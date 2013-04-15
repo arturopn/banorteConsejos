@@ -109,6 +109,10 @@ font-variant: normal;}
 input:-moz-placeholder { color:#000; font-size: 24px; font-weight: lighter;}
 textarea:-moz-placeholder { color:#000; font-size: 24px; font-weight: lighter;} ​
 
+.greyselect ::-webkit-input-placeholder  { color:#000; font-size: 12px !important; font-weight: lighter; }
+.greyselect input.inputSearch:-moz-placeholder { color:#000; font-size: 12px !important; font-weight: lighter;}
+.greyselect textarea.inputSearch:-moz-placeholder { color:#000; font-size: 12px !important; font-weight: lighter;} ​
+
 
 .plabel { font-size: 24px; font-style: normal; font-family: 'source_sans_prolight';}
 
