@@ -368,7 +368,7 @@ padding: 0 10px;
 
 div#box{display: none;}
 
-div.fotobg{ background: url(../img/bg/fotobg.png) no-repeat;  width: 323px; max-width: 323px; height: 452px; z-index: 1; position: absolute; top: 0; left: 615px;}
+div.fotobg{ background: url(../img/bg/fotobg.png) no-repeat;  width: 323px; max-width: 323px; height: 452px; z-index: 1; position: absolute; top: -4px; left: 626px;}
 
 
 .fotobg label{ text-align: left; padding-left: 33px;}
@@ -436,6 +436,8 @@ padding-left: 10px;}
 .ff31 .more{position:absolute; bottom:10px; right:20px;}
 
 .searchresults{ padding: 20px 0; border-bottom: 1px #ccc solid;}
+
+
 
 /*	- Buttons -	*/
 

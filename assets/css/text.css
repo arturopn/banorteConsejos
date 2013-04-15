@@ -101,7 +101,13 @@ label {font-size: 23px; display: block;}
 }
 #footer p{margin: 1em 1em 1em 1em;}
 
+<<<<<<< HEAD
 .btn.bgred{ font-size: 18px; font-style: normal; font-family: 'source_sans_prolight';
+=======
+.grey{color: #999999;}
+
+.btn.bgred{ font-size: 24px; font-style: normal; font-family: 'source_sans_prolight';
+>>>>>>> cambio de header en la pagina de busqueda
 font-weight: 200 !important;
 font-variant: normal;}
 
