@@ -111,9 +111,11 @@ ul{	margin:0;	padding:0; list-style:none; }
 .margin1t	{ margin-top:1px  !important;}
 .margin5t	{ margin-top:5px  !important;}
 .margin10t	{ margin-top:10px !important;}
+.margin14t	{ margin-top:14px !important;}
 .margin15t	{ margin-top:15px !important;}
 .margin20t	{ margin-top:20px !important;}
 .margin25t	{ margin-top:25px !important;}
+.margin27t	{ margin-top:27px !important;}
 .margin30t	{ margin-top:30px !important;}
 .margin40t	{ margin-top:40px !important;}
 .margin50t	{ margin-top:50px !important;}
@@ -383,7 +385,7 @@ div.inputimg{display: inline-block; width: 235px;}
 
 .border5{ border-radius: 5px; moz-border-radius:5px;}
 
-.separadorbarra { background: url(../img/lines/separadorbarra.gif); width: 2px; height: 71px;}
+.separadorbarra { background: url(../img/lines/separadorbarra.gif); width: 2px; height: 81px;}
 
 .temporaldrop{background: url(../img/btns/temporaldrop.png) no-repeat; width: 262px; height: 62px; text-align: left; padding-left:10px; padding-top: 16px; font-size: 20px; }
 
