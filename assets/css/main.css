@@ -271,7 +271,7 @@ ul{	margin:0;	padding:0; list-style:none; }
 
 
 .bgtrans{ background: url(../img/bg/trans.png);}
-.contentregistro{ width: 563px; height:582px; padding: 20px; text-align: left; border:solid 2px #8B8B8B;}
+.contentregistro{ width: 663px; height:582px; padding: 20px; text-align: left; border:solid 2px #8B8B8B;}
 .contentlogin{ width: 281px; height:582px; padding: 20px; text-align: left; border:solid 2px #8B8B8B;}
 
 .separador{ background:#CCCCCC; height: 1px;}
@@ -305,7 +305,7 @@ ul{	margin:0;	padding:0; list-style:none; }
 }
 
 input.input2 {
-	font-size: 24px;
+	font-size: 18px;
 	font-family: 'source_sans_prolight';
 	height: 42px;
 	padding-left: 10px;
@@ -387,10 +387,9 @@ div.inputimg{display: inline-block; width: 235px;}
 
 .temporaldrop{background: url(../img/btns/temporaldrop.png) no-repeat; width: 262px; height: 62px; text-align: left; padding-left:10px; padding-top: 16px; font-size: 20px; }
 
-.plabel, .biglabel { font-size: 24px; font-style: normal; font-family: 'source_sans_prolight';}
+.plabel, .biglabel { font-size: 18px; font-style: normal; font-family: 'source_sans_prolight';}
 .acerca{ border: 1px #CCCCCC solid; height: 546px; width: 946px;}
 .acercaleft{border-right: 1px #CCCCCC solid; height: 546px; width: 273px; }
-.p24 { font-size: 24px;}
 
 
 .pestanas{ font-size: 17px; font-family: 'source_sans_prolight'; border: 1px #CCCCCC solid; padding: 5px 0; width: 271px;}

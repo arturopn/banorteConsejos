@@ -18,22 +18,6 @@
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.0.6"></script>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script type="text/javascript" src="http://api.recaptcha.net/js/recaptcha_ajax.js"></script>
-  <script type="text/javascript" language="javascript1.2">
-    function showRecaptcha(element, submitButton, recaptchaButton, themeName) {
-        Recaptcha.destroy();
-        Recaptcha.create("6Lc_O98SAAAAAN-yYrDZir5CeWz2essYQaJSI5Da", element, {
-            theme: themeName,
-            tabindex: 0
-        });
-        $(".recaptcha_required").show();
-        $("#"+submitButton).show();
-    }
-  $(document).ready(function() {
-
-        showRecaptcha('recaptcha_div_1', 'submit_1','recaptcha_required_1','white');
-  });
-  </script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -52,38 +36,38 @@
     </div>
      <div id="contenido">
         <div class="bgtrans contentregistro margin20l">
-        <h1 class="red">Bienvenido</h1>
+        <h1 class="red prolight font30 margin20l">Bienvenido</h1>
         <div class="separador margin20t margin20b"></div>
         <div class="clearfix margin5b">
             <div class="floatL width50 relative">
-                <img src="assets/img/photos/foto.gif" id="foto" class="floatL margin20l error"/>
+                <img src="assets/img/photos/foto.gif" id="foto" class="floatL margin20l margin10r error"/>
         <p class="plabel">Nombre</p>
-        <p class="p24">Juan Antonio Garza Cruz</p>
+        <p class="font20">Juan Antonio Garza Cruz</p>
        </div>
        <div class="floatL width50">
         	<p class="plabel">Usuario</p>
-        	<p class="p24">Consejero075</p>
+        	<p class="font20">Consejero075</p>
         </div>
-       <div class="floatL width100">
-        <label class="biglabel">Asigna tu contraseña *</label>
-        <input type="text" placeholder="Contraseña" class="input2 width45 margin5b margin20t " name="contra" id="contra">
+       <div class="floatL width80">
+        <label class="biglabel margin20l margin20t">Asigna tu contraseña *</label>
+        <input type="text" placeholder="Contraseña" class="input2 width45 margin5b margin20l " name="contra" id="contra">
      <input type="text" placeholder="Confirma tu contraseña" class="input2 width45" name="confirmarcontra" id="confirmarcontra">
         </div>
-        <div class="floatL width50 relative">
-         <label class="biglabel margin20t">Código de seguridad *</label>
-        <input type="text" placeholder="" class="input2 width85 margin5b margin20t " name="contra" id="contra">
+        <div class="floatL width80 relative">
+         <label class="biglabel margin20l  margin10t">Código de seguridad *</label>
+        <input type="text" placeholder="" class="input2 width45 margin5b margin20l" name="contra" id="contra">
 		    </div>
         
-    	<div id="recaptcha_div_1" class="width85 floatL" style="background-color:#063;">Hola</div>
-        <div class=" floatL width30 clear">
-        <p>Escribe los caracteres</p>
-        <a href="#box" class="btn modalbox width25 floatR margin40r bgred margin20t  line40 ">REGISTRARSE</a>
+    	<div class="width100 floatL">
+        	<p class="prolight font18 margin20l">Escribe los caracteres</p>
+        </div>
+        <div class="width70 floatL margin20l">
+        <img src="assets/img/icons/captcha.jpg">
+        </div>
+        <div class=" width25 floatL">
+        <a href="#box" class="btn modalbox width90 floatL bgred line40">REGISTRARSE</a>
 		</div>
-        <div class="floatL width100">
-        <p style="position:absolute; bottom:-60px;">Campos obligatorios *</p>
-        </div> 
-        
-        
+        <div class="floatL clear"><p class="prolight margin15t margin20l font12">Campos obligatorios *</p></div>
         <div id="box">
         <div class="floatL padding30"><p style="font-size:30px;">Bienvenido Juan Antonio, </br> tu cuenta ah sido activada<p></div>
         <div class="floatL padding30"> <img src="assets/img/icons/check.png"/> </div>  
