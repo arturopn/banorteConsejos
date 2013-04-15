@@ -376,6 +376,7 @@ div.inputimg{display: inline-block; width: 235px;}
 
 
 .pestanas{ font-size: 17px; font-family: 'source_sans_prolight'; border: 1px #CCCCCC solid; padding: 5px 0; width: 271px;}
+.pestanas a {font-size: 17px; font-family: 'source_sans_prolight'; }
 .on{background:url("../img/btns/directorioon.png") no-repeat #B54949; background-position: 240px 11px; }
 #directoriohead span{ color: #A92626;}
 #directoriohead { color: #333333; font-size: 20px;}
