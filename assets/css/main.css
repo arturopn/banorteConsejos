@@ -438,7 +438,8 @@ padding-left: 10px;}
 .ff31 .more{position:absolute; bottom:10px; right:20px;}
 
 .searchresults{ padding: 20px 0; border-bottom: 1px #ccc solid;}
-
+.logrosp {font-family: 'source_sans_prolight'; font-size: 17px; text-align: left;}
+.taleft{text-align: left;}
 
 
 /*	- Buttons -	*/
