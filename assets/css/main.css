@@ -209,6 +209,12 @@ ul{	margin:0;	padding:0; list-style:none; }
 .width95	{width:95% !important;}
 .width100	{width:100% !important;}
 
+table{border-collapse: collapse;}
+.borderb td{ border-bottom: 1px #ccc solid; padding: 10px 0;}
+.padding10tb td{padding: 10px 0;}
+
+.directorioperfil input, .directorioperfil textarea{ margin-bottom: 10px;}
+
 .floatL, #nav li {	float: left; }
 .floatR {	float: right; }
 
