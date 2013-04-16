@@ -117,17 +117,12 @@
   <script src="assets/js/prototype/iphone-style-checkboxes.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript" charset="utf-8">
     document.observe("dom:loaded", function() {
-      new iPhoneStyle('.on_off input[type=checkbox]');
-      new iPhoneStyle('.css_sized_container input[type=checkbox]', { resizeContainer: false, resizeHandle: false });
-      new iPhoneStyle('.long_tiny input[type=checkbox]', { checkedLabel: 'Very Long Text', uncheckedLabel: 'Tiny' });
+$("#sliderl").click(function(){
+        alert("hola");
+      });
+     
+
       
-      var onchange_checkbox = $$('.onchange input[type=checkbox]').first();
-      new iPhoneStyle(onchange_checkbox);
-      setInterval(function toggleCheckbox() {
-        onchange_checkbox.writeAttribute('checked', !onchange_checkbox.checked);
-        onchange_checkbox.change();
-        $('status').update(onchange_checkbox.checked);
-      }, 2500);
     });
   </script>
     </body>
