@@ -192,6 +192,7 @@ ul{	margin:0;	padding:0; list-style:none; }
 .width35	{width:35% !important;}
 .width33	{width:33% !important;}
 .width40	{width:40% !important;}
+.width43	{width:43% !important;}
 .width45	{width:45% !important;}
 .width50	{width:50% !important;}
 .width55	{width:55% !important;}
@@ -204,6 +205,7 @@ ul{	margin:0;	padding:0; list-style:none; }
 .width80	{width:80% !important;}
 .width85	{width:85% !important;}
 .width90	{width:90% !important;}
+.width94	{width:94% !important;}
 .width95	{width:95% !important;}
 .width100	{width:100% !important;}
 
@@ -400,7 +402,7 @@ div.inputimg{display: inline-block; width: 235px;}
 #directoriohead span{ color: #A92626;}
 #directoriohead { color: #333333; font-size: 20px;}
 
-.directorioin{ padding: 30px;}
+.directorioin{ padding: 30px; height: 486px; width: 612px !important;}
 
 .font13{ font-size: 13px;}
 .font16{ font-size: 16px;}
