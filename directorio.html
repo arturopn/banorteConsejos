@@ -16,27 +16,6 @@
         <link rel="stylesheet" href="css/main.css">
         <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/dropkick.css" rel="stylesheet" type="text/css" />
-        <script type="text/javascript" src="assets/js/jquery.js"></script>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script type="text/javascript" src="assets/js/engine.js"></script>
-        <script type="text/javascript" src="assets/js/dropkick.js"></script>
-        <script type="text/javascript">
-        $(document).ready(function(){
-        $('.drop').dropkick();
-        $('div.fotobg').hide();
-        
-        $('.fotologin').click(function(){
-       
-        if($('div.fotobg').is(':hidden')) {
-               $('div.fotobg').show(400);
-        }
-        else {
-            $('div.fotobg').hide(400);
-        }
-        });
- 
-        });
-        </script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -51,9 +30,9 @@
             	<a href="index.html"><img src="assets/img/photos/logo.png"></a>
             </div>
             <div class="clearfix floatR">
-            <div class="floatL">
-              <h1 class="margin10t margin5r" style="margin-bottom:0;">Juan Antonio Garza Cruz</h1>
-               <h2 style="text-align:left; margin-bottom:0;" class="grey"><small>Consejo Regional Metropolitano</small></h2>
+            <div class="floatL" align="left">
+              <p class="margin10t margin5r font23" style="margin-bottom:0;">Juan Antonio Garza Cruz</p>
+               <p class="grey font13 margin5b">Consejo Regional Metropolitano</p>
               <h2 style="text-align:left;" class="red"><small><a class="red" href="#">Editar perfil</a></small></h2>
             </div>
             <div class="separadorbarra floatL margin15r"></div>
@@ -63,35 +42,34 @@
             <div class="separadorbarra floatL margin15r"></div>
             <img src="assets/img/icons/interrogacion.png" class="floatL margin27t margin15r"/>
             <div class="separadorbarra floatL"></div>
-
-
-             <div class="fotobg">
-   <h1>Búsqueda de integrandes del consejo</h1>
-   <div class="separador width80 margin30l"></div>
-   <div class="margin10t">
-    <label for="nombre">Por nombre:</label>
-    <input type="text" class="input2 width77" name="nombre" placeholder="Claudia"/>
-   </div>
-   <div>
-    <label for="consejo">Por consejo:</label>
-    <div class="width80 floatR margin35r">
-   <div class="width100"><select class="drop" name="recinto">
-            <option>Consejo regional 1</option>
-          </select></div></div>
-
-   </div>
-
-   <div>
-    <label for="actividad">Por actividad:</label>
-    <div class="width80 floatR margin35r">
-   <div class="width100"><select class="drop" name="actividad">
-            <option>Fisica</option>
-          </select></div></div>
-
-   </div>
-
-   <a href="index.html" class="btn width30  bgred line40 floatR margin10t margin30r">BUSCAR</a>
-        </div>
+             <div class="fotobg hidden">
+               <h1>Búsqueda de integrantes</h1>
+               <div class="separador width80 margin30l"></div>
+               <div class="margin10t">
+                <label for="nombre">Por nombre:</label>
+                <input type="text" class="input2 width77" name="nombre" placeholder="Claudia"/>
+               </div>
+               <div class="margin10t clearfix">
+                <label for="consejo">Por consejo:</label>
+                <div class="width80 floatR margin35r">
+               <div class="width100"><select class="drop" name="recinto">
+                        <option>Consejo regional 1</option>
+                      </select></div>
+                      </div>
+              
+               </div>
+              
+               <div class="margin10t clearfix">
+                <label for="actividad">Por actividad:</label>
+                <div class="width80 floatR margin35r">
+               	<div class="width100"><select class="drop" name="actividad">
+                        <option>Fisica</option>
+                      </select></div></div>
+              
+               </div>
+  
+   							<a href="index.html" class="btn width30  bgred line40 floatR margin10t margin30r">BUSCAR</a>
+        			</div>
         </div>
 
     	</div>
@@ -123,22 +101,22 @@
      <div id="datospersonales" class="floatL taleft width60 directorioin tabs-cont">
           <h1>Datos personales</h1>
 
-          <div class="clearfix">
-            <div class="floatL margin20b">
+          <div class="clearfix margin20b">
+            <div class="floatL width30">
           <label for"nombres">Nombres</label>
-          <input type="text" value="Juan antonio" class="input2 width100 margin5b" name="nombres" id="nombres">
+          <input type="text" value="Juan antonio" class="input2 width90 margin5b" name="nombres" id="nombres">
            </div>
-           <div class="floatL margin20l">
+           <div class="floatL width30 margin10l">
           <label for"nombres">Apellidos</label>
-          <input type="text" value="Garza Cruz" class="input2 width100 margin5b" name="Apellidos" id="Apellidos">
+          <input type="text" value="Garza Cruz" class="input2 width90 margin5b" name="Apellidos" id="Apellidos">
            </div>
-           <div class="floatL margin20l relative">
-          <label for"fotografia">Fotografia</label>
-          <p>Maximo 2mb</p>
-          <a href="index.html" class="btn width60  bggray line30  ">CAMBIAR</a>
-          <img src="assets/img/photos/foto.gif" style="position:absolute; right:-100px; top:0px;"/>
-        </div>
-      </div>
+           <div class="floatL width35 clearfix margin10l relative">
+              <div class="floatL width50"><label for"fotografia">Fotografía</label>
+              <p>Maximo 2mb</p>
+              <a href="index.html" class="btn width60  bggray line30  ">CAMBIAR</a></div>
+              <img src="assets/img/photos/foto.gif" class="floatR"/>
+            </div>
+      		</div>
 
       <div class="clearfix margin20b">
             <div class="clearfix">
@@ -603,7 +581,7 @@
           </div>
         </div>
 
-        <div id="organizaciones" class="floatL width60 directorioin tabs-cont">
+        <div id="organizaciones" class="floatL width60 directorioin tabs-cont" align="left">
           <div class="directorioperfil">
             <h2 class="font23">Organizaciones Sociales</h2>
             <table class="width100 tabla1 margin10b">
@@ -676,18 +654,22 @@
 
        
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
-         <script src="js/plugins.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.js"></script>
+        <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script type="text/javascript" src="assets/js/tabs.js"></script>
         <script type="text/javascript" src="assets/js/iosslider.js"></script>
         <script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>
+        <script type="text/javascript" src="assets/js/engine.js"></script>
+        <script type="text/javascript" src="assets/js/dropkick.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-        $('.drop').dropkick();
-        $.tabs('tab-directorio');
     
         $(document).ready(function(){
+					$('.drop').dropkick();
+					$.tabs('tab-directorio');
           $(".scroll").niceScroll();
           $('#tablogros').one('click',function(){
             $('#slidelogros .slide').each(function(index){ if( index == 0 ) $('#navlogros').append('<a class="on"></a>'); else $('#navlogros').append('<a></a>'); });

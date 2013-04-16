@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-	$('div.fotobg').hide();
-
 	//fix html5 placeholder attribute for ie7 & ie8
 	if (jQuery.browser.msie && jQuery.browser.version.substr(0,1) < 9) { // ie7&ie8
 		jQuery('input[placeholder], textarea[placeholder]').each(function(){          
@@ -24,19 +22,16 @@ $(document).ready(function() {
 	}
 
 
-$('#new_user').submit(function(event){
-    $('.required').each(function(){
-        if(!$.trim($(this).val()))
-        {
-            $(this).addClass('emptyField');
-            event.preventDefault();
-        }
-    });
-});
+	$('#new_user').submit(function(event){
+		$('.required').each(function(){
+			if(!$.trim($(this).val()))
+			{
+				$(this).addClass('emptyField');
+				event.preventDefault();
+			}
+		});
+	});
 
-
-$('.fotologin').click(function(){
-   $('div.fotobg').show(400);
-});
+	$('.fotologin').click(function(){	$('div.fotobg').toggle(400); });
 
 });

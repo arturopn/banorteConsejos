@@ -29,7 +29,7 @@ div.dropbottom .dk_container:first-child{ margin-left: 130px;}
 .greyselect .dk_container a{ font-size: 12px;}
 
 .greyselect.bigger .dk_container { height: 45px;}
-.greyselect.bigger .dk_container a{ font-size: 20px; line-height: 40px;}
+.greyselect.bigger .dk_container a{ font-size: 18px; line-height: 40px;}
 .greyselect.bigger  .dk_toggle {
   /**
    * Help: Arrow image not appearing

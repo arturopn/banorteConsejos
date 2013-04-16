@@ -7,8 +7,9 @@ body {
     line-height: 1.4;
 	background-image:url(../img/bg/bg.png);
 	background-color:##E9E9E9;
-	font-family:"Myriad Pro", arial, helvetica, sans-serif;
+	font-family: 'source_sans_prolight';
 }
+html, body{ min-width:1280px; }
 .main {
 	text-align:left;
 	display: block;
@@ -397,7 +398,7 @@ div.inputimg{display: inline-block; width: 235px;}
 
 .temporaldrop{background: url(../img/btns/temporaldrop.png) no-repeat; width: 262px; height: 62px; text-align: left; padding-left:10px; padding-top: 16px; font-size: 20px; }
 
-.plabel, .biglabel { font-size: 18px; font-style: normal; font-family: 'source_sans_prolight';}
+.plabel, .biglabel { font-size: 18px; font-style: normal;}
 .acerca{ border: 1px #CCCCCC solid; height: 546px; width: 946px;}
 .acercaleft{border-right: 1px #CCCCCC solid; height: 546px; width: 273px; }
 
@@ -450,7 +451,8 @@ padding-left: 10px;}
 .taleft{text-align: left;}
 
 /*Andres*/
-.tabla1, .btn, .input, #slidelogros .slide{ font-family: 'source_sans_prolight'; }
+.tabla1, .btn, .input, #slidelogros .slide, .fotobg label, div.fotobg h1{ font-family: 'source_sans_prolight'; }
+.fotobg label{ font-size:19px; }
 .pestanas.on a{ color:#FFF; }
 .pestanas a{ display:block; }
 .tabla1{ border-spacing:0;  border-collapse:collapse; font-size:14px; }
@@ -489,6 +491,7 @@ padding-left: 10px;}
 }
 .navslider .on, .navslider a:hover{ background-position:-11px 0; }
 .navslider a{ background-image:url(../img/btns/navslider.png); }
+.hidden{ display:none; }
 
 
 /*	- Buttons -	*/

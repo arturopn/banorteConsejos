@@ -64,9 +64,8 @@ body, a, textarea {
 	font-size: 12px;
 	font-style: normal;
 	font-weight: normal;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'source_sans_prolight';
 }
-<<<<<<< HEAD >>>>>>> a7eb1891ffc36b3ab551fdbadb7f46dbabdfce70
 h1, h1 a { font-size: 30px; font-family: 'source_sans_proextralight';}
 h2, h2 a { font-size: 14px; }
 h3, h3 a{ font-size: 12px; }	
@@ -101,13 +100,11 @@ label {font-size: 23px; display: block;}
 }
 #footer p{margin: 1em 1em 1em 1em;}
 
-<<<<<<< HEAD
 .btn.bgred{ font-size: 18px; font-style: normal; font-family: 'source_sans_prolight';
-=======
+
 .grey{color: #999999;}
 
 .btn.bgred{ font-size: 24px; font-style: normal; font-family: 'source_sans_prolight';
->>>>>>> cambio de header en la pagina de busqueda
 font-weight: 200 !important;
 font-variant: normal;}
 
