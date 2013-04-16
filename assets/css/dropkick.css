@@ -35,8 +35,8 @@ div.dropbottom .dk_container:first-child{ margin-left: 130px;}
    * Help: Arrow image not appearing
    * Try updating this property to your correct dk_arrows.png path
    */
-  background: url(../img/btns/select3.png) 56% 17px no-repeat;
-  padding: 1px 60px 10px 14px;
+  background: url(../img/btns/select3.png) 85% 17px no-repeat;
+  padding: 1px 16px 0px 14px;
 }
 
 .greyselect  .dk_toggle {
@@ -44,8 +44,8 @@ div.dropbottom .dk_container:first-child{ margin-left: 130px;}
    * Help: Arrow image not appearing
    * Try updating this property to your correct dk_arrows.png path
    */
-  background: url(../img/btns/select2.png) 66% 11px no-repeat;
-  padding: 1px 60px 10px 14px;
+  background: url(../img/btns/select2.png) 86% 11px no-repeat;
+  padding: 1px 23px 0px 14px;
 }
 .dk_container {
 	background:#FFF;
