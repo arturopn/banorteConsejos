@@ -449,6 +449,47 @@ padding-left: 10px;}
 .logrosp {font-family: 'source_sans_prolight'; font-size: 17px; text-align: left;}
 .taleft{text-align: left;}
 
+/*Andres*/
+.tabla1, .btn, .input, #slidelogros .slide{ font-family: 'source_sans_prolight'; }
+.pestanas.on a{ color:#FFF; }
+.pestanas a{ display:block; }
+.tabla1{ border-spacing:0;  border-collapse:collapse; font-size:14px; }
+.tabla1 th{ font-weight:normal; padding:10px 0; }
+.tabla1 td{ border-top:1px solid #CCC; padding:10px 0; vertical-align:top; }
+.h84{ height:84px; }
+.width29{ width:29%;  }
+.bbot{ border-bottom:1px solid #CCC; }
+.iosSlider {
+	position: relative;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+.iosSlider .slider {
+	width: 100%;
+	height: 100%;
+}
+.iosSlider .slider .slide {
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+#slidelogros, #slidelogros .slide{ height:175px !important; width:568px !important; }
+#slidelogros p{ font-size:17px; color:#666; }
+.navslider{ text-align:center; }
+.navslider a{
+	width:10px;
+	height:9px;
+	cursor:pointer;
+	display:inline-block;
+	margin:0 8px;
+	background-position:0 0;
+}
+.navslider .on, .navslider a:hover{ background-position:-11px 0; }
+.navslider a{ background-image:url(../img/btns/navslider.png); }
+
 
 /*	- Buttons -	*/
 

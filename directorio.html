@@ -113,8 +113,8 @@
         <li class="pestanas"><a href="#redessociales">REDES SOCIALES</a></li>
         <li class="pestanas"><a href="#infprofesional">INF. PROFESIONAL</a></li>
         <li class="pestanas"><a href="#infacademica">INF. ACADÉMICA</a></li>
-        <li class="pestanas"><a href="#casasbeneficas">CASAS BENEFICAS</a></li>
-        <li class="pestanas"><a href="#logros">LOGROS</a></li>
+        <li class="pestanas"><a href="#casasbeneficas">CAUSAS BENÉFICAS</a></li>
+        <li class="pestanas"><a id="tablogros" href="#logros">LOGROS</a></li>
         <li class="pestanas"><a href="#logrosprof">LOGROS PROFESIONALES</a></li>
         <li class="pestanas"><a href="#casosdeexito">CASOS DE ÉXITO</a></li>
         <li class="pestanas" style="border-bottom:0;"><a href="#organizaciones">ORGANIZACIONES SOCIALES</a></li>
@@ -596,7 +596,7 @@
     
         $(document).ready(function(){
           $(".scroll").niceScroll();
-          $('#tablogros').click(function(){
+          $('#tablogros').one('click',function(){
             $('#slidelogros .slide').each(function(index){ if( index == 0 ) $('#navlogros').append('<a class="on"></a>'); else $('#navlogros').append('<a></a>'); });
             $('#slidelogros').iosSlider({
               snapToChildren: true,

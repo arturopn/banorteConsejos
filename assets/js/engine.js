@@ -35,7 +35,7 @@ $('#new_user').submit(function(event){
 });
 
 
-$('.fotologin').click({
+$('.fotologin').click(function(){
    $('div.fotobg').show(400);
 });
 
