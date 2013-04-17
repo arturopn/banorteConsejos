@@ -239,7 +239,7 @@ html, body{ min-width:1024px; }
 	width:100%;
 }
 #encabezado{
-	width:100%;
+	width:1024px;
 	height:69px;
 	margin:auto;
 }
