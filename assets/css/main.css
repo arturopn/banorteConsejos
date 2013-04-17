@@ -211,7 +211,7 @@ body {
 	background-color:##E9E9E9;
 	font-family: 'source_sans_prolight';
 }
-html, body{ min-width:1280px; }
+html, body{ min-width:1024px; }
 .main {
 	text-align:left;
 	display: block;
@@ -282,7 +282,7 @@ html, body{ min-width:1280px; }
 
 .bgtrans{ background: url(../img/bg/trans.png);}
 .contentregistro{ width: 663px; height:497px; padding:0 20px; text-align: left; border:solid 2px #8B8B8B;}
-.contentlogin{ width: 281px; height:497px; padding: 20px; text-align: left; border:solid 2px #8B8B8B;}
+.contentlogin{ width: 281px; height:456px; padding: 20px; text-align: left; border:solid 2px #8B8B8B;}
 
 .separador{ background:#CCCCCC; height: 1px;}
 
