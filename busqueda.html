@@ -39,62 +39,62 @@
         </script>
     </head>
     <body>
+      <div style="position:absolute; width:100%; overflow:hidden;"><img  src="assets/img/lines/barra_top.png"></div>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 <div id="contenedor">
-	<div id="encabezado" >
+<div id="encabezado" >
        
 
-		<div id="barra-top">
-        	<div class="logo margin5t">
-            	<a href="index.html"><img src="assets/img/photos/logo.png"></a>
+    <div id="barra-top">
+          <div class="logo margin5t">
+              <a href="index.html"><img src="assets/img/photos/logo.png"></a>
             </div>
             <div class="clearfix floatR">
-            <div class="floatL">
-            	<h1 class="margin10t margin5r" style="margin-bottom:0;">Juan Antonio Garza Cruz</h1>
-               <h2 style="text-align:left; margin-bottom:0;" class="grey"><small>Consejo Regional Metropolitano</small></h2>
-             <h2 style="text-align:left;" class="red"><small><a class="red" href="#">Editar perfil</a></small></h2>
+            <div class="floatL" align="left">
+              <p class="margin5r font18" style="margin-bottom:0;">Juan Antonio Garza Cruz</p>
+               <p class="grey font13" style="margin-bottom:0;">Consejo Regional Metropolitano</p>
+              <h2 style="text-align:left;" class="red"><small><a class="red font11" href="#">Editar perfil</a></small></h2>
             </div>
             <div class="separadorbarra floatL margin15r"></div>
-            <img src="assets/img/photos/fotologin.jpg" class="floatL margin14t margin15r"/>
+            <img src="assets/img/photos/fotologin.jpg" width="42" class="floatL margin7t margin15r"/>
             <div class="separadorbarra floatL margin15r"></div>
-            <img src="assets/img/icons/search.png" class="floatL margin27t margin20r margin5l fotologin"/>
+            <img src="assets/img/icons/search.png" class="floatL margin14t margin20r margin5l fotologin"/>
             <div class="separadorbarra floatL margin15r"></div>
-            <img src="assets/img/icons/interrogacion.png" class="floatL margin27t margin15r"/>
+            <img src="assets/img/icons/interrogacion.png" class="floatL margin14t margin15r"/>
             <div class="separadorbarra floatL"></div>
-
-
-             <div class="fotobg">
-   <h1>Búsqueda de integrandes del consejo</h1>
-   <div class="separador width80 margin30l"></div>
-   <div class="margin10t">
-    <label for="nombre">Por nombre:</label>
-    <input type="text" class="input2 width77" name="nombre" placeholder="Claudia"/>
-   </div>
-   <div>
-    <label for="consejo">Por consejo:</label>
-    <div class="width80 floatR margin35r">
-   <div class="width100"><select class="drop" name="recinto">
-            <option>Consejo regional 1</option>
-          </select></div></div>
-
-   </div>
-
-   <div>
-    <label for="actividad">Por actividad:</label>
-    <div class="width80 floatR margin35r">
-   <div class="width100"><select class="drop" name="actividad">
-            <option>Fisica</option>
-          </select></div></div>
-
-   </div>
-
-   <a href="index.html" class="btn width30  bgred line40 floatR margin10t margin30r">BUSCAR</a>
+             <div class="fotobg hidden">
+               <h1>Búsqueda de integrantes</h1>
+               <div class="separador width80 margin30l"></div>
+               <div class="margin10t">
+                <label for="nombre">Por nombre:</label>
+                <input type="text" class="input2 width77" name="nombre" placeholder="Claudia"/>
+               </div>
+               <div class="margin10t clearfix">
+                <label for="consejo">Por consejo:</label>
+                <div class="width80 floatR margin35r">
+               <div class="width100"><select class="drop" name="recinto">
+                        <option>Consejo regional 1</option>
+                      </select></div>
+                      </div>
+              
+               </div>
+              
+               <div class="margin10t clearfix">
+                <label for="actividad">Por actividad:</label>
+                <div class="width80 floatR margin35r">
+                <div class="width100"><select class="drop" name="actividad">
+                        <option>Fisica</option>
+                      </select></div></div>
+              
+               </div>
+  
+                <a href="index.html" class="btn width30  bgred line40 floatR margin10t margin30r">BUSCAR</a>
+              </div>
         </div>
-        </div>
 
-    	</div>
+      </div>
 
 
     </div>
@@ -109,7 +109,7 @@
         <li class="pestanasBusqueda"><a href="#consejeros">CONSEJEROS</a></li>
         <li class="pestanasBusqueda"><a href="#directorios">DIRECTIVOS</a></li>
       </ul>    
- <div id="consejeros" class="tabs-cont clearfix acerca">
+ <div id="consejeros" class="tabs-cont clearfix acerca scroll">
 
  <div class="searchtop clearfix">
   <p class="font22 prolight floatL" style="margin:19px;">Filtro:</p>
@@ -141,7 +141,7 @@
   <div class="ff31 floatL clearfix relative "><img class="floatL" src="assets/img/photos/foto.gif"/><div class="floatL"> <h1 class="floatL margin30l">José Luis Espinoza Torres</h1><p class="margin50t">Actividad Empresarial</p><p>Lácteos y Derivados, S.A de C.V.</p></div><img class="more" src="assets/img/icons/more.png"/></div>
   </div>
 
-   <div class="searchresults clearfix">
+   <div class="searchresults clearfix scroll">
     <div class="floatL relative" style="height:250px;">
       <p class="font22 prolight" style="margin:19px; margin-right:0;">Región Norte</p>
       <div style="background:#ccc; height:1px; width:150px; position:absolute; left:19px;"></div>
@@ -235,11 +235,14 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script type="text/javascript" src="assets/js/tabs.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
         $('.drop').dropkick();
         $.tabs('tab-directorio');
+        $(".scroll").niceScroll();
        
            /* var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

@@ -80,6 +80,7 @@ ul{	margin:0;	padding:0; list-style:none; }
 
 .margin1t	{ margin-top:1px  !important;}
 .margin5t	{ margin-top:5px  !important;}
+.margin7t	{ margin-top:7px  !important;}
 .margin10t	{ margin-top:10px !important;}
 .margin14t	{ margin-top:14px !important;}
 .margin15t	{ margin-top:15px !important;}
@@ -362,10 +363,10 @@ padding: 0 10px;
 
 #contenidoin{
 	width:1000px;
-	height:655px;
+	height:449px;
 	background-image:url(../img/bg/mainbg.png);
 	background-repeat:no-repeat;
-	float:left;
+	margin:10px auto 40px;
 	padding: 25px;
 	z-index: -1;
 }
@@ -387,13 +388,13 @@ div.inputimg{display: inline-block; width: 235px;}
 
 .border5{ border-radius: 5px; moz-border-radius:5px;}
 
-.separadorbarra { background: url(../img/lines/separadorbarra.gif); width: 2px; height: 81px;}
+.separadorbarra { background: url(../img/lines/separadorbarra.gif); width: 2px; height: 54px;}
 
 .temporaldrop{background: url(../img/btns/temporaldrop.png) no-repeat; width: 262px; height: 62px; text-align: left; padding-left:10px; padding-top: 16px; font-size: 20px; }
 
 .plabel, .biglabel { font-size: 18px; font-style: normal;}
-.acerca{ border: 1px #CCCCCC solid; height: 546px; width: 946px;}
-.acercaleft{border-right: 1px #CCCCCC solid; height: 546px; width: 273px; }
+.acerca{ border: 1px #CCCCCC solid; height: 405px; width: 946px;}
+.acercaleft{border-right: 1px #CCCCCC solid; height: 405px; width: 273px; }
 
 
 .pestanas{ font-size: 17px; font-family: 'source_sans_prolight'; border: 1px #CCCCCC solid; padding: 5px 0; width: 271px;}
@@ -402,7 +403,7 @@ div.inputimg{display: inline-block; width: 235px;}
 #directoriohead span{ color: #A92626;}
 #directoriohead { color: #333333; font-size: 20px;}
 
-.directorioin{ padding: 30px; height: 486px; width: 612px !important;}
+.directorioin{ padding: 30px; height: 311px; width: 612px !important;}
 
 .font13{ font-size: 13px;}
 .font16{ font-size: 16px;}
@@ -425,6 +426,9 @@ padding-left: 10px;}
 
 .prolight{font-family: 'source_sans_prolight';}
 .font22{font-size: 22px;}
+.font20{font-size: 20px;}
+.font11{font-size: 11px;}
+.font18{font-size: 18px;}
 
 .searchtop{ border-bottom: solid 1px #CCCCCC; text-align: left;}
 .separadorV64{ width: 1px; height: 64px; background: #cccccc;}
