@@ -142,7 +142,7 @@ div.dropbottom .dk_container:first-child{ margin-left: 130px;}
   }
   .dk_options a:hover,
   .dk_option_current a {
-    background-color: #003479;
+    background-color: #B54949;
     color: #fff;
     text-decoration: none;
     text-shadow: rgba(0, 0, 0, .5) 0 1px 0;
@@ -199,7 +199,7 @@ div.dropbottom .dk_container:first-child{ margin-left: 130px;}
   margin-top: 2px;
   position: absolute;
   left: 0;
-  width: 114%;
+  width: 101%;
 }
   .dk_options a,
   .dk_options a:link,
