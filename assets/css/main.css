@@ -424,11 +424,15 @@ padding-left: 10px;}
 .pestanasBusqueda{background:#E1E1E1; z-index: 0; position: relative; display: inline-block; width: 121px; height: 40px; border-radius: 10px 10px 0px 0px; border:#CCCCCC solid 1px; border-bottom: 0; }
 .pestanasBusqueda.on{background:#F7F7F7; z-index: 1; position: relative; }
 
+.semibold{font-family: 'source_sans_prosemibold'}
 .prolight{font-family: 'source_sans_prolight';}
 .font22{font-size: 22px;}
 .font20{font-size: 20px;}
 .font11{font-size: 11px;}
 .font18{font-size: 18px;}
+.font17{font-size: 17px !important;}
+.bold{ font-weight: bold;}
+.gray{color: #666666;}
 
 .searchtop{ border-bottom: solid 1px #CCCCCC; text-align: left;}
 .separadorV64{ width: 1px; height: 64px; background: #cccccc;}
