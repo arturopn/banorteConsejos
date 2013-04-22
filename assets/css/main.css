@@ -533,7 +533,6 @@ padding-left: 10px;}
 /*Slider label*/
 #sliderLabel {
 	border: 1px solid #a2a2a2;
-
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -629,10 +628,12 @@ label.little{font-family: 'source_sans_prolight'; font-size: 12px; color: #66666
 
 
 .block300, .encuesta{ width:270px; height:114px; padding:7px 15px; margin:0 0 10px 7px; float:left; background:#FFF; text-align:left; }
+.block600{ width:436px; height:100px; padding:7px 15px; margin:3px 0 0 5px; float:left; background:#FFF; text-align:left; }
 .gray3{ color:#333; }
 .block300 .gray3{ font-family:"source_sans_prosemibold"; }
 .padding20-0{ padding:20px 0; }
 #slidefavs, #slidefavs .slide{ height:280px !important; }
+#slidefavs-chat, #slidefavs-chat .slide-chat{ height:355px !important; }
 #directoriohead{ line-height:24px; }
 #directoriohead span{ font-size:16px; }
 #directoriohead img{ float:left; margin-right:10px; }
