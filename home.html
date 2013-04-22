@@ -25,87 +25,98 @@
         $('.drop').dropkick();
         $('div.fotobg').hide();
         
-        $('.fotologin').click(function(){
        
-        if($('div.fotobg').is(':hidden')) {
-               $('div.fotobg').show(400);
-        }
-        else {
-            $('div.fotobg').hide(400);
-        }
-        });
  
         });
         </script>
     </head>
     <body>
+      <div style="position:absolute; width:100%; overflow:hidden;"><img  src="assets/img/lines/barra_top.png"></div>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 <div id="contenedor">
-	<div id="encabezado" >
+<div id="encabezado" >
        
 
-		<div id="barra-top">
-        	<div class="logo margin5t">
-            	<a href="index.html"><img src="assets/img/photos/logo.png"></a>
+    <div id="barra-top">
+          <div class="logo margin5t">
+              <a href="index.html"><img src="assets/img/photos/logo.png"></a>
             </div>
             <div class="clearfix floatR">
-            <div class="floatL">
-              <h1 class="margin10t margin5r" style="margin-bottom:0;">Juan Antonio Garza Cruz</h1>
-               <h2 style="text-align:left; margin-bottom:0;" class="grey"><small>Consejo Regional Metropolitano</small></h2>
-              <h2 style="text-align:left;" class="red"><small><a class="red" href="#">Editar perfil</a></small></h2>
+            <div class="floatL" align="left">
+              <p class="margin5r font18" style="margin-bottom:0;">Juan Antonio Garza Cruz</p>
+               <p class="grey font13" style="margin-bottom:0;">Consejo Regional Metropolitano</p>
+              <h2 style="text-align:left;" class="red"><small><a class="red font11" href="#">Editar perfil</a></small></h2>
             </div>
             <div class="separadorbarra floatL margin15r"></div>
-            <img src="assets/img/photos/fotologin.jpg" class="floatL margin14t margin15r"/>
+            <img src="assets/img/photos/fotologin.jpg" width="42" class="floatL margin7t margin15r"/>
             <div class="separadorbarra floatL margin15r"></div>
-            <img src="assets/img/icons/search.png" class="floatL margin27t margin20r margin5l fotologin"/>
+            <img src="assets/img/icons/search.png" class="floatL margin14t margin20r margin5l fotologin"/>
             <div class="separadorbarra floatL margin15r"></div>
-            <img src="assets/img/icons/interrogacion.png" class="floatL margin27t margin15r"/>
+            <img src="assets/img/icons/interrogacion.png" class="floatL margin14t margin15r"/>
             <div class="separadorbarra floatL"></div>
-
-
-             <div class="fotobg">
-   <h1>Búsqueda de integrandes del consejo</h1>
-   <div class="separador width80 margin30l"></div>
-   <div class="margin10t">
-    <label for="nombre">Por nombre:</label>
-    <input type="text" class="input2 width77" name="nombre" placeholder="Claudia"/>
-   </div>
-   <div>
-    <label for="consejo">Por consejo:</label>
-    <div class="width80 floatR margin35r">
-   <div class="width100"><select class="drop" name="recinto">
-            <option>Consejo regional 1</option>
-          </select></div></div>
-
-   </div>
-
-   <div>
-    <label for="actividad">Por actividad:</label>
-    <div class="width80 floatR margin35r">
-   <div class="width100"><select class="drop" name="actividad">
-            <option>Fisica</option>
-          </select></div></div>
-
-   </div>
-
-   <a href="index.html" class="btn width30  bgred line40 floatR margin10t margin30r">BUSCAR</a>
+             <div class="fotobg hidden">
+               <h1>Búsqueda de integrantes</h1>
+               <div class="separador width80 margin30l"></div>
+               <div class="margin10t">
+                <label for="nombre">Por nombre:</label>
+                <input type="text" class="input2 width77" name="nombre" placeholder="Claudia"/>
+               </div>
+               <div class="margin10t clearfix">
+                <label for="consejo">Por consejo:</label>
+                <div class="width80 floatR margin35r">
+               <div class="width100"><select class="drop" name="recinto">
+                        <option>Consejo regional 1</option>
+                      </select></div>
+                      </div>
+              
+               </div>
+              
+               <div class="margin10t clearfix">
+                <label for="actividad">Por actividad:</label>
+                <div class="width80 floatR margin35r">
+                <div class="width100"><select class="drop" name="actividad">
+                        <option>Fisica</option>
+                      </select></div></div>
+              
+               </div>
+  
+                <a href="index.html" class="btn width30  bgred line40 floatR margin10t margin30r">BUSCAR</a>
+              </div>
         </div>
-        </div>
 
-    	</div>
+      </div>
 
 
     </div>
-     <div id="contenidoin">
+     <div id="contenidoin" class="contenidohome">
 
         <div class="clearfix">
         <div id="participa" class="relative floatL">
         <textarea class="participa"></textarea>
-        <a href="index.html" class="btn width15  bgred line64 " style="position:absolute; right:2px; bottom:6px;">PUBLICAR</a>
+        <a href="index.html" class="btn width15  bgred line26 " style="position:absolute; right:2px; bottom:7px;">PUBLICAR</a>
        </div>
-       <div class="temporaldrop floatL red">14</div>
+       <div class="temporaldrop floatL red margin5l">14</div>
+   </div>
+
+   <div class="clearfix">
+    <div id="actreciente" class="floatL">
+      <img src="assets/img/btns/3lines.png" class="margin10b"/>
+      <img src="assets/img/misc/actividadreciente.png"/>
+    </div>
+
+    <div id="" class="floatL w207h234 bgwhite leftshadow">
+    </div>
+    <div id="" class="floatL w207h234 bgwhite margin5l">
+    </div>
+    <div id="" class="floatL w207h234 bgwhite margin5l">
+    </div>
+
+    <div class="twitter floatL margin5l">
+    </div>
+
+
    </div>
 
   <!-- <div class="clearfix">

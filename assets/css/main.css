@@ -371,6 +371,8 @@ padding: 0 10px;
 	z-index: -1;
 }
 
+.contenidohome {padding: 10px !important; height: 479px !important;}
+
 div#box{display: none;}
 
 div.fotobg{ background: url(../img/bg/fotobg.png) no-repeat;  width: 323px; max-width: 323px; height: 452px; z-index: 1; position: absolute; top: -4px; left: 626px;}
@@ -382,7 +384,7 @@ div.fotobg h1{ width: 253px; padding: 90px 30px 0; font-size: 20px; font-weight:
 
 .whiteback{ background: #fff;}
 
-textarea.participa { resize:none; width: 509px; border:1px #A3A3A3 solid; height: 40px; background:#fff url(../img/icons/participa.png) no-repeat; background-position: 15px 20px; padding-left: 50px; padding-right: 120px; padding-top: 20px; font-size: 20px;}
+textarea.participa { resize:none; width: 509px; border:1px #A3A3A3 solid; height: 26px; background:#fff url(../img/icons/participa.png) no-repeat; background-position: 15px 3px; padding-left: 50px; padding-right: 120px; padding-top: 3px; font-size: 20px;}
 div#participa{display: inline-block; width: 681px;}
 div.inputimg{display: inline-block; width: 235px;}
 
@@ -390,7 +392,15 @@ div.inputimg{display: inline-block; width: 235px;}
 
 .separadorbarra { background: url(../img/lines/separadorbarra.gif); width: 2px; height: 54px;}
 
-.temporaldrop{background: url(../img/btns/temporaldrop.png) no-repeat; width: 262px; height: 62px; text-align: left; padding-left:10px; padding-top: 16px; font-size: 20px; }
+.temporaldrop{background: url(../img/btns/temporaldrop.png) no-repeat;
+width: 288px;
+height: 33px;
+text-align: left;
+padding-left: 7px;
+padding-top: 0px;
+font-size: 20px;
+background-size: 100%;
+ }
 
 .plabel, .biglabel { font-size: 18px; font-style: normal;}
 .acerca, .acerca2{ border: 1px #CCCCCC solid; height: 405px; width: 946px;}
@@ -460,7 +470,7 @@ padding-left: 10px;}
 
 .ff31 .more{position:absolute; bottom:10px; right:20px;}
 
-#actreciente { width: 52px; padding: 10px; border-top: 2px #ccc solid; border-bottom: 2px #ccc solid; border-left: 2px #ccc solid;}
+#actreciente { width: 30px; padding: 10px; border-top: 2px #ccc solid; border-bottom: 2px #ccc solid; border-left: 2px #ccc solid;}
 #actreciente img{ display: block; }
 
 .searchresults{ padding: 20px 0; border-bottom: 1px #ccc solid;}
@@ -626,7 +636,7 @@ padding-left: 10px;}
 
 label.little{font-family: 'source_sans_prolight'; font-size: 12px; color: #666666; display: inline;}
 
-<<<<<<< HEAD
+
 
 .block300, .encuesta{ width:270px; height:114px; padding:7px 15px; margin:0 0 10px 7px; float:left; background:#FFF; text-align:left; }
 .block600{ width:436px; height:100px; padding:7px 15px; margin:3px 0 0 5px; float:left; background:#FFF; text-align:left; }
@@ -642,8 +652,8 @@ label.little{font-family: 'source_sans_prolight'; font-size: 12px; color: #66666
 .encuesta td{ font-size:13px; font-family:"source_sans_proregular"; }
 .encuesta .more{ background:url(../img/icons/more.png); width:20px; height:22px; display:block; position:absolute; bottom:5px; right:10px; cursor:pointer; }
 .borBT{ border-bottom:1px solid #CCC; border-top:1px solid #CCC; padding:8px 0; }
-=======
-.font33{font-size: 33px;}
+
+.font33{font-size: 33px !important;}
 .font16{font-size: 16px;}
 .font14{font-size: 14px;}
 .font15{font-size: 15px !important;}
@@ -664,4 +674,16 @@ label.little{font-family: 'source_sans_prolight'; font-size: 12px; color: #66666
 
 #confirmados{border-left: 1px #C4C4C4 solid;
 height: 170px;}
->>>>>>> pantallas de eventos
+
+.line26{ line-height: 26px;}
+
+
+.w207h234{ width: 207px; height: 234px;}
+.bgwhite { background: #fff;}
+
+.leftshadow{-moz-box-shadow: 2px 2px 2px 2px #C6C3BA;
+-webkit-box-shadow: 2px 2px 2px 2px #C6C3BA;
+box-shadow: 2px 2px 2px 2px #C6C3BA;
+filter: progid:DXImageTransform.Microsoft.Shadow(color='#C6C3BA', Direction=135, Strength=1);}
+
+.twitter{ width: 293px; height: 242px; background: #d5d5d5;}
