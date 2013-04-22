@@ -20,14 +20,15 @@
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script type="text/javascript" src="assets/js/engine.js"></script>
         <script type="text/javascript" src="assets/js/dropkick.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.tipTip.js"></script>
         <script type="text/javascript">
         $(document).ready(function(){
         $('.drop').dropkick();
-        
+         $(".tip").tipTip();
+       
  
         });
         </script>
-        <link rel="stylesheet" href="assets/css/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
     </head>
     <body>
       <div style="position:absolute; width:100%; overflow:hidden;"><img  src="assets/img/lines/barra_top.png"></div>
@@ -35,7 +36,7 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 <div id="contenedor">
-	<div id="encabezado" >
+<div id="encabezado" >
        
 
     <div id="barra-top">
@@ -91,81 +92,119 @@
     </div>
      <div id="contenidoin" >
      <div class="clearfix margin10b"> 
-      <div id="directoriohead" class="floatL"><img src="assets/img/icons/directorio.png"/>
-      <span>Directorio »</span> Búsqueda de integrantes </div>
-   </div>
+      <div id="directoriohead" class="floatL width95"><div class="floatL width30"><img  src="assets/img/icons/reloj.png"/>
+      <span>Eventos »</span> Reunión Consejeros</div> </div>
+      </div>
 
 <div id="tab-directorio" class="relative">
-           
- <div id="consejeros" class="tabs-cont clearfix acerca scroll">
-  <div class="searchtop clearfix">
-  <p class="font22 prolight floatL" style="margin:19px;">Filtro:</p>
+         
+ <div id="consejeros" class="tabs-cont clearfix acerca scroll" style="overflow-y:hidden;">
+  <div class="clearfix borderb margin15b">
+<div class="floatL margin10b">
+  <div class="clearfix margin40l">
+  <p class="font33 prolight taleft floatL margin30r margin20t" style="line-height:60%;">5 MAR</br><span class="font16">12:45 p.m.<span></p>
   <div class="separadorV64 floatL"></div>
-<div class="clearfix busquedaop">
-
-
-                         
-           <label class="little floatL margin10t margin20l">AÑO</label>
-           <div class="width15 greyselect floatL" style="margin-top:2px; margin-left:10px;"><select class="drop" name="año">
-            <option>2013</option>
-          </select></div> 
- 
-          <label class="little floatL margin10t">CONSEJO</label>
-          <div class="width15 greyselect floatL" style="margin-top:2px; margin-left:10px;"><select class="drop" name="consejo">
-            <option>Norte</option>
-          </select></div>
-
-         <a href="index.html" class="btn width10  bga20 line30  " style="margin-top:2px; margin-left:10px;">BUSCAR</a>
-  </div>       
-  </div>
-<div class="searchresults clearfix scroll">
+</div>
+  <img src="assets/img/photos/fotoevento.png" class="margin20l margin10t"/>
+  
       
-<div class="clearfix margin20b">
-  <div class="ff32 floatL clearfix relative  "><h1>Reunión de Consejeros Hotel Ancira</h1><h2>Enero 22 de 2013</h1><p>Objetivo</p><p>Crear un dialogo para la oportuna detección de posibles afectaciones a la solución de conflictos...</p><img class="more" src="assets/img/icons/more.png"/></div>
-  <div class="ff32 floatL clearfix relative "><h1>Reunión de Consejeros Hotel Ancira</h1><h2>Enero 22 de 2013</h1><p>Objetivo</p><p>Crear un dialogo para la oportuna detección de posibles afectaciones a la solución de conflictos...</p><img class="more" src="assets/img/icons/more.png"/></div>
-   <div class="ff32 floatL clearfix relative "><h1>Reunión de Consejeros Hotel Ancira</h1><h2>Enero 22 de 2013</h1><p>Objetivo</p><p>Crear un dialogo para la oportuna detección de posibles afectaciones a la solución de conflictos...</p><img class="more" src="assets/img/icons/more.png"/></div>
- </div>
+  </div>
 
-<div class="clearfix">
-     <div class="ff32 floatL clearfix relative  "><h1>Reunión de Consejeros Hotel Ancira</h1><h2>Enero 22 de 2013</h1><p>Objetivo</p><p>Crear un dialogo para la oportuna detección de posibles afectaciones a la solución de conflictos...</p><img class="more" src="assets/img/icons/more.png"/></div>
-  <div class="ff32 floatL clearfix relative "><h1>Reunión de Consejeros Hotel Ancira</h1><h2>Enero 22 de 2013</h1><p>Objetivo</p><p>Crear un dialogo para la oportuna detección de posibles afectaciones a la solución de conflictos...</p><img class="more" src="assets/img/icons/more.png"/></div>
-   <div class="ff32 floatL clearfix relative "><h1>Reunión de Consejeros Hotel Ancira</h1><h2>Enero 22 de 2013</h1><p>Objetivo</p><p>Crear un dialogo para la oportuna detección de posibles afectaciones a la solución de conflictos...</p><img class="more" src="assets/img/icons/more.png"/></div>
+  <div class="floatL clearfix padding20" style="width:490px;">
+    <div class="width70 floatL taleft">
+  <h1 class="prolight font22 ">Reunión de Consejeros Regionales </br>SALA C Hotel Intercontinental</h1>
+  <p class="prolight font17">Lorem ipsum dolor sit amet neque, Nullam gravida! Vel Ut auctor nisl nostra, Vivamus nulla lorem mus pede eget lorem. Pellentesque litora Duis! Ridiculus ante, diam ut mattis.</p></div>
+
+  <div class="width30 taleft margin0l floatL">
+  <h1 class="font15">Documentos:</h1>
+  <ul>
+   <li><img src="assets/img/icons/pdf.png"/>Festejo de aniversario</li>
+   <li><img src="assets/img/icons/pdf.png"/>Resumen informativo...</li>
+   <li><img src="assets/img/icons/pdf.png"/>Comunidad empresarial</li>
+   <li><img src="assets/img/icons/ubicacion.png"/>¿Como llegar?</li>
+  </ul>
+  </div>
+  </div>
+
+  <div id="confirmados" class="floatL clearfix relative">
+    <a class="font16 red" style="position:absolute; top:0px; left:40px;">24</a>
+    <h1 class="font16 borderb taleft margin60l">ASISTENTES</br> CONFIRMADOS</h1>
+    <ul>
+      <div class="fotosconfirmados margin50l">
+      <li><img src="assets/img/photos/fotodetail1.png" class="tip" title="hola"/></li>
+      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+       </div>
+       <div class="fotosconfirmados margin50l">
+      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+       </div>
+       <div class="fotosconfirmados margin50l">
+      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+       </div>
+       <div class="fotosconfirmados margin50l">
+      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+       </div>
+      
+    <a class="font16 red" style="position:absolute; top:208px; left:40px;">12</a>
+    <h1 class="font16 borderb taleft margin60l">INVITADOS PENDIENTES</h1>
+    </ul>
   </div>
 </div>
 
+
+
+
+<div class="clearfix">
+   <div class="floatL">
+    <img src="assets/img/icons/reloj.png" style="display:block;"/>
+   <img src="assets/img/misc/proximoseventos.png" class="margin30t"/>
+ </div>
+
+ <div class="floatL margin20l hscroll " style="height:150px;">
+   <div class="box24">
+    <div class="boxpestana yellow"></div>
+    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">5 MAR</br><span class="font16">12:45 p.m.<span></p>
+    <p class="font14 semibold taleft" >Reunión de consejeros</br>SALA C </br>Intercontinental</p>
+    <img class="more" src="assets/img/icons/more.png">
+   </div>
+   <div class="box24">
+<div class="boxpestana purple"></div>
+    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">12 MAY</br><span class="font16">12:45 p.m.<span></p>
+    <p class="font14 semibold taleft" >DESAYUNO consejeros</br>Hotel Crown Plaza </p>
+    <img class="more" src="assets/img/icons/more.png">
+   </div>
+   <div class="box24">
+<div class="boxpestana red"></div>
+    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">19 MAY</br><span class="font16">12:45 p.m.<span></p>
+    <p class="font14 semibold taleft" >Frestejo de aniversario</br>Fundación Banorte </br>Hotel Ancira</p>
+    <img class="more" src="assets/img/icons/more.png">
+   </div>
+   <div class="box24">
+<div class="boxpestana green"></div>
+    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">20 JUN</br><span class="font16">12:45 p.m.<span></p>
+    <p class="font14 semibold taleft" >Conferencia Magistral</br>"La tecnología de las finanzas"</br>CONVEX</p>
+    <img class="more" src="assets/img/icons/more.png">
+   </div>
+  
+ </div>
+   </div>
              </div>
 
-        <div id="directorios" class="tabs-cont clearfix acerca">
-          
- <div class="searchtop clearfix">
-  <p class="font22 prolight floatL" style="margin:19px;">Filtro:</p>
-  <div class="separadorV64 floatL"></div>
-<div class="clearfix busquedaop">
-  <div class="width15 greyselect floatL" style="margin-top:2px; margin-left:30px;"><input type="text" class="inputSearch" value="NOMBRE"/></div> 
-
-         <div class="width15 greyselect floatL" style="margin-top:2px; margin-left:10px;"><input type="text" class="inputSearch" value="APELLIDO"/></div>
-
-         
-
-          <div class="width15 greyselect floatL" style="margin-top:2px; margin-left:10px;"><select class="drop" name="area">
-            <option>AREA</option>
-          </select></div> 
-
-         <a href="index.html" class="btn width10  bga20 line30  " style="margin-top:2px; margin-left:10px;">BUSCAR</a>
-  </div>       
-  </div>
-
-<div class="searchresults clearfix">
-       <div class="floatL relative">
-      <p class="font22 prolight" style="margin:19px; margin-right:0;">Región Norte</p>
-      <div style="background:#ccc; height:1px; width:150px; position:absolute; left:19px;"></div>
-    </div>
-
-  <div class="ff31 floatL clearfix relative  "><img class="floatL" src="assets/img/photos/foto.gif"/><div class="floatL"> <h1 class="floatL margin30l">José Luis Espinoza Torres</h1><p class="margin50t">Actividad Empresarial</p><p> Lácteos y Derivados, S.A de C.V.</p></div><img class="more" src="assets/img/icons/more.png"/></div>
-  <div class="ff31 floatL clearfix relative "><img class="floatL" src="assets/img/photos/foto.gif"/><div class="floatL"> <h1 class="floatL margin30l">José Luis Espinoza Torres</h1><p class="margin50t">Actividad Empresarial</p><p>Lácteos y Derivados, S.A de C.V.</p></div><img class="more" src="assets/img/icons/more.png"/></div>
-  </div>
-
-        </div>
+   
 </div>
   <!-- <div class="clearfix">
     <div class="whiteback shadow">
@@ -175,6 +214,7 @@
     <p>“La nueva interfaz de la versión mobile de Banorte es de las mejores que he probado en cuestión de....”</p>
     </div>
    </div>-->
+
    
     </div>
     <div id="footer">
@@ -198,9 +238,6 @@
         <script src="js/main.js"></script>
         <script type="text/javascript" src="assets/js/tabs.js"></script>
         <script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>
-        <script type="text/javascript" src="assets/js/fancybox.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.fancybox-media.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.fancybox-thumbs.js"></script>
 
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -215,30 +252,10 @@
           horizrailenabled: true
         });
        
-       $(".fancybox-thumb").fancybox({
-        helpers : {
-          title : {
-            type: 'inside'
-          }/*,
-          thumbs  : {
-            width : 70,
-            height  : 70
-          }*/
-        }
-      });
-      
-      $('.fancybox-media').fancybox({
-        openEffect  : 'none',
-        closeEffect : 'none',
-        helpers : {
-          media : {}
-        }
-      });
            /* var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));*/
         </script>
-
     </body>
 </html>

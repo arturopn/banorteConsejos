@@ -451,12 +451,12 @@ padding-left: 10px;}
 .ff31 p{font-size: 13px; line-height: 5px; margin-left: 30px;}
 .ff31 h2{ font-size: 13px;}
 
-.ff31 .more{position:absolute; bottom:10px; right:20px;}
+.more{position:absolute; bottom:10px; right:20px;}
 
-.ff32{background: #fff; margin-left: 20px; width: 301px; height: 209px; font-family: 'source_sans_prolight'; text-align: left; padding: 10px; }
-.ff32 h1{ font-size: 20px; margin-top: 5px;}
-.ff32 p{font-size: 13px; line-height: 5px; margin-left: 30px;}
-.ff32 h2{ font-size: 13px;}
+.ff32{background: #fff; margin-left: 10px; width: 283px; height: 209px; font-family: 'source_sans_prolight'; text-align: left; padding: 10px; }
+.ff32 h1{ font-size: 18px; text-align: center; margin-top: 5px;}
+.ff32 p{font-size: 18px; line-height: 20px; margin-left: 10px;}
+.ff32 h2{ font-size: 17px; margin-top: 30px; border-bottom: 1px solid #000; border-top: 1px #000 solid; width: 93%; margin-left: 10px;}
 
 .ff31 .more{position:absolute; bottom:10px; right:20px;}
 
@@ -626,6 +626,7 @@ padding-left: 10px;}
 
 label.little{font-family: 'source_sans_prolight'; font-size: 12px; color: #666666; display: inline;}
 
+<<<<<<< HEAD
 
 .block300, .encuesta{ width:270px; height:114px; padding:7px 15px; margin:0 0 10px 7px; float:left; background:#FFF; text-align:left; }
 .block600{ width:436px; height:100px; padding:7px 15px; margin:3px 0 0 5px; float:left; background:#FFF; text-align:left; }
@@ -641,3 +642,26 @@ label.little{font-family: 'source_sans_prolight'; font-size: 12px; color: #66666
 .encuesta td{ font-size:13px; font-family:"source_sans_proregular"; }
 .encuesta .more{ background:url(../img/icons/more.png); width:20px; height:22px; display:block; position:absolute; bottom:5px; right:10px; cursor:pointer; }
 .borBT{ border-bottom:1px solid #CCC; border-top:1px solid #CCC; padding:8px 0; }
+=======
+.font33{font-size: 33px;}
+.font16{font-size: 16px;}
+.font14{font-size: 14px;}
+.font15{font-size: 15px !important;}
+
+.fotosconfirmados  li{ display: inline;}
+
+.box24{ background: #fff; width: 187px; padding-left: 20px; position: relative; height: 148px; max-width: 207px; max-height: 148px;  display: inline-block; float:left; margin: 0 2px;}
+
+.boxpestana{ width: 6px; height: 19px; position: absolute; top: 0; left: 0;}
+.boxpestana.yellow {background: #DDC100;}
+
+.boxpestana.purple{background:#993366; }#A92929
+.boxpestana.red{background:#A92929; }
+.boxpestana.green{background:#4EA963; }
+
+.padding40{padding: 40px;}
+.borderb{border-bottom: 1px #c4c4c4 solid;}
+
+#confirmados{border-left: 1px #C4C4C4 solid;
+height: 170px;}
+>>>>>>> pantallas de eventos

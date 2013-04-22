@@ -26,7 +26,11 @@
 
 .fancybox-skin {
 	position: relative;
+<<<<<<< HEAD
 	background: #FFF;
+=======
+	background: #f9f9f9;
+>>>>>>> pantallas de eventos
 	color: #444;
 	text-shadow: none;
 	-webkit-border-radius: 4px;
