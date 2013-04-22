@@ -49,6 +49,7 @@ div.dropbottom .dk_container:first-child{ margin-left: 130px;}
    */
   background: url(../img/btns/select2.png) 86% 11px no-repeat;
   padding: 1px 23px 0px 14px;
+	border:1px solid #CCC;
 }
 .dk_container {
 	background:#FFF;

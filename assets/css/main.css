@@ -620,3 +620,17 @@ padding-left: 10px;}
 }
 
 label.little{font-family: 'source_sans_prolight'; font-size: 12px; color: #666666; display: inline;}
+
+
+.block300, .encuesta{ width:270px; height:114px; padding:7px 15px; margin:0 0 10px 7px; float:left; background:#FFF; text-align:left; }
+.gray3{ color:#333; }
+.block300 .gray3{ font-family:"source_sans_prosemibold"; }
+.padding20-0{ padding:20px 0; }
+#slidefavs, #slidefavs .slide{ height:280px !important; }
+#directoriohead{ line-height:24px; }
+#directoriohead span{ font-size:16px; }
+#directoriohead img{ float:left; margin-right:10px; }
+.encuesta{ height:auto; padding:15px 15px 40px; }
+.encuesta td{ font-size:13px; font-family:"source_sans_proregular"; }
+.encuesta .more{ background:url(../img/icons/more.png); width:20px; height:22px; display:block; position:absolute; bottom:5px; right:10px; cursor:pointer; }
+.borBT{ border-bottom:1px solid #CCC; border-top:1px solid #CCC; padding:8px 0; }
