@@ -393,13 +393,19 @@ div.inputimg{display: inline-block; width: 235px;}
 .temporaldrop{background: url(../img/btns/temporaldrop.png) no-repeat; width: 262px; height: 62px; text-align: left; padding-left:10px; padding-top: 16px; font-size: 20px; }
 
 .plabel, .biglabel { font-size: 18px; font-style: normal;}
-.acerca{ border: 1px #CCCCCC solid; height: 405px; width: 946px;}
+.acerca, .acerca2{ border: 1px #CCCCCC solid; height: 405px; width: 946px;}
+.acerca2{background-color:#FFF;}
 .acercaleft{border-right: 1px #CCCCCC solid; height: 405px; width: 273px; }
+.acercaleft2{ height: 405px; margin-left: 20px; margin-top: 20px; width: 251px;}
 
 
 .pestanas{ font-size: 17px; font-family: 'source_sans_prolight'; border: 1px #CCCCCC solid; padding: 5px 0; width: 271px;}
+.pestanas2{ font-size: 23px; font-family: 'source_sans_prolight'; border-bottom: 1px #CCCCCC solid; padding: 8px 0; width: 251px; background:url("../img/btns/directorioon2.png") no-repeat; background-position: 235px 17px; text-align:left;}
 .pestanas a {font-size: 17px; font-family: 'source_sans_prolight'; }
+.pestanas2 a {font-size: 17px; font-family: 'source_sans_prolight'; padding-left:5px;}
 .pestanas.on{background:url("../img/btns/directorioon.png") no-repeat #B54949; background-position: 240px 11px; }
+.pestanas2.on{background:url("../img/btns/directorioon.png") no-repeat #B54949; background-position: 235px 17px; text-align:left;}
+.pestanas2.on a{color:#FFF; padding-left:5px;}
 #directoriohead span{ color: #A92626;}
 #directoriohead { color: #333333; font-size: 20px;}
 
