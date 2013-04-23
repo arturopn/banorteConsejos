@@ -84,6 +84,7 @@ ul{	margin:0;	padding:0; list-style:none; }
 .margin10t	{ margin-top:10px !important;}
 .margin14t	{ margin-top:14px !important;}
 .margin15t	{ margin-top:15px !important;}
+.margin18t	{ margin-top:18px !important;}
 .margin20t	{ margin-top:20px !important;}
 .margin25t	{ margin-top:25px !important;}
 .margin27t	{ margin-top:27px !important;}
@@ -680,11 +681,20 @@ height: 170px;}
 
 
 .w207h234{ width: 207px; height: 234px;}
-.bgwhite { background: #fff;}
+.bgwhite { background: #fff; border: 1px solid #A3A3A3;}
 
 .leftshadow{-moz-box-shadow: 2px 2px 2px 2px #C6C3BA;
 -webkit-box-shadow: 2px 2px 2px 2px #C6C3BA;
 box-shadow: 2px 2px 2px 2px #C6C3BA;
 filter: progid:DXImageTransform.Microsoft.Shadow(color='#C6C3BA', Direction=135, Strength=1);}
 
-.twitter{ width: 293px; height: 242px; background: #d5d5d5;}
+.twitter{ width: 293px; height: 234px; background: #d5d5d5;}
+
+.w207h193{ width: 207px; height: 193px;}
+
+.w414h193{width: 414px; height: 193px;}
+
+.w351h193{width: 351px; height: 193px;}
+
+.f7{background:#F7F7F7; border: 1px solid #A3A3A3;}
+.h230{height: 230px !important;}
