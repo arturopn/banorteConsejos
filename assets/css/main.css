@@ -343,6 +343,14 @@ input:focus {
 	border: 1px solid #A92929 !important;
 	color:#A92929 !important;
 }
+.inputerror::-webkit-input-placeholder {
+    color:#A92929;
+	font-size:16px;
+}
+.inputerror:-moz-placeholder {
+    color:#A92929;
+	font-size:16px;
+}
 .btn {
 display: inline-block;
 text-align: center;
