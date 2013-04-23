@@ -140,39 +140,61 @@
 
 
 
-<div class="clearfix">
-   <div class="floatL">
+<div class="clearfix hscroll" style="height:150px;">
+   <div class="floatL margin10r">
     <img src="assets/img/icons/reloj.png" style="display:block;"/>
    <img src="assets/img/misc/proximoseventos.png" class="margin30t"/>
  </div>
 
- <div class="floatL margin20l hscroll " style="height:150px;">
    <div class="box24">
     <div class="boxpestana yellow"></div>
-    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">5 MAR</br><span class="font16">12:45 p.m.<span></p>
+    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">5 MAR</br><span class="font16">12:45 p.m.</span></p>
     <p class="font14 semibold taleft" >Reunión de consejeros</br>SALA C </br>Intercontinental</p>
     <img class="more" src="assets/img/icons/more.png">
    </div>
    <div class="box24">
 <div class="boxpestana purple"></div>
-    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">12 MAY</br><span class="font16">12:45 p.m.<span></p>
+    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">12 MAY</br><span class="font16">12:45 p.m.</span></p>
     <p class="font14 semibold taleft" >DESAYUNO consejeros</br>Hotel Crown Plaza </p>
     <img class="more" src="assets/img/icons/more.png">
    </div>
    <div class="box24">
 <div class="boxpestana red"></div>
-    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">19 MAY</br><span class="font16">12:45 p.m.<span></p>
+    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">19 MAY</br><span class="font16">12:45 p.m.</span></p>
     <p class="font14 semibold taleft" >Frestejo de aniversario</br>Fundación Banorte </br>Hotel Ancira</p>
     <img class="more" src="assets/img/icons/more.png">
    </div>
    <div class="box24">
 <div class="boxpestana green"></div>
-    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">20 JUN</br><span class="font16">12:45 p.m.<span></p>
+    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">20 JUN</br><span class="font16">12:45 p.m.</span></p>
+    <p class="font14 semibold taleft" >Conferencia Magistral</br>"La tecnología de las finanzas"</br>CONVEX</p>
+    <img class="more" src="assets/img/icons/more.png">
+   </div>
+   <div class="box24">
+    <div class="boxpestana yellow"></div>
+    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">5 MAR</br><span class="font16">12:45 p.m.</span></p>
+    <p class="font14 semibold taleft" >Reunión de consejeros</br>SALA C </br>Intercontinental</p>
+    <img class="more" src="assets/img/icons/more.png">
+   </div>
+   <div class="box24">
+<div class="boxpestana purple"></div>
+    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">12 MAY</br><span class="font16">12:45 p.m.</span></p>
+    <p class="font14 semibold taleft" >DESAYUNO consejeros</br>Hotel Crown Plaza </p>
+    <img class="more" src="assets/img/icons/more.png">
+   </div>
+   <div class="box24">
+<div class="boxpestana red"></div>
+    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">19 MAY</br><span class="font16">12:45 p.m.</span></p>
+    <p class="font14 semibold taleft" >Frestejo de aniversario</br>Fundación Banorte </br>Hotel Ancira</p>
+    <img class="more" src="assets/img/icons/more.png">
+   </div>
+   <div class="box24">
+<div class="boxpestana green"></div>
+    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">20 JUN</br><span class="font16">12:45 p.m.</span></p>
     <p class="font14 semibold taleft" >Conferencia Magistral</br>"La tecnología de las finanzas"</br>CONVEX</p>
     <img class="more" src="assets/img/icons/more.png">
    </div>
   
- </div>
    </div>
              </div>
 
@@ -232,12 +254,13 @@
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
         $.tabs('tab-directorio');
-        $(".scroll").niceScroll({
+        /*$(".scroll").niceScroll({
           horizrailenabled: false
-        });
+        });*/
 
         $(".hscroll").niceScroll({
-          horizrailenabled: true
+          horizrailenabled: true,
+					railvalign: 'bottom'
         });
        
 

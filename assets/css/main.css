@@ -155,6 +155,7 @@ ul{	margin:0;	padding:0; list-style:none; }
 .padding25b	{ padding-bottom:25px;}
 .padding30b	{ padding-bottom:30px;}
 
+.width5	{width:5% !important;}
 .width10	{width:10% !important;}
 .width15	{width:15% !important;}
 .width20	{width:20% !important;}
@@ -644,7 +645,7 @@ label.little{font-family: 'source_sans_prolight'; font-size: 12px; color: #66666
 .block300 .gray3{ font-family:"source_sans_prosemibold"; }
 .padding20-0{ padding:20px 0; }
 #slidefavs, #slidefavs .slide{ height:280px !important; }
-#slidefavs-chat, #slidefavs-chat .slide-chat{ height:355px !important; }
+#slidefavs-chat, #slidefavs-chat .slide, #slidefavs-chat2, #slidefavs-chat2 .slide{ height:355px !important; }
 #directoriohead{ line-height:24px; }
 #directoriohead span{ font-size:16px; }
 #directoriohead img{ float:left; margin-right:10px; }

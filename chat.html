@@ -86,10 +86,10 @@
 <div id="tab-directorio" class="relative">
         <ul class="tabs-links" style="position:absolute; top:-40px; right:80px;">  
         <li class="pestanasBusqueda"><a href="#todas">TODAS</a></li>
-        <li class="pestanasBusqueda"><a href="#grupales">GRUPALES</a></li>
+        <li class="pestanasBusqueda"><a href="#grupales" id="grupalestab">GRUPALES</a></li>
       </ul>    
 <div id="todas" class="tabs-cont clearfix acerca scroll">
-<div id="slidefavs-chat" class="iosSlider"><div class="slider-chat">
+<div id="slidefavs-chat" class="iosSlider"><div class="slider">
             
                   <div class="slide clearfix">
                   
@@ -302,10 +302,11 @@
                   </div>
                 
                 </div></div>
+            		<div class="navslider width100" id="navfavs"></div>
 </div>
 
         <div id="grupales" class="tabs-cont clearfix scroll acerca">
-        <div id="slidefavs-chat" class="iosSlider"><div class="slider-chat">
+        <div id="slidefavs-chat2" class="iosSlider"><div class="slider">
             
                   <div class="slide clearfix">
                   
@@ -518,6 +519,7 @@
                   </div>
                 
                 </div></div>
+            		<div class="navslider width100" id="navfavs2"></div>
         </div>
 </div>   
     </div>
@@ -554,15 +556,28 @@
       	$('.drop').dropkick();
         $.tabs('tab-directorio');
         $(".scroll").niceScroll();
-		$('#slidefavs-chat .slide-chat').each(function(index){ if( index == 0 ) $('#navfavs').append('<a class="on"></a>'); else $('#navfavs').append('<a></a>'); });
+				$('#slidefavs-chat .slide').each(function(index){ if( index == 0 ) $('#navfavs').append('<a class="on"></a>'); else $('#navfavs').append('<a></a>'); });
 				$('#slidefavs-chat').iosSlider({
 					snapToChildren: true,
+					desktopDragClick: true,
 					navSlideSelector: $('#navfavs a'),
 					onSlideChange: function(args){ 
 						var index = args.currentSlideNumber; index--;
 						$('#navfavs .on').removeClass('on');
 						$('#navfavs a:eq(' + index +')').addClass('on');
 					}
+				});
+				$('#grupalestab').click(function(){
+					$('#slidefavs-chat2 .slide').each(function(index){ if( index == 0 ) $('#navfavs2').append('<a class="on"></a>'); else $('#navfavs2').append('<a></a>'); });
+					$('#slidefavs-chat2').iosSlider({
+						snapToChildren: true,
+						navSlideSelector: $('#navfavs2 a'),
+						onSlideChange: function(args){ 
+							var index = args.currentSlideNumber; index--;
+							$('#navfavs2 .on').removeClass('on');
+							$('#navfavs2 a:eq(' + index +')').addClass('on');
+						}
+					});
 				});
 			
 			});
