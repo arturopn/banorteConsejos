@@ -317,7 +317,7 @@ html, body{ min-width:1024px; }
     border: 0;
 }
 
-input.input2 {
+input.input2, .inputerror {
 	font-size: 18px;
 	font-family: 'source_sans_prolight';
 	height: 42px;
@@ -339,7 +339,10 @@ input:focus {
 	-moz-box-shadow: 0px 0px 5px #007eff;
 	box-shadow: 0px 0px 5px #007eff;
 }
-
+.inputerror{
+	border: 1px solid #A92929 !important;
+	color:#A92929 !important;
+}
 .btn {
 display: inline-block;
 text-align: center;
