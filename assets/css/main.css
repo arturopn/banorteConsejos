@@ -723,3 +723,8 @@ filter: progid:DXImageTransform.Microsoft.Shadow(color='#C6C3BA', Direction=135,
 .h230{height: 230px !important;}
 
 .height300{height: 330px;}
+.header{width:240px;
+	display:block;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;}
