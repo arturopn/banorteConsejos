@@ -41,5 +41,12 @@ texto =  $(this).text();
 $("span.tituloacerca").text(texto);
 })
 
+$(".temporaldrop").toggle(function(){
+   $(this).animate({height:"300px"},1000);
+ 
+}, function(){ $(this).animate({height:"31px"},1000);});
+
+
+
 });
 
