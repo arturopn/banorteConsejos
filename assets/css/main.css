@@ -232,6 +232,13 @@ html, body{ min-width:1024px; }
 	height:89px;
 	float:left;
 }
+#footer2{
+	background-image:url(../img/lines/footer.png);
+	background-repeat:repeat-x;
+	width:100%;
+	height:50px;
+	float:left;
+}
 #content{	display: block;	clear: both; }
 
 
@@ -266,6 +273,12 @@ html, body{ min-width:1024px; }
 	width:1050px;
 	height:30px;
 }
+.info-footer2{
+	width:1050px;
+	height:30px;
+	margin:0 auto;
+	padding-top:15px;
+}
 .copyright{
 	float:left;
 	width:290px;
@@ -284,7 +297,7 @@ html, body{ min-width:1024px; }
 
 .bgtrans{ background: url(../img/bg/trans.png);}
 .contentregistro{ width: 663px; height:497px; padding:0 20px; text-align: left; border:solid 2px #8B8B8B;}
-.contentlogin{ width: 281px; height:456px; padding: 20px; text-align: left; border:solid 2px #8B8B8B;}
+.contentlogin{ width: 248px; height:456px; padding: 20px; text-align: left; border:solid 2px #8B8B8B;}
 
 .separador{ background:#CCCCCC; height: 1px;}
 
@@ -378,7 +391,7 @@ padding: 0 10px;
 	height:449px;
 	background-image:url(../img/bg/mainbg.png);
 	background-repeat:no-repeat;
-	margin:10px auto 40px;
+	margin:0 auto 10px;
 	padding: 25px;
 	z-index: -1;
 }
@@ -746,6 +759,8 @@ div.menuActividad{z-index:1;}
 .wrapper{ width: 1050px; margin: 0 auto;}
 
 #footer ul li{ display: inline;}
+#footer2 ul li{ display: inline;}
 
 #footer ul li a{font-size: 16px; content: #666666; margin: 0 5px;}
+#footer2 ul li a{font-size: 16px; content: #666666; margin: 0 5px;}
 
