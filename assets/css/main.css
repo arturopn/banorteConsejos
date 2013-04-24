@@ -237,7 +237,7 @@ html, body{ min-width:1024px; }
 
 
 /*			- Site Layout -			*/
-
+.tituloacerca{color:#666 !important;}
 #contenedor{
 	width:100%;
 }
