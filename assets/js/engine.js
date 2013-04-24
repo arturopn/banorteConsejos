@@ -34,4 +34,6 @@ $(document).ready(function() {
 
 	$('.fotologin').click(function(){	$('div.fotobg').toggle(400); });
 
+	$("#actreciente img").click(function(){ $('div.menuActividad').toggle(400); });
+
 });

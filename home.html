@@ -24,10 +24,8 @@
         $(document).ready(function(){
         $('.drop').dropkick();
         $('div.fotobg').hide();
-        
-       
- 
         });
+        
         </script>
     </head>
     <body>
@@ -92,28 +90,42 @@
     </div>
      <div id="contenidoin" class="contenidohome">
 
-        <div class="clearfix">
+        <div class="clearfix relative">
         <div id="participa" class="relative floatL">
         <textarea class="participa"></textarea>
         <a href="index.html" class="btn width15  bgred line26 " style="position:absolute; right:2px; bottom:8px;">PUBLICAR</a>
        </div>
-       <div class="temporaldrop floatL red margin5l">14</div>
+       <div class="temporaldrop floatL margin1l"><span class="red margin10r">14</span>Notificaciones Nuevas</div>
    </div>
 
    <div class="clearfix">
-    <div id="actreciente" class="floatL">
-      <img src="assets/img/btns/3lines.png" class="margin10b"/>
+    <div id="actreciente" class="floatL relative">
+      <img src="assets/img/btns/3lines.png" class="margin20b 3lines"/>
       <img src="assets/img/misc/actividadreciente.png"/>
+
+      <div class="menuActividad hidden">
+               <h1>Filtrar por:</h1>
+                <div class="width80 floatR margin35r">
+               <div class="width100"><select class="drop" name="recientes">
+                        <option>Más recientes</option>
+                      </select></div>
+                      </div>
+              
+          
+    
+  
+                <a href="index.html" class="btn width30  bgred line40 floatR margin10t margin30r">BUSCAR</a>
+              </div>
     </div>
 
     <div id="" class="floatL w207h234 bgwhite leftshadow">
     </div>
-    <div id="" class="floatL w207h234 bgwhite margin5l">
+    <div id="" class="floatL w207h234 bgwhite margin1l">
     </div>
-    <div id="" class="floatL w207h234 bgwhite margin5l">
+    <div id="" class="floatL w207h234 bgwhite margin1l">
     </div>
 
-    <div class="twitter floatL margin5l">
+    <div class="twitter floatL margin1l">
     </div>
 
 
@@ -124,10 +136,10 @@
     <div class="floatL w207h193 f7">
     </div>
 
-    <div class="floatL w414h193 margin5l bgwhite">
+    <div class="floatL w414h193 margin1l bgwhite">
     </div>
 
-    <div class="floatL w351h193 bgwhite margin5l">
+    <div class="floatL w351h193 bgwhite margin1l">
     </div>
    </div>
 
@@ -164,6 +176,7 @@
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
+      
         
            /* var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
