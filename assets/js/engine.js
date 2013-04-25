@@ -37,7 +37,7 @@ $(document).ready(function() {
 	$("#actreciente img").click(function(){ $('div.menuActividad').toggle(400); });
 
 $(".btnacerca").click(function(){
-texto =  $(this).text();
+texto = $(this).text();
 $("span.tituloacerca").text(texto);
 })
 
