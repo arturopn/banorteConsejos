@@ -62,6 +62,7 @@ ul{	margin:0;	padding:0; list-style:none; }
 .margin80l	{ margin-left:80px !important;}
 .margin85l	{ margin-left:85px !important;}
 .margin105l	{ margin-left:105px !important;}
+.margin120l	{ margin-left:120px !important;}
 
 .margin0t	{ margin-top:0px  !important;}
 .margin-1t	{ margin-top:-1px  !important;}
@@ -412,8 +413,22 @@ div.fotobg h1{ width: 253px; padding: 90px 30px 0; font-size: 20px; font-weight:
 
 .whiteback{ background: #fff;}
 
-textarea.participa { resize:none; width: 509px; border:1px #A3A3A3 solid; height: 26px; background:#fff url(../img/icons/participa.png) no-repeat; background-position: 15px 3px; padding-left: 50px; padding-right: 120px; padding-top: 3px; font-size: 20px;}
-div#participa{display: inline-block; width: 681px;}
+textarea.participa {
+resize: none;
+width: 509px;
+border: 1px #A3A3A3 solid;
+height: 26px;
+background: white url(../img/icons/participa.png) no-repeat;
+background-position: 15px 3px;
+padding-left: 50px;
+padding-right: 120px;
+padding-top: 3px;
+font-size: 20px;
+position: absolute;
+left: 0;
+z-index: 9997;}
+
+div#participa{display: inline-block; width: 681px; height: 36px;}
 div.inputimg{display: inline-block; width: 235px;}
 
 .border5{ border-radius: 5px; moz-border-radius:5px;}
@@ -792,3 +807,12 @@ div.menuActividad{z-index:1;}
 .borderl{ border-right: 1px #ccc solid;}
 
 .lineh142{ width: 1px; height: 148px; background:#ccc;}
+
+div.respuesta label{margin-top: 8px; font-size: 16px;}
+div.respuestas {margin-left:50px;}
+p.pregunta{ width: 288px; font-size: 16px; text-align: left; margin-left: 50px; margin-top: 10px;}
+
+.clickhelp{cursor: pointer;}
+.notificaciones{ padding-top: 10px; padding-bottom: 0; border-bottom: 1px #ccc solid;}
+.bordert {border-top: 1px #ccc solid;}
+.notificaciones p{ font-size: 14px; margin-left: 10px; position: relative; bottom: 2px; width: 222px;}

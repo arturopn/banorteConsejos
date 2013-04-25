@@ -42,11 +42,17 @@ $("span.tituloacerca").text(texto);
 })
 
 $(".temporaldrop").toggle(function(){
-   $(this).animate({height:"300px"},1000);
+   $(this).animate({height:"240px"},1000);
  
 }, function(){ $(this).animate({height:"31px"},1000);});
 
+$(".clickhelp").click(function(){$("div.help").show();});
+$(".cerrarhelp").click(function(){$("div.help").hide();})
 
+$("textarea").focus(function(){
+	 $(".participa").animate({height:"220px"},1000)});
 
+$("textarea").blur(function(){
+	 $(".participa").animate({height:"24px"},1000)});
 });
 
