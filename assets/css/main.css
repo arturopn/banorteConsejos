@@ -384,7 +384,7 @@ padding: 0 10px;
 	height:500px;
 	background-image:url(../img/photos/bgregistrate.jpg);
 	background-repeat:no-repeat;
-	margin:10px auto 40px;
+	margin:10px auto 35px;
 }
 
 #contenidoin{
@@ -401,7 +401,7 @@ padding: 0 10px;
 
 div#box{display: none;}
 
-div.fotobg{ background: url(../img/bg/fotobg.png) no-repeat;  width: 323px; max-width: 323px; height: 452px; z-index: 1; position: absolute; top: -4px; left: 626px;}
+div.fotobg{ background: url(../img/bg/fotobg.png) no-repeat;  width: 323px; max-width: 323px; height: 452px; z-index: 1; position: absolute; top: -4px; left: 540px;}
 
 
 div.menuActividad{ background: url(../img/bg/menuActividad.png) no-repeat;  width: 374px; max-width: 374px; height: 165px; z-index: 1; position: absolute; top: -4px; left: -5px;}

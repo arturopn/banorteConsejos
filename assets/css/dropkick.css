@@ -29,7 +29,7 @@ div.dropbottom .dk_container:first-child{ margin-left: 130px;}
 .greyselect .dk_container a{ font-size: 12px;}
 
 .greyselect.bigger .dk_container { height: 45px;}
-.greyselect.bigger .dk_container a{ font-size: 18px; line-height: 40px;}
+.greyselect.bigger .dk_container a{ font-size: 18px; line-height: 32px;}
 .greyselect.bigger  .dk_toggle {
   /**
    * Help: Arrow image not appearing
@@ -58,7 +58,7 @@ div.dropbottom .dk_container:first-child{ margin-left: 130px;}
   line-height: 14px;
 
 	/*width:17%;*/
-	height:48px;
+	height:40px;
 	width:100%;
 }
 .small .dk_container{ height:28px; }
@@ -69,8 +69,9 @@ div.dropbottom .dk_container:first-child{ margin-left: 130px;}
     cursor: pointer;
     text-decoration: none;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 0px;
     font-family: 'source_sans_prolight';
+	padding-left:10px;
   }
 
 /* Opens the dropdown and holds the menu label */
@@ -82,11 +83,11 @@ div.dropbottom .dk_container:first-child{ margin-left: 130px;}
   background: url(../img/btns/select.png) 102% 0px no-repeat;
 
   color: #333;
-	width:77% !important;
-	height:28px;
-	font-size:24px;
+	width:73% !important;
+	height:20px;
+	font-size:18px;
   font-weight: lighter;
-	line-height:27px;
+	line-height:20px;
   padding: 10px 60px 10px 0px;
   text-shadow: #fff 1px 1px 0;
  

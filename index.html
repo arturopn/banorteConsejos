@@ -14,29 +14,35 @@
 
         <link rel="stylesheet" href="assets/css/normalize.css">
         <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" type="text/css" media="all" href="fancybox/jquery.fancybox.css">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+          <link rel="stylesheet" type="text/css" media="all" href="fancybox/jquery.fancybox.css">
+          <script type="text/javascript" src="assets/js/jquery.js"></script>
+  <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
   <script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.0.6"></script>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+
+     
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="screen" charset="utf-8" />
+     
     </head>
     <body>
-    <div style="position:absolute;"><img  src="assets/img/lines/barra_top.png"></div>
+      <div style="position:absolute; width:100%; overflow:hidden;"><img  src="assets/img/lines/barra_top.png"></div>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-<div id="contenedor">
+<div id="contenedor relative">
 	<div id="encabezado" class="relative">
     
-		<div id="barra-top">
-        	<div class="logo">
-            	<a href="index.html"><img src="assets/img/photos/logo.png"></a>
+    <div id="barra-top">
+          <div class="logo">
+              <a href="index.html"><img src="assets/img/photos/logo.png"></a>
             </div>
             <div class="login">
-            	<h1>Consejos Regionales</h1>
+              <h1>Consejos Regionales</h1>
             </div>
-    	</div>
+      </div>
     </div>
-     <div id="contenido">
+    <div id="contenido">
         <div class="bgtrans contentregistro margin20l">
         <h1 class="red prolight font30 margin20l margin20t">Bienvenido</h1>
         <div class="separador margin10t margin20b"></div>
@@ -50,10 +56,10 @@
         	<p class="plabel">Usuario</p>
         	<p class="font20">Consejero075</p>
         </div>
-       <div class="floatL width80">
+       <div class="floatL width90">
         <label class="biglabel margin20l margin20t">Asigna tu contraseña *</label>
-        <input type="text" placeholder="Contraseña" class="input2 width45 margin5b margin20l " name="contra" id="contra">
-     <input type="text" placeholder="Confirma tu contraseña" class="input2 width45" name="confirmarcontra" id="confirmarcontra">
+        <input type="text" placeholder="Contraseña" class="input2 width40 margin5b margin20l margin10r" name="contra" id="contra">
+     <input type="text" placeholder="Confirma tu contraseña" class="input2 width40" name="confirmarcontra" id="confirmarcontra">
         </div>
         <div class="floatL width80 relative">
          <label class="biglabel margin20l  margin10t">Código de seguridad *</label>
@@ -77,9 +83,8 @@
     </div>
         </div>
         </div>
-    </div>
-    <div id="footer2">
-        <div class="info-footer2">
+	<div id="footer2">
+      <div class="info-footer2">
             <div class="copyright">
                 <p>2012 Grupo Financiero Banorte. Derechos reservados</p>
             </div>
@@ -98,33 +103,31 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="assets/css/styles.css"></script>
-  <script type="text/javascript" src="http://api.recaptcha.net/js/recaptcha_ajax.js"></script>
 
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-				function showRecaptcha(element, submitButton, recaptchaButton, themeName) {
-					Recaptcha.destroy();
-					Recaptcha.create("6Lc_O98SAAAAAN-yYrDZir5CeWz2essYQaJSI5Da", element, {
-						theme: themeName,
-						tabindex: 0
-					});
-					$(".contact_submit").hide();
-					$(".recaptcha_required").show();
-					$("#"+recaptchaButton).hide();
-					$("#"+submitButton).show();
-				}
-	
-       $(document).ready(function() {
-				showRecaptcha('recaptcha_div_1', 'submit_1','recaptcha_required_1','clean');
-        $(".modalbox").fancybox({ padding: [0,0,15,15] });
     
-    		});
+    
+  
         
            /* var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));*/
         </script>
+        <script src="assets/js/prototype/prototype.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/js/prototype/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+  <script src="assets/js/prototype/iphone-style-checkboxes.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    document.observe("dom:loaded", function() {
+$("#sliderl").click(function(){
+        alert("hola");
+      });
+
+
+      
+    });
+  </script>
     </body>
 </html>
