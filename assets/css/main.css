@@ -819,3 +819,10 @@ p.pregunta{ width: 288px; font-size: 16px; text-align: left; margin-left: 50px; 
 
 .w248{ width: 248px; height: 292px; border:solid #cccccc 1px; margin:0 7px;}
 .w404{ width: 404px; height: 292px; border:solid #cccccc 1px; margin:0 5px;}
+
+.hidetext{display: block;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+height:37px;
+}
