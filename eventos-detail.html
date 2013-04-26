@@ -29,6 +29,7 @@
         </script>
     </head>
     <body>
+
       <div style="position:absolute; width:100%; overflow:hidden;"><img  src="assets/img/lines/barra_top.png"></div>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
@@ -129,7 +130,7 @@
     <h1 class="font18 borderb taleft margin10l">ASISTENTES</br> CONFIRMADOS</h1>
     <ul>
       <div class="fotosconfirmados">
-      <li><img src="assets/img/photos/fotodetail1.png"/></li>
+      <li><a class="fancybox-thumb" rel="galeria" href="assets/img/photos/galeria.png"><img src="assets/img/photos/fotodetail1.png" class="tip" title="Juan Luis Guerra </br> <small>Consejo Regional</small>"/></a></li>
       <li><img src="assets/img/photos/fotodetail1.png"/></li>
       <li><img src="assets/img/photos/fotodetail1.png"/></li>
       <li><img src="assets/img/photos/fotodetail1.png"/></li>
@@ -153,31 +154,39 @@
    <img src="assets/img/misc/proximoseventos.png" class="margin30t"/>
  </div>
 
- <div class="floatL margin20l hscroll " style="height:150px;">
-   <div class="box24">
+ <div class="floatL margin20l scroll" style="height:160px; width:886px;">
+  <div class="clearfix widthscroll" height="150">
+   <div class="box24 clearfix">
     <div class="boxpestana yellow"></div>
-    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">5 MAR</br><span class="font16">12:45 p.m.<span></p>
+    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">5 MAR</br><span class="font16">12:45 p.m.</span></p>
     <p class="font14 semibold taleft" >Reunión de consejeros</br>SALA C </br>Intercontinental</p>
     <img class="more" src="assets/img/icons/more.png">
    </div>
    <div class="box24">
 <div class="boxpestana purple"></div>
-    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">12 MAY</br><span class="font16">12:45 p.m.<span></p>
+    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">12 MAY</br><span class="font16">12:45 p.m.</span></p>
     <p class="font14 semibold taleft" >DESAYUNO consejeros</br>Hotel Crown Plaza </p>
     <img class="more" src="assets/img/icons/more.png">
    </div>
    <div class="box24">
 <div class="boxpestana red"></div>
-    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">19 MAY</br><span class="font16">12:45 p.m.<span></p>
+    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">19 MAY</br><span class="font16">12:45 p.m.</span></p>
     <p class="font14 semibold taleft" >Frestejo de aniversario</br>Fundación Banorte </br>Hotel Ancira</p>
     <img class="more" src="assets/img/icons/more.png">
    </div>
    <div class="box24">
 <div class="boxpestana green"></div>
-    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">20 JUN</br><span class="font16">12:45 p.m.<span></p>
+    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">20 JUN</br><span class="font16"> 12:45 p.m.</span></p>
     <p class="font14 semibold taleft" >Conferencia Magistral</br>"La tecnología de las finanzas"</br>CONVEX</p>
     <img class="more" src="assets/img/icons/more.png">
    </div>
+   <div class="box24">
+<div class="boxpestana green"></div>
+    <p class="font33 prolight taleft margin30r margin20t" style="line-height:60%;">20 JUN</br><span class="font16"> 12:45 p.m.</span></p>
+    <p class="font14 semibold taleft" >Conferencia Magistral</br>"La tecnología de las finanzas"</br>CONVEX</p>
+    <img class="more" src="assets/img/icons/more.png">
+   </div>
+ </div>
   
  </div>
    </div>
@@ -215,26 +224,63 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+    
+        <script type="text/javascript" src="assets/js/jquery.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript" src="assets/js/engine.js"></script>
+        <script type="text/javascript" src="assets/js/dropkick.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.tipTip.js"></script>
         <script type="text/javascript" src="assets/js/tabs.js"></script>
         <script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>
+        <script type="text/javascript" src="assets/js/fancybox.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox-media.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.fancybox-thumbs.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+        $('.drop').dropkick();
+        $(".tip").tipTip();
+       
+ 
+        });
+        </script>
 
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-        $('.drop').dropkick();
-        $.tabs('tab-directorio');
-        $(".scroll").niceScroll({
-          horizrailenabled: false
-        });
+        <script>$(document).ready(function(){
 
-        $(".hscroll").niceScroll({
-          horizrailenabled: true
-        });
+          var cantidad = $(".box24").length;
+        var ancho = $(".box24").width() + 30;
+        var anchoscroll = cantidad * ancho;
+         $(".widthscroll").width(anchoscroll);
+
+      
+        $(".scroll").niceScroll();
        
+
+       $(".fancybox-thumb").fancybox({
+        helpers : {
+          title : {
+            type: 'inside'
+          }/*,
+          thumbs  : {
+            width : 70,
+            height  : 70
+          }*/
+        }
+      });
+      
+      $('.fancybox-media').fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+        helpers : {
+          media : {}
+        }
+      });
            /* var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));*/
+     });
         </script>
     </body>
 </html>

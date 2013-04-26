@@ -816,3 +816,6 @@ p.pregunta{ width: 288px; font-size: 16px; text-align: left; margin-left: 50px; 
 .notificaciones{ padding-top: 10px; padding-bottom: 0; border-bottom: 1px #ccc solid;}
 .bordert {border-top: 1px #ccc solid;}
 .notificaciones p{ font-size: 14px; margin-left: 10px; position: relative; bottom: 2px; width: 222px;}
+
+.w248{ width: 248px; height: 292px; border:solid #cccccc 1px; margin:0 7px;}
+.w404{ width: 404px; height: 292px; border:solid #cccccc 1px; margin:0 5px;}
