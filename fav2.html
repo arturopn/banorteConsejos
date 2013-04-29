@@ -12,70 +12,79 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+   
         <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/dropkick.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="assets/js/jquery.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript" src="assets/js/engine.js"></script>
+        <script type="text/javascript" src="assets/js/dropkick.js"></script>
     </head>
     <body>
-    <div style="position:absolute; width:100%; overflow:hidden;"><img  src="assets/img/lines/barra_top.png"></div>
-      <!--[if lt IE 7]>
-          <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-      <![endif]-->
-      <div id="contenedor">
-        <div id="encabezado" >
-          <div id="barra-top">
-            <div class="logo margin5t">
+      <div style="position:absolute; width:100%; overflow:hidden;"><img  src="assets/img/lines/barra_top.png"></div>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+<div id="contenedor">
+<div id="encabezado" >
+       
+
+    <div id="barra-top">
+          <div class="logo margin5t">
               <a href="index.html"><img src="assets/img/photos/logo.png"></a>
             </div>
             <div class="clearfix floatR">
-              <div class="floatL" align="left">
+            <div class="floatL" align="left">
               <p class="margin5r font18 header" style="margin-bottom:0;">Juan Antonio Gonzalez Treviño</p>
-                 <p class="grey font13" style="margin-bottom:0;">Consejo Regional Metropolitano</p>
-                <h2 style="text-align:left;" class="red"><small><a class="red font11" href="#">Editar perfil</a></small></h2>
-              </div>
-              <div class="separadorbarra floatL margin15r"></div>
-              <img src="assets/img/photos/fotologin.jpg" width="42" class="floatL margin7t margin15r"/>
-              <div class="separadorbarra floatL margin15r"></div>
-              <img src="assets/img/icons/search.png" class="floatL margin14t margin20r margin5l fotologin"/>
-              <div class="separadorbarra floatL margin15r"></div>
-              <img src="assets/img/icons/interrogacion.png" class="floatL margin14t margin15r"/>
-              <div class="separadorbarra floatL"></div>
-              <div class="fotobg hidden">
-              <h1>Búsqueda de integrantes</h1>
-              <div class="separador width80 margin30l"></div>
-              <div class="margin10t">
-              <label for="nombre">Por nombre:</label>
-              <input type="text" class="input2 width77" name="nombre" placeholder="Claudia"/>
-              </div>
-              <div class="margin10t clearfix">
-              <label for="consejo">Por consejo:</label>
-              <div class="width80 floatR margin35r">
-              <div class="width100"><select class="drop" name="recinto">
-                    <option>Consejo regional 1</option>
-                  </select></div>
-              </div>
-              </div>
+               <p class="grey font13" style="margin-bottom:0;">Consejo Regional Metropolitano</p>
+              <h2 style="text-align:left;" class="red"><small><a class="red font11" href="#">Editar perfil</a></small></h2>
+            </div>
+            <div class="separadorbarra floatL margin15r"></div>
+            <img src="assets/img/photos/fotologin.jpg" width="42" class="floatL margin7t margin15r"/>
+            <div class="separadorbarra floatL margin15r"></div>
+            <img src="assets/img/icons/search.png" class="floatL margin14t margin20r margin5l fotologin"/>
+            <div class="separadorbarra floatL margin15r"></div>
+            <img src="assets/img/icons/interrogacion.png" class="floatL margin14t margin15r"/>
+            <div class="separadorbarra floatL"></div>
+             <div class="fotobg hidden">
+               <h1>Búsqueda de integrantes</h1>
+               <div class="separador width80 margin30l"></div>
+               <div class="margin10t">
+                <label for="nombre">Por nombre:</label>
+                <input type="text" class="input2 width77" name="nombre" placeholder="Claudia"/>
+               </div>
+               <div class="margin10t clearfix">
+                <label for="consejo">Por consejo:</label>
+                <div class="width80 floatR margin35r">
+               <div class="width100"><select class="drop" name="recinto">
+                        <option>Consejo regional 1</option>
+                      </select></div>
+                      </div>
               
-              <div class="margin10t clearfix">
-              <label for="actividad">Por actividad:</label>
-              <div class="width80 floatR margin35r">
-              <div class="width100"><select class="drop" name="actividad">
-                    <option>Fisica</option>
-                  </select></div></div>
+               </div>
+              
+               <div class="margin10t clearfix">
+                <label for="actividad">Por actividad:</label>
+                <div class="width80 floatR margin35r">
+                <div class="width100"><select class="drop" name="actividad">
+                        <option>Fisica</option>
+                      </select></div></div>
+              
+               </div>
+  
+                <a href="index.html" class="btn width30  bgred line40 floatR margin10t margin30r">BUSCAR</a>
               </div>
-              <a href="index.html" class="btn width30  bgred line40 floatR margin10t margin30r">BUSCAR</a>
-              </div>
-        	  </div>
-          </div>
         </div>
-        <div id="contenidoin">
+
+      </div>
+
+
+    </div>
+     <div id="contenidoin">
           <div class="clearfix margin10b"> 
             <div id="directoriohead" class="floatL"><img src="assets/img/icons/favorites.png"/>
             <span>Favoritos »</span> Juan Antonio Garza Cruz </div>
           </div>
-          <div id="tab-directorio" class="relative">
-            <div id="consejeros" class="tabs-cont clearfix acerca">
               <div class="searchtop clearfix">
                 <p class="font22 prolight floatL" style="margin:19px;">Filtro:</p>
                 <div class="separadorV64 floatL"></div>
@@ -92,8 +101,6 @@
                 </div>       
               </div>
               <div class="scroll">
-              <div class=" padding20-0 clearfix">
-                  
                   	<div class="block600" style="padding-bottom:20px;">
                     	<img src="assets/img/photos/directorio.jpg" class="floatL">
                       <div class="width60 floatR">
@@ -162,74 +169,6 @@
                       </div>
                     </div>
 
-                  	<div class="block600" style="padding-bottom:20px;">
-                    	<img src="assets/img/photos/directorio.jpg" class="floatL">
-                      <div class="width60 floatR">
-                      	<div class="bbot margin5b">
-                          <p class="font16 margin5b">Juan Ignacio Cabrera</p>
-                        </div>
-                        <div class="bbot margin5b">
-                        <p class="gray3 margin5b">Lo que comentas es muy interesante. Los estados de resultados de mi...</p>
-                        </div>
-                        <div class="clearfix">
-	                        <div class="socialicons floatL"><img src="assets/img/icons/like.png"/><p>29</p></div>
-	                        <div class="socialicons floatL margin5l"><img src="assets/img/icons/comment.png"/><p>29</p></div>
-	                        <div class="socialicons floatL margin5l"><img src="assets/img/icons/favourite.png"/></div>
-	                    </div>
-                      </div>
-                    </div>
-                  
-                  	<div class="block600" style="padding-bottom:20px;">
-                    	<img src="assets/img/photos/directorio.jpg" class="floatL">
-                      <div class="width60 floatR">
-                      	<div class="bbot margin5b">
-                          <p class="font16 margin5b">Juan Ignacio Cabrera</p>
-                        </div>
-                        <div class="bbot margin5b">
-                        <p class="gray3 margin5b">Lo que comentas es muy interesante. Los estados de resultados de mi...</p>
-                        </div>
-                        <div class="clearfix">
-	                        <div class="socialicons floatL"><img src="assets/img/icons/like.png"/><p>29</p></div>
-	                        <div class="socialicons floatL margin5l"><img src="assets/img/icons/comment.png"/><p>29</p></div>
-	                        <div class="socialicons floatL margin5l"><img src="assets/img/icons/favourite.png"/></div>
-	                    </div>
-                      </div>
-                    </div>
-                  
-                  	<div class="block600" style="padding-bottom:20px;">
-                    	<img src="assets/img/photos/directorio.jpg" class="floatL">
-                      <div class="width60 floatR">
-                      	<div class="bbot margin5b">
-                          <p class="font16 margin5b">Juan Ignacio Cabrera</p>
-                        </div>
-                        <div class="bbot margin5b">
-                        <p class="gray3 margin5b">Lo que comentas es muy interesante. Los estados de resultados de mi...</p>
-                        </div>
-                        <div class="clearfix">
-	                        <div class="socialicons floatL"><img src="assets/img/icons/like.png"/><p>29</p></div>
-	                        <div class="socialicons floatL margin5l"><img src="assets/img/icons/comment.png"/><p>29</p></div>
-	                        <div class="socialicons floatL margin5l"><img src="assets/img/icons/favourite.png"/></div>
-	                    </div>
-                      </div>
-                    </div>
-                  
-                  	<div class="block600" style="padding-bottom:20px;">
-                    	<img src="assets/img/photos/directorio.jpg" class="floatL">
-                      <div class="width60 floatR">
-                      	<div class="bbot margin5b">
-                          <p class="font16 margin5b">Juan Ignacio Cabrera</p>
-                        </div>
-                        <div class="bbot margin5b">
-                        <p class="gray3 margin5b">Lo que comentas es muy interesante. Los estados de resultados de mi...</p>
-                        </div>
-                        <div class="clearfix">
-	                        <div class="socialicons floatL"><img src="assets/img/icons/like.png"/><p>29</p></div>
-	                        <div class="socialicons floatL margin5l"><img src="assets/img/icons/comment.png"/><p>29</p></div>
-	                        <div class="socialicons floatL margin5l"><img src="assets/img/icons/favourite.png"/></div>
-	                    </div>
-                      </div>
-                    </div>
-                  
                   	<div class="block600" style="padding-bottom:20px;">
                     	<img src="assets/img/photos/directorio.jpg" class="floatL">
                       <div class="width60 floatR">
@@ -299,66 +238,58 @@
                     </div>
                     
                     </div>
-		</div>
+		
               </div>
             </div>
-         	  </div>
-        	</div>
-        <div id="footer">
-          <div class="info-footer">
+    <div id="footer">
+        <div class="info-footer">
             <div class="copyright">
-              <p>2012 Grupo Financiero Banorte. Derechos reservados</p>
+                <p>2012 Grupo Financiero Banorte. Derechos reservados</p>
             </div>
             <div class="terminos">
-              <p>Términos legales</p>
+                <p>Términos legales</p>
             </div>
             <div class="aviso-priva">
-              <p>Aviso de Privacidad</p>
+                <p>Aviso de Privacidad</p>
             </div>
-          </div>
         </div>
-          </div>
-      </div>
-      </div>
-      
-      
-       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script type="text/javascript" src="assets/js/jquery.js"></script>
+    </div>
+</div>
+
+       
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script type="text/javascript" src="assets/js/tabs.js"></script>
-        <script type="text/javascript" src="assets/js/iosslider.js"></script>
         <script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>
-        <script type="text/javascript" src="assets/js/engine.js"></script>
-        <script type="text/javascript" src="assets/js/dropkick.js"></script>
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-    
         $(document).ready(function(){
-					$('.drop').dropkick();
-					$.tabs('tab-directorio');
-          $(".scroll").niceScroll();
-          $('#tablogros').one('click',function(){
-            $('#slidelogros .slide').each(function(index){ if( index == 0 ) $('#navlogros').append('<a class="on"></a>'); else $('#navlogros').append('<a></a>'); });
-            $('#slidelogros').iosSlider({
-              snapToChildren: true,
-              navSlideSelector: $('#navlogros a'),
-              onSlideChange: function(args){ 
-                var index = args.currentSlideNumber; index--;
-                $('#navlogros .on').removeClass('on');
-                $('#navlogros a:eq(' + index +')').addClass('on');
-              }
-            });
-          });
-        });
+ 
+      $(".resultados").each(function(){
+           regionesnorte = $(".regionnorte", this).length; 
+        alto = $(".regionnorte", this).height();
+        total = regionesnorte * alto;
+        $(".altotal", this).height(total);
+      });
+      
 
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-         /* var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-          (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-          g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-          s.parentNode.insertBefore(g,s)}(document,'script'));*/
-      </script>
+
+        $('.drop').dropkick();
+        $.tabs('tab-directorio');
+        $(".scroll").niceScroll();
+
+         $(".pestanasBusqueda a").click(function(){
+          $(".scroll").niceScroll();
+        });
+       });
+       
+           /* var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));*/
+        </script>
     </body>
 </html>
