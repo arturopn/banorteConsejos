@@ -56,3 +56,21 @@ $("textarea").blur(function(){
 	 $(".participa").animate({height:"24px"},1000)});
 });
 
+$(".chatButton").toggle(function(){
+	$("div.contactos").show(400);
+}, function(){
+	$("div.contactos").hide(400);
+})
+
+$(".contacto").click(function(){
+ nombreDeContacto = $("h2",this).text();
+ foto = $("img",this).attr("src");
+ $(".ventanachat h2").text(nombreDeContacto);
+ $(".ventanachat img").attr("src",foto);
+ $(".ventanachat").show(400);
+});
+
+$(".cerrarchat").click(function(){
+   $(".ventanachat").hide(400);
+});
+
