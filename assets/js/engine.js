@@ -1,5 +1,11 @@
 $(document).ready(function() {
-
+$("#recientes").change(function(){
+    if ($("#recientes").val() == "Usuario") {
+       alert("1");
+    } else {
+      alert("2");
+    }
+});
 	//fix html5 placeholder attribute for ie7 & ie8
 	if (jQuery.browser.msie && jQuery.browser.version.substr(0,1) < 9) { // ie7&ie8
 		jQuery('input[placeholder], textarea[placeholder]').each(function(){          
@@ -34,7 +40,8 @@ $(document).ready(function() {
 
 	$('.fotologin').click(function(){	$('div.fotobg').toggle(400); });
 
-	$("#actreciente img").click(function(){ $('div.menuActividad').toggle(400); });
+	$("#actreciente .menu3lines").click(function(){ $('div.actividadopen').show(400); });
+	$(".cuadroinside").click(function(){ $('div.actividadopen').hide(400); });
 
 $(".btnacerca").click(function(){
 texto = $(this).text();
@@ -64,6 +71,8 @@ $("textarea").blur(function(){
 	});
 });
 
+
+
 $(".chatButton").toggle(function(){
 	$("div.contactos").show(400);
 }, function(){
@@ -81,4 +90,5 @@ $(".contacto").click(function(){
 $(".cerrarchat").click(function(){
    $(".ventanachat").hide(400);
 });
+
 

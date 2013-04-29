@@ -422,7 +422,7 @@ padding: 0 10px;
 
 div#box{display: none;}
 
-div.fotobg{ background: url(../img/bg/fotobg.png) no-repeat;  width: 323px; max-width: 323px; height: 452px; z-index: 809; position: absolute; top: -7px; left: 540px;}
+div.fotobg{ background: url(../img/bg/fotobg.png) no-repeat;  width: 323px; max-width: 323px; height: 452px; z-index: 809; position: absolute; top: -7px; left: 634px;}
 
 
 div.menuActividad{ background: url(../img/bg/menuActividad.png) no-repeat;  width: 374px; max-width: 374px; height: 165px; z-index: 1; position: absolute; top: -4px; left: -5px;}
@@ -446,7 +446,7 @@ padding-right: 120px;
 padding-top: 3px;
 font-size: 20px;
 position: relative;
-z-index: 9999;}
+z-index: 8888;}
 
 
 div#participa{display: inline-block; width: 681px; height: 36px;}
@@ -552,7 +552,7 @@ padding: 12px; margin-left: 15px;}
 
 .ff31 .more{position:absolute; bottom:10px; right:20px;}
 
-#actreciente { width: 30px; padding: 10px; border-top: 2px #ccc solid; border-bottom: 2px #ccc solid; border-left: 2px #ccc solid;}
+#actreciente { width: 50px; padding: 0px; border-top: 2px #ccc solid; border-bottom: 2px #ccc solid; border-left: 2px #ccc solid;}
 #actreciente img{ display: block; cursor: pointer; z-index: 22; position: relative; top:9px;}
 
 .searchresults{ padding: 20px 0; }
@@ -906,6 +906,14 @@ textarea.comment{ width: 84%; height: 30px; resize:none; padding-left: 55px; pad
 
 .camara{background: url(../img/icons/camara.png) no-repeat center; width: 81px; height: 51px; border-right: 1px #ccc solid; cursor: pointer;}
 
-.participaBottom{ z-index: 9999; display: none; position: relative; width: 680px; height: 51px; background: #fff; border: #ccc solid 1px; bottom: 5px; }
+.participaBottom{ z-index: 8888; display: none; position: relative; width: 680px; height: 51px; background: #fff; border: #ccc solid 1px; bottom: 5px; }
 
+.menu3lines{ background: url(../img/btns/3lines.png) no-repeat center; z-index: 889; width: 52px; height: 54px; border-bottom: #ccc solid 1px; cursor: pointer;}
 
+.menu3lines.on{background: url("../img/icons/3lineson.gif") no-repeat;}
+
+.actividadopen{position: absolute; top: 0; display: none; padding: 5px; left: 48px; width: 300px; min-height: 150px; background: #FfFfFf; border: #ccc 1px solid; z-index: 888;}
+.actividadopen .inside{ background: #F9F9F9; width: 100%; height: 100%; min-height: 150px;}
+.cuadroinside{ background: #F9F9F9 url(../img/btns/3lines.png) no-repeat center; width: 100%; height: 44px; cursor:pointer;}
+
+.actcuadro{position: absolute; top: 0; left: -50px; background: #fff; width: 50px; height: 45px; padding: 5px 0 5px 5px; z-index: 899;}
