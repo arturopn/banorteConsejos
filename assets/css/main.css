@@ -445,9 +445,9 @@ padding-left: 50px;
 padding-right: 120px;
 padding-top: 3px;
 font-size: 20px;
-position: absolute;
-left: 0;
-z-index: 800;}
+position: relative;
+z-index: 9999;}
+
 
 div#participa{display: inline-block; width: 681px; height: 36px;}
 div.inputimg{display: inline-block; width: 235px;}
@@ -903,4 +903,9 @@ textarea.comment{ width: 84%; height: 30px; resize:none; padding-left: 55px; pad
 
 .foto-contacto{position: absolute; top: 50px; left: 20px;}
 .foto-usuario{position: absolute; top: 257px; left: 20px;}
+
+.camara{background: url(../img/icons/camara.png) no-repeat center; width: 81px; height: 51px; border-right: 1px #ccc solid; cursor: pointer;}
+
+.participaBottom{ z-index: 9999; display: none; position: relative; width: 680px; height: 51px; background: #fff; border: #ccc solid 1px; bottom: 5px; }
+
 

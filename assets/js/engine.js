@@ -50,10 +50,18 @@ $(".clickhelp").click(function(){$("div.help").show();});
 $(".cerrarhelp").click(function(){$("div.help").hide();})
 
 $("textarea").focus(function(){
-	 $(".participa").animate({height:"220px"},1000)});
+	 $(".participa").animate({height:"220px"},1000), 
+
+	 $(".participaBottom").show(1000);
+	 $(".botonpublicar").hide(400);
+
+	});
 
 $("textarea").blur(function(){
-	 $(".participa").animate({height:"24px"},1000)});
+	 $(".participa").animate({height:"24px"},1000),
+	  $(".participaBottom").hide(1000);
+      $(".botonpublicar").show(400);
+	});
 });
 
 $(".chatButton").toggle(function(){
