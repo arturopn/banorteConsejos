@@ -109,7 +109,7 @@
       <div class="actividadopen"><div class="actcuadro"> <div class="cuadroinside"></div></div> <div class="inside taleft clearfix">
      <h1 class="margin25l">Filtrar por:</h1>
      <div class="clearfix">
-                <div class="width80 floatR margin35r">
+                <div class="width80 divrecientes floatR margin35r">
                <div class="width100"><select id="recientes" class="drop" name="recientes">
                         <option>Más recientes</option>
                         <option>Usuario</option>
@@ -404,7 +404,13 @@
         $(".scroll").niceScroll();
 
       $(".tododesta").width(1000);
+       
 
+       $(".dk_label").change(function(){
+    if($(".dk_label").text() == "Usuario"){
+      alert("hola");
+    }
+});
    
         
         //

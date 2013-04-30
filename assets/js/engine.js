@@ -1,10 +1,7 @@
 $(document).ready(function() {
-$("#recientes").change(function(){
-    if ($("#recientes").val() == "Usuario") {
-       alert("1");
-    } else {
-      alert("2");
-    }
+
+$(".dk_toggle").click(function(){
+    alert("hola");
 });
 	//fix html5 placeholder attribute for ie7 & ie8
 	if (jQuery.browser.msie && jQuery.browser.version.substr(0,1) < 9) { // ie7&ie8
