@@ -422,7 +422,7 @@ padding: 0 10px;
 
 div#box{display: none;}
 
-div.fotobg{ background: url(../img/bg/fotobg.png) no-repeat;  width: 323px; max-width: 323px; height: 452px; z-index: 809; position: absolute; top: -7px; left: 634px;}
+div.fotobg{ background: url(../img/bg/fotobg.png) no-repeat;  width: 323px; max-width: 323px; height: 452px; z-index: 809; position: absolute; top: -7px; left: 540px;}
 
 
 div.menuActividad{ background: url(../img/bg/menuActividad.png) no-repeat;  width: 374px; max-width: 374px; height: 165px; z-index: 1; position: absolute; top: -4px; left: -5px;}
@@ -446,7 +446,7 @@ padding-right: 120px;
 padding-top: 3px;
 font-size: 20px;
 position: relative;
-z-index: 8888;}
+z-index: 888;}
 
 
 div#participa{display: inline-block; width: 681px; height: 36px;}
