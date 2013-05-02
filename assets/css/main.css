@@ -425,7 +425,7 @@ div#box{display: none;}
 div.fotobg{ background: url(../img/bg/fotobg.png) no-repeat;  width: 323px; max-width: 323px; height: 452px; z-index: 809; position: absolute; top: -7px; left: 540px;}
 
 
-div.menuActividad{ background: url(../img/bg/menuActividad.png) no-repeat;  width: 374px; max-width: 374px; height: 165px; z-index: 1; position: absolute; top: -4px; left: -5px;}
+div.menuActividad{ background: url(../img/bg/menuActividad.png) no-repeat;  width: 374px; max-width: 374px; height: 165px; z-index: 800; position: absolute; top: -4px; left: -5px;}
 
 
 .fotobg label{ text-align: left; padding-left: 33px;}
