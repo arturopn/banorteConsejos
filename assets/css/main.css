@@ -499,7 +499,12 @@ z-index: 802;
 .directorioperfil h2{ text-align: left; font-family: 'source_sans_prolight';}
 .directorioin h1{font-size: 33px; font-family: 'source_sans_prolight';}
 
-.enlinea{ background: url(../img/misc/greendot.png) no-repeat;
+.enlinea, .offline{ background: url(../img/misc/greendot.png) no-repeat;
+display: inline-block;
+background-position: center left;
+padding-left: 10px;}
+
+.offline{ background: url(../img/misc/reddot.png) no-repeat;
 display: inline-block;
 background-position: center left;
 padding-left: 10px;}
