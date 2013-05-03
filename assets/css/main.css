@@ -928,4 +928,6 @@ textarea.comment{ width: 84%; height: 30px; resize:none; padding-left: 55px; pad
 
 .ff244 { margin-top: 10px;}
 
+.directorioin th{text-align: left;}
+.directorioin td{ text-align: left;}
 .actcuadro{position: absolute; top: 0; left: -50px; background: #fff; width: 50px; height: 45px; padding: 5px 0 5px 5px; z-index: 899;}
