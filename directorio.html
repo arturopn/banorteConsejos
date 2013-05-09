@@ -14,6 +14,7 @@
 
         <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/dropkick.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/fancybox.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
       <div style="position:absolute; width:100%; overflow:hidden;"><img  src="assets/img/lines/barra_top.png"></div>
@@ -843,7 +844,7 @@
                 <p>Aviso de Privacidad</p>
             </div>
             <div class="aviso-priva">
-                <a onclick="openFB('890','430','contactanos.html')" style="cursor:pointer;"><p>Contáctanos</p></a>
+                <a onClick="openFB('890','430','contactanos.html')" style="cursor:pointer;"><p>Contáctanos</p></a>
             </div>
         </div>
     </div>
@@ -873,17 +874,6 @@
           $(".scroll").niceScroll();
           $('#tablogros').one('click',function(){
           $('#slidelogros .slide').each(function(index){ if( index == 0 ) $('#navlogros').append('<a class="on"></a>'); else $('#navlogros').append('<a></a>'); });
-		  function openFB(w,h,url){
-				w = parseInt(w);
-				h = parseInt(h);
-				$.fancybox({
-					href: url + '',
-					width : w,
-					height : h,
-					type : 'iframe',
-					autoSize  : false
-				});
-		  }
 				
           $('#slidelogros').iosSlider({
               snapToChildren: true,
@@ -896,6 +886,17 @@
             });
           });
         });
+		  function openFB(w,h,url){
+				w = parseInt(w);
+				h = parseInt(h);
+				$.fancybox({
+					href: url + '',
+					width : w,
+					height : h,
+					type : 'iframe',
+					autoSize  : false
+				});
+		  }
         
            /* var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
