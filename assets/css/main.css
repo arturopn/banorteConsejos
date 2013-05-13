@@ -892,6 +892,8 @@ height:37px;
  p.nota {font-size: 17px !important; margin-top: 10px;}
 
  .chatButton{ cursor: pointer;}
+ .chats{float:left; cursor:pointer;}
+ 
 
 div.contactos{position: absolute; bottom: 85px; display: none; right: 145px; width: 323px; height: 300px; background: #F9F9F9; border: #ccc 1px solid; padding: 10px;}
 .contacto{ padding: 10px; cursor: pointer;}
