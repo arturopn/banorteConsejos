@@ -75,7 +75,7 @@
       spacebarenabled:true,
       railpadding:{top:0,right:0,left:0,bottom:0},
       disableoutline:true,
-      horizrailenabled:true,
+      horizrailenabled:false,
       railalign:"right",
       railvalign:"bottom",
       enabletranslate3d:true,
