@@ -58,7 +58,7 @@
       cursorborderradius:"5px",
       scrollspeed:60,
       mousescrollstep:8*3,
-      touchbehavior:false,
+      touchbehavior:true,
       hwacceleration:true,
       usetransition:true,
       boxzoom:false,
