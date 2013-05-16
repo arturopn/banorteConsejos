@@ -166,7 +166,7 @@ div.dropbottom .dk_container:first-child{ margin-left: 130px;}
 /* Set a max-height on the options inner */
 .dk_options_inner,
 .dk_touch .dk_options {
-  max-height: 250px;
+  max-height: 170px;
 }
 
 /******  End Theme ******/

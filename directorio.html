@@ -100,6 +100,8 @@
       </ul>
      
      <div id="datospersonales" class="floatL scroll taleft width60 directorioin tabs-cont">
+      <div style="height:588px;">
+
           <h1>Datos personales</h1>
 
           <div class="clearfix margin20b">
@@ -147,6 +149,11 @@
             <option>8</option>
             <option>9</option>
             <option>9</option>
+            <option>9</option>
+            <option>9</option>
+            <option>9</option>
+            <option>9</option>
+            <option>9</option>
           </select></div>
           <div class="width15 greyselect bigger floatL" style="margin-top:2px; margin-left:10px;"><select class="drop" name="Mes">
             <option>Mes</option>
@@ -172,9 +179,20 @@
           <label for"estado">Estado</label>
           <div class="greyselect bigger floatL" style="margin-top:2px;  width:150px;"><select class="drop" name="estado">
             <option>Estado</option>
+            <option>Estado</option>
+            <option>Estado</option>
+            <option>Estado</option>
+
+            <option>Estado</option>
+            <option>Estado</option>
+            <option>Estado</option>
+            <option>Estado</option>
+            <option>Estado</option>
+            <option>Estado</option>
           </select></div>
            </div>
           <div class="floatL width50 margin20t margin-20b" align="left"><a href="#" class="btn width40 line30  bggray font13 ">GUARDAR</a></div>
+        </div>
       </div>
 
         
@@ -905,7 +923,11 @@
           });
 
           $(".dk_toggle").click(function(){
-             $(".directorioin").scrollTop(200);
+             $(".directorioin").scrollTop(300);
+          });
+
+          $(".pestanas a").click(function(){
+            $(".dk_container").removeClass("dk_open");
           });
         });
 		  function openFB(w,h,url){
