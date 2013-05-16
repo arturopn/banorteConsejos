@@ -88,8 +88,10 @@ label {font-size: 23px; display: block;}
 .font23{ font-size:23px; }
 .font30{ font-size:30px; }
 .p24 { font-size: 24px;}
-
-.title{ font-size:60px; }
+.title{ font-size:60px;}
+.arigth{text-align:right;}
+.aleft{text-align:left;}
+.acenter{text-align:center;}
 
 /* Color */
 .title, .bgorange-trans *, .contact-box p { color:#FFF; }
