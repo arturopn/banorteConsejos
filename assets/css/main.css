@@ -774,7 +774,7 @@ label.little{font-family: 'source_sans_prolight'; font-size: 12px; color: #66666
 .borderb{border-bottom: 1px #c4c4c4 solid;}
 
 #confirmados{border-left: 1px #C4C4C4 solid;
-height: 170px;}
+height: 170px; width: 26%; padding-right: 16px;}
 
 .line26{ line-height: 26px;}
 
