@@ -500,7 +500,7 @@ z-index: 802;
 #directoriohead span{ color: #A92626;}
 #directoriohead { color: #333333; font-size: 20px;}
 
-.directorioin{ padding: 30px; height: 311px; width:64.6% !important;}
+.directorioin{ padding: 30px; height: 311px; width: 612px !important;}
 
 .font13{ font-size: 13px;}
 .font16{ font-size: 16px;}
@@ -889,8 +889,6 @@ height:37px;
 .postlabel{ margin-top: 30px; text-align: left;}
 .postlabel p{ font-size: 14px; border-top: 0; }
 
-ul.documentos li span { font-size: 12px;}
-
 
 
 
@@ -917,12 +915,10 @@ div.ventanachat{position: absolute; bottom: 85px; display: none; right: 491px; w
 .ventanachat textarea{ border: 1px solid #ccc;}
 textarea.conversacion{ width: 84%; height: 180px; resize:none; padding-left: 55px; padding-top: 20px; background: url(../img/icons/chat.png) bottom left #fff no-repeat;}
 
-textarea.comment{ width: 95%; height: 37px; resize:none; padding:10px; margin-top:5px; font-size:14px;}
+textarea.comment{ width: 95%; height: 37px; resize:none; padding:10px;}
 
-.chaticon, .chaticon2{background: url(../img/icons/chat.png); width: 30px; height: 26px; margin-top: 5px;}
-.chaticon2{background: url(../img/icons/chatgris.png);}
-
-
+.chaticon{background: url(../img/icons/chat.png); width: 30px; height: 26px; margin-top: 5px;}
+.chaticon2{background: url(../img/icons/chatgris.png); width: 30px; height: 26px; margin-top: 5px;}
 .cerrarchat{background: url(../img/icons/cerrarchat.jpg); width: 16px; height: 15px; cursor: pointer; margin-top: 5px; position: absolute; right: 10px; top: 10px;}
 
 .borderb{border-bottom: 1px solid #ccc;}
