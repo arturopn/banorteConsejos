@@ -500,7 +500,7 @@ z-index: 802;
 #directoriohead span{ color: #A92626;}
 #directoriohead { color: #333333; font-size: 20px;}
 
-.directorioin{ padding: 30px; height: 311px; width: 612px !important;}
+.directorioin{ padding: 30px; height: 311px; width:64.6% !important;}
 
 .font13{ font-size: 13px;}
 .font16{ font-size: 16px;}
@@ -888,6 +888,8 @@ height:37px;
 
 .postlabel{ margin-top: 30px; text-align: left;}
 .postlabel p{ font-size: 14px; border-top: 0; }
+
+ul.documentos li span { font-size: 12px;}
 
 
 
