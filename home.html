@@ -133,7 +133,7 @@
             <div class="clearfix">
               <div class="width80 divrecientes floatR margin35r">
                 <div class="width100">
-                  <select id="recientes" class="drop" name="recientes">
+                  <select id="recientes" class="drop-filtro" name="recientes">
                     <option value="1">Más recientes</option>
                     <option value="2">Más comentados</option>
                     <option value="3">Más gustados</option>
@@ -394,7 +394,7 @@
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> 
 <script>
         $(document).ready(function(){
-        	$('.drop').dropkick({ 
+        	$('.drop-por').dropkick({ 
 			change: function (value, label) {
 				$('#input4,#input5,#inputnombre, .optconsejo, .optdir').hide();
 				if(value < 4)
@@ -406,7 +406,7 @@
 				if(value == 'Directivo')
 					$('.optdir').show();
 			}});
-			$('.drop').dropkick({ 
+			$('.drop-filtro').dropkick({ 
 			change: function (value, label) {
 				$('#input4,#input5,#inputnombre').hide();
 				if(value < 4)

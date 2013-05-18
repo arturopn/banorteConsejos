@@ -55,7 +55,7 @@
             <label for="consejo">Por:</label>
             <div class="width80 floatR margin35r">
               <div class="width100">
-                <select class="drop" name="dpor">
+                <select class="drop-por" name="dpor">
                 	<option>------</option>
                   <option>Consejero</option>
                   <option>Directivo</option>
@@ -925,18 +925,14 @@
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
          <script type="text/javascript">
         $(document).ready(function(){
-					$('.drop').dropkick({ 
-			change: function (value, label) {
-				$('#input4,#input5,#inputnombre, .optconsejo, .optdir').hide();
-				if(value < 4)
-					$('#inputnombre').show();
-				if(value >= 4)
-					$('#input' + value).show();
-				if(value == 'Consejero')
-					$('.optconsejo').show();
-				if(value == 'Directivo')
-					$('.optdir').show();
-			}});
+					$('.drop-por').dropkick({ 
+						change: function (value, label) {
+							$(' .optconsejo, .optdir').hide();
+							if(value == 'Consejero')
+								$('.optconsejo').show();
+							if(value == 'Directivo')
+								$('.optdir').show();
+						}});
 			$('.drop').dropkick({ 
 			change: function (value, label) {
 				$('#input4,#input5,#inputnombre').hide();
