@@ -47,29 +47,52 @@
           <div class="separador width80 margin30l"></div>
           <div class="margin10t">
             <label for="nombre">Por nombre:</label>
-            <input type="text" class="input2 width77" name="nombre" placeholder="Claudia"/>
+            <input type="text" class="input4 width77" name="nombre" placeholder="Claudia"/>
           </div>
-          <div class="margin10t clearfix">
-            <label for="consejo">Por consejo:</label>
+          <div class="margin5t clearfix">
+            <label for="consejo">Por:</label>
             <div class="width80 floatR margin35r">
               <div class="width100">
-                <select class="drop" name="recinto">
-                  <option>Consejo regional 1</option>
+                <select class="drop" name="dpor">
+                	<option>------</option>
+                  <option>Consejero</option>
+                  <option>Directivo</option>
                 </select>
               </div>
             </div>
           </div>
-          <div class="margin18t clearfix">
+          <div class="margin5t clearfix hidden optconsejo">
+            <label for="actividad">Consejo:</label>
+            <div class="width80 floatR margin35r">
+              <div class="width100">
+                <select class="drop" name="dconsejo">
+                  <option>Consejo 1</option>
+                  <option>Consejo 2</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="margin5t clearfix hidden optconsejo">
             <label for="actividad">Por actividad:</label>
             <div class="width80 floatR margin35r">
               <div class="width100">
-                <select class="drop" name="actividad">
+                <select class="drop" name="dact">
                   <option>Fisica</option>
                 </select>
               </div>
             </div>
           </div>
-          <a href="index.html" class="btn width30  bgred line40 floatR margin10t margin30r">BUSCAR</a> </div>
+          <div class="margin5t clearfix hidden optdir">
+            <label for="actividad">Área:</label>
+            <div class="width80 floatR margin35r">
+              <div class="width100">
+                <select class="drop" name="darea">
+                  <option>Fisica</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <a href="index.html" class="btn width30  bgred line30 floatR margin10t margin30r">BUSCAR</a> </div>
       </div>
     </div>
   </div>
@@ -111,18 +134,21 @@
               <div class="width80 divrecientes floatR margin35r">
                 <div class="width100">
                   <select id="recientes" class="drop" name="recientes">
-                    <option>Más recientes</option>
-                    <option>Más comentados</option>
-                    <option>Más gustados</option>
-                    <option>Consejo</option>
+                    <option value="1">Más recientes</option>
+                    <option value="2">Más comentados</option>
+                    <option value="3">Más gustados</option>
+                    <option value="4">Consejo</option>
+                    <option value="5">Usuario</option>
                   </select>
                 </div>
               </div>
             </div>
             <div class="width80 margin10t margin25l">
-              <input type="text" class="input width100" placeholder="Nombre"/>
+              <input id="inputnombre" type="text" class="input width100 obj" placeholder="Nombre"/>
+              <input id="input4" type="text" class="input width100 hidden" placeholder="Tipo Consejo"/>
+              <input id="input5" type="text" class="input width100 hidden" placeholder="Nombre de Usuario"/>
             </div>
-            <a href="index.html" class="btn width30  bgred line40 floatR margin10t margin30r">FILTRAR</a> </div>
+            <a href="index.html" class="btn width30  bgred line30 floatR margin10t margin30r">FILTRAR</a> </div>
         </div>
         <img src="assets/img/misc/actividadreciente.png"/>
         <div class="menuActividad hidden">
@@ -368,8 +394,29 @@
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> 
 <script>
         $(document).ready(function(){
-        $('.drop').dropkick();
-          $('div.fotobg').hide();
+        	$('.drop').dropkick({ 
+			change: function (value, label) {
+				$('#input4,#input5,#inputnombre, .optconsejo, .optdir').hide();
+				if(value < 4)
+					$('#inputnombre').show();
+				if(value >= 4)
+					$('#input' + value).show();
+				if(value == 'Consejero')
+					$('.optconsejo').show();
+				if(value == 'Directivo')
+					$('.optdir').show();
+			}});
+			$('.drop').dropkick({ 
+			change: function (value, label) {
+				$('#input4,#input5,#inputnombre').hide();
+				if(value < 4)
+					$('#inputnombre').show();
+				else
+					$('#input' + value).show();
+			}});
+            $('div.fotobg').hide();
+			
+			
 
     
         //scroll horizontal para el div de la parte superior
@@ -377,6 +424,7 @@
         var ancho = $(".w207h234").width() + 30;
         var anchoscroll = cantidad * ancho;
          $(".widthscroll").width(anchoscroll);
+		 
         });
 
 

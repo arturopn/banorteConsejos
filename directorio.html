@@ -44,39 +44,59 @@
             <div class="separadorbarra floatL margin15r"></div>
             <img src="assets/img/icons/logout.png" class="floatL margin14t margin15r"/>
             <div class="separadorbarra floatL"></div>
-             <div class="fotobg hidden">
-               <h1>Búsqueda de integrantes</h1>
-               <div class="separador width80 margin30l"></div>
-               <div class="margin10t">
-                <label for="nombre">Por nombre:</label>
-                <input type="text" class="input2 width77" name="nombre" placeholder="Claudia"/>
-               </div>
-               <div class="margin10t clearfix">
-                <label for="consejo">Por consejo:</label>
-                <div class="width80 floatR margin35r">
-               <div class="width100"><select class="drop" name="recinto">
-                        <option>Consejo regional 1</option>
-                      </select></div>
-                      </div>
-              
-               </div>
-              
-               <div class="margin10t clearfix">
-                <label for="actividad">Por actividad:</label>
-                <div class="width80 floatR margin35r">
-               	<div class="width100"><select class="drop" name="actividad">
-                        <option>Fisica</option>
-                      </select></div></div>
-              
-               </div>
-  
-   							<a href="index.html" class="btn width30  bgred line40 floatR margin10t margin30r">BUSCAR</a>
-        			</div>
+            <div class="fotobg hidden">
+          <h1>Búsqueda de integrantes</h1>
+          <div class="separador width80 margin30l"></div>
+          <div class="margin10t">
+            <label for="nombre">Por nombre:</label>
+            <input type="text" class="input4 width77" name="nombre" placeholder="Claudia"/>
+          </div>
+          <div class="margin5t clearfix">
+            <label for="consejo">Por:</label>
+            <div class="width80 floatR margin35r">
+              <div class="width100">
+                <select class="drop" name="dpor">
+                	<option>------</option>
+                  <option>Consejero</option>
+                  <option>Directivo</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="margin5t clearfix hidden optconsejo">
+            <label for="actividad">Consejo:</label>
+            <div class="width80 floatR margin35r">
+              <div class="width100">
+                <select class="drop" name="dconsejo">
+                  <option>Consejo 1</option>
+                  <option>Consejo 2</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="margin5t clearfix hidden optconsejo">
+            <label for="actividad">Por actividad:</label>
+            <div class="width80 floatR margin35r">
+              <div class="width100">
+                <select class="drop" name="dact">
+                  <option>Fisica</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="margin5t clearfix hidden optdir">
+            <label for="actividad">Área:</label>
+            <div class="width80 floatR margin35r">
+              <div class="width100">
+                <select class="drop" name="darea">
+                  <option>Fisica</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <a href="index.html" class="btn width30  bgred line30 floatR margin10t margin30r">BUSCAR</a> </div>
         </div>
-
     	</div>
-
-
     </div>
      <div id="contenidoin" >
      <div class="clearfix margin10b"> 
@@ -905,7 +925,26 @@
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
          <script type="text/javascript">
         $(document).ready(function(){
-					$('.drop').dropkick();
+					$('.drop').dropkick({ 
+			change: function (value, label) {
+				$('#input4,#input5,#inputnombre, .optconsejo, .optdir').hide();
+				if(value < 4)
+					$('#inputnombre').show();
+				if(value >= 4)
+					$('#input' + value).show();
+				if(value == 'Consejero')
+					$('.optconsejo').show();
+				if(value == 'Directivo')
+					$('.optdir').show();
+			}});
+			$('.drop').dropkick({ 
+			change: function (value, label) {
+				$('#input4,#input5,#inputnombre').hide();
+				if(value < 4)
+					$('#inputnombre').show();
+				else
+					$('#input' + value).show();
+			}});
 					$.tabs('tab-directorio');
 				
           $(".scroll").niceScroll();

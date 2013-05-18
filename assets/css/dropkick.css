@@ -58,7 +58,7 @@ div.dropbottom .dk_container:first-child{ margin-left: 130px;}
   line-height: 14px;
 
 	/*width:17%;*/
-	height:40px;
+	height:35px;
 	width:100%;
 }
 .small .dk_container{ height:28px; }
@@ -84,10 +84,10 @@ div.dropbottom .dk_container:first-child{ margin-left: 130px;}
 
   color: #333;
 	width:73% !important;
-	height:20px;
-	font-size:18px;
+	height:15px;
+	font-size:15px;
   font-weight: lighter;
-	line-height:20px;
+	line-height:15px;
   padding: 10px 60px 10px 0px;
   text-shadow: #fff 1px 1px 0;
  

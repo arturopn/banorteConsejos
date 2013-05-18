@@ -1,8 +1,7 @@
 $(document).ready(function() {
-
-$(".dk_toggle").click(function(){
+/*$(".dk_toggle").click(function(){
     alert("hola");
-});
+});*/
 	//fix html5 placeholder attribute for ie7 & ie8
 	if (jQuery.browser.msie && jQuery.browser.version.substr(0,1) < 9) { // ie7&ie8
 		jQuery('input[placeholder], textarea[placeholder]').each(function(){          
@@ -67,7 +66,6 @@ $("textarea").blur(function(){
       $(".botonpublicar").show(400);
 	});
 });
-
 
 
 $(".chatButton").toggle(function(){
