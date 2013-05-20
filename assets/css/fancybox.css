@@ -112,7 +112,7 @@
 }
 
 .fancybox-nav {
-	position: absolute;
+	position: relative;
 	top: 0;
 	width: 20%;
 	height: 80%;
@@ -124,31 +124,33 @@
 }
 
 .fancybox-prev {
-	left: -45px;
+	left: -175px;
 }
 
 .fancybox-next {
-	right: -45px;
+	right: -175px;
 }
 
 .fancybox-nav span {
-	position: absolute;
+	
 	top: 50%;
+	font-size: 18px;
 	width: 30px;
 	height: 50px;
 	margin-top: -25px;
 	cursor: pointer;
 	z-index: 8040;
-	visibility: hidden;
 	background:url(../img/misc/prevnext.png);
 }
 
 .fancybox-prev span {
+	text-align: left;
 	left: 0;
 	background-position: 0 0;
 }
 
 .fancybox-next span {
+	text-align: right;
 	right: 0;
 	background-position: -70px 0;
 }
