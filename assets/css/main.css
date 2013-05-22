@@ -502,10 +502,12 @@ z-index: 802;
 #directoriohead span{ color: #A92626;}
 #directoriohead { color: #333333; font-size: 20px;}
 
-.directorioin{ padding: 30px; height: 311px; width:64.6% !important;}
+.directorioin{  height: 311px;}
 
 .font13{ font-size: 13px;}
 .font16{ font-size: 16px;}
+
+.adentrotab{height:200px; width:600px; padding:10px 40px;; margin-top:160px;}
 
 .directorioin{ }
 .directorioperfil p { text-align: left;}
