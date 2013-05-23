@@ -502,7 +502,8 @@ z-index: 802;
 #directoriohead span{ color: #A92626;}
 #directoriohead { color: #333333; font-size: 20px;}
 
-.directorioin{  height: 311px;}
+.directorioin{ padding: 30px; height: 311px; width:64.6% !important;}
+.directorioin2{  height: 311px;}
 
 .font13{ font-size: 13px;}
 .font16{ font-size: 16px;}
