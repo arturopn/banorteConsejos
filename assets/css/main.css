@@ -252,9 +252,11 @@ html, body{ min-width:1024px; }
 	width:100%;
 }
 #encabezado{
-	width:1024px;
 	height:66px;
 	margin:auto;
+	background-image:url(../img/lines/barra_top.png);
+	background-repeat:no-repeat;
+	background-position:center 0;
 }
 #barra-top{
 	width:1000px;
@@ -482,7 +484,7 @@ position: absolute;
 right: 21px;
 overflow: hidden;
 cursor: pointer;
-z-index: 802;
+z-index: 808;
  }
 
 .plabel, .biglabel { font-size: 18px; font-style: normal;}
