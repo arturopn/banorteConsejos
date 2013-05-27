@@ -66,6 +66,7 @@ ul{	margin:0;	padding:0; list-style:none; }
 .margin120l	{ margin-left:120px !important;}
 
 .margin0t	{ margin-top:0px  !important;}
+.margin0b	{ margin-bottom:0px  !important;}
 .margin-1t	{ margin-top:-1px  !important;}
 .margin-5t	{ margin-top:-5px  !important;}
 .margin-10t	{ margin-top:-10px !important;}
@@ -927,8 +928,8 @@ ul.documentos li span { font-size: 12px;}
  
 
 div.contactos{position: absolute; bottom: 85px; display: none; right: 130px; width: 280px; height: 300px; background: #F9F9F9; border: #ccc 1px solid; padding: 10px;}
-.contacto{ padding: 10px; cursor: pointer;}
-.contacto h2{ font-family: "source_sans_prolight"; color:#333; margin-left: 10px; font-size: 13px; margin-top: 10px;}
+.contacto{ padding: 5px 10px; cursor: pointer;}
+.contacto h2{ font-family: "source_sans_prolight"; color:#333; margin-left: 10px; font-size: 13px; margin-bottom:0;}
 
 div.ventanachat{position: absolute; bottom: 85px; /*display: none;*/ right: 433px; width: 280px; height: 300px; background: #F9F9F9; border: #ccc 1px solid; padding: 10px;;}
 .ventanachat h2{ font-family: "source_sans_prolight"; color:#333; font-size: 17px;}
