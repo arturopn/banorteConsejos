@@ -82,6 +82,8 @@ label {font-size: 23px; display: block;}
 
 /* Size */
 .contact-box input, .contact-box textarea{ font-size:18px; }
+.font11{font-size:11px;}
+.font12{font-size:12px;}
 .font18{ font-size:12px; }
 .font18{ font-size:18px; }
 .font20{ font-size:20px; }
@@ -101,7 +103,7 @@ label {font-size: 23px; display: block;}
 .error {
      border: 2px solid red;
 }
-#footer p{margin: 1em 1em 1em 1em;}
+#footer p{margin:10px;}
 
 .btn.bgred{ font-size: 15px; font-style: normal; font-family: 'source_sans_prolight';
 

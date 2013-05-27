@@ -571,6 +571,12 @@ padding: 12px; margin-left: 15px;}
 .ff32 p{font-size: 18px; line-height: 20px; margin-left: 10px;}
 .ff32 h2{ font-size: 17px; border-bottom: 1px solid #ccc; border-top: 1px #ccc solid; width: 93%;}
 
+.ff33{background: #fff; margin-left: 10px; width: 283px; height: 135px; font-family: 'source_sans_prolight'; text-align: left; padding: 10px; }
+.ff33 h1{ font-size: 18px; text-align: left; margin-top: 5px;}
+.ff33 p{font-size: 12px; line-height: 20px;}
+.ff33 h2{ font-size: 14px; border-bottom: 1px solid #ccc; border-top: 1px #ccc solid; width: 93%;}
+.ff31 .more{bottom:10px; right:20px;}
+
 .ff31 .more{position:absolute; bottom:10px; right:20px;}
 
 #actreciente { width: 50px; padding: 0px; border-top: 2px #ccc solid; border-bottom: 2px #ccc solid; border-left: 2px #ccc solid;}
@@ -789,7 +795,7 @@ height: 170px; width: 25.6%; padding-right: 16px;}
 .w300h129{ width: 299px; height: 51px; padding: 10px; border: 1px #a3a3a3 solid;}
 .w207h234 h2{font-size: 14px; margin-bottom: 0; margin-left: 10px;}
 .w207h234 p{ font-size: 14px; margin-top: 17px;}
-.w207h234 .line188{ margin-top: 20px;}
+.w207h234 .line188{ margin-top: 15px;}
 
 
 .bgwhite { background: #fff; border: 1px solid #A3A3A3;}
@@ -843,7 +849,7 @@ div.menuActividad{z-index:1;}
 .socialicons p{margin-top: 0;}
 .twit { border-top: #fff solid 1px;}
 .twit h2{ text-align: left; padding: 0 10px; margin-bottom: 0; margin-top: 5px;}
-.twit p { font-size: 15px; text-align: left; padding: 0 10px;}
+.twit p { font-size: 14px; text-align: left; padding: 0 10px;}
 
 
 .destacado{text-align: left; padding: 5px;}
@@ -855,8 +861,8 @@ div.menuActividad{z-index:1;}
 .lineh142{ width: 1px; height: 148px; background:#ccc;}
 
 div.respuesta label{margin-top: 8px; font-size: 16px;}
-div.respuestas {margin-left:50px;}
-p.pregunta{ width: 288px; font-size: 16px; text-align: left; margin-left: 50px; margin-top: 10px;}
+div.respuestas {margin-left:15px;}
+p.pregunta{ width: 325px; font-size: 16px; text-align: left; margin-top: 10px;}
 
 .clickhelp{cursor: pointer;}
 .notificaciones{ padding-top: 10px; padding-bottom: 0; border-bottom: 1px #ccc solid;}
@@ -911,7 +917,7 @@ ul.documentos li span { font-size: 12px;}
 
  .chatButton{ cursor: pointer;}
  .chats{float:left; cursor:pointer;}
- .tiempochat span{margin-left:10px; padding-left:10px; text-align:left; text-decoration:underline; cursor:pointer;}
+ .tiempochat span{margin-left:10px; padding-left:10px; text-align:left; text-decoration:underline; cursor:pointer; font-size:12px;}
  .tiempochat{margin-top:-10px;}
  
 
@@ -935,12 +941,12 @@ textarea.comment{ width: 260px; height: 30px; resize:none; padding:10px; margin-
 
 .borderb{border-bottom: 1px solid #ccc;}
 
-.foto-contacto{position: absolute; top: 55px; left: 20px;}
+.foto-contacto{position: absolute; top: 60px; left: 20px;}
 .foto-usuario{position: absolute; top: 257px; left: 20px;}
 
-.camara{background: url(../img/icons/camara.png) no-repeat center; width: 81px; height: 51px; border-right: 1px #ccc solid; cursor: pointer;}
+.camara{background: url(../img/icons/camara.png) no-repeat center; width: 81px; height: 26px; border-right: 1px #ccc solid; cursor: pointer;}
 
-.participaBottom{ z-index: 8888; display: none; position: relative; width: 680px; height: 51px; background: #fff; border: #ccc solid 1px; bottom: 5px; }
+.participaBottom{ z-index: 8888; display: none; position: relative; width: 680px; height: 26px; background: #fff; border: #ccc solid 1px; bottom: 5px; }
 
 .menu3lines{ background: url(../img/btns/3lines.png) no-repeat center; z-index: 889; width: 52px; height: 54px; border-bottom: #ccc solid 1px; cursor: pointer;}
 
