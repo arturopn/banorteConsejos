@@ -45,10 +45,10 @@ texto = $(this).text();
 $("span.tituloacerca").text(texto);
 })
 
-$(".temporaldrop").toggle(function(){
-   $(this).animate({height:"260px"},1000);
+$(".dropclick").toggle(function(){
+   $(".temporaldrop").animate({height:"260px"},1000);
  
-}, function(){ $(this).animate({height:"31px"},1000);});
+}, function(){ $(".temporaldrop").animate({height:"31px"},1000);});
 
 $(".clickhelp").click(function(){$("div.help").show();});
 $(".cerrarhelp").click(function(){$("div.help").hide();})
