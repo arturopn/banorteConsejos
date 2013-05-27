@@ -85,8 +85,8 @@ $(".contacto").click(function(){
 	//$(".ventanachat").show(400);
 });
 
-$(".cerrarchat").click(function(){
-   $(".ventanachat").hide(400);
+$(".cerrarchat").live('click',function(){
+   $(this).parent().hide(400);
 });
 
 
