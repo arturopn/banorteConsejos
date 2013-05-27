@@ -568,6 +568,7 @@ padding: 12px; margin-left: 15px;}
 .more{position:absolute; bottom:10px; right:20px;}
 
 
+
 .ff32{background: #fff; margin-left: 10px; width: 283px; height: 110px; font-family: 'source_sans_prolight'; text-align: left; padding: 10px; }
 .ff32 h1{ font-size: 18px; text-align: left; margin-top: 5px;}
 .ff32 p{font-size: 18px; line-height: 20px; margin-left: 10px;}
@@ -811,6 +812,8 @@ filter: progid:DXImageTransform.Microsoft.Shadow(color='#C6C3BA', Direction=135,
 height: 234px;
 background: #D5D5D5;
 border: solid 1px white;}
+
+.twitter h2, .twitter p{ z-index: 700}
 
 .w207h193{ width: 187px;
 height: 173px;
