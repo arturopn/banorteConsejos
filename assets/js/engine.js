@@ -76,11 +76,13 @@ $(".chatButton").toggle(function(){
 })
 
 $(".contacto").click(function(){
- nombreDeContacto = $("h2",this).text();
- foto = $("img",this).attr("src");
- $(".ventanachat h2").text(nombreDeContacto);
- $(".ventanachat img").attr("src",foto);
- $(".ventanachat").show(400);
+	nombreDeContacto = $("h2",this).text();
+	foto = $("img",this).attr("src");
+	$('#ventanas').append('<div class="ventanachat relative"><div class="cerrarchat"></div><div class="floatL width90"><h2>' + nombreDeContacto +'</h2></div><div class="floatL width100 tiempochat"><span>1 Día</span><span>1 Semana</span><span>1 Mes</span><span>Toda</span></div><img class="floatL foto-contacto" src="' + foto +'"><textarea class="conversacion"></textarea><textarea class="comment"></textarea></div>');
+	$( ".ventanachat" ).draggable();
+	//$(".ventanachat h2").text(nombreDeContacto);
+	//$(".ventanachat img").attr("src",foto);
+	//$(".ventanachat").show(400);
 });
 
 $(".cerrarchat").click(function(){
