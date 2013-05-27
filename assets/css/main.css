@@ -814,7 +814,7 @@ border: solid 1px white;}
 height: 173px;
 padding: 10px;}
 
-.w207h193 a, .w414h193 a, .w351h193 a{color: #666; font-size: 12px; font-weight: bold; font-family: "source_sans_prosemibold";}
+.w207h193 a, .w414h193 a, .w351h193 a, .temporaldrop a{color: #666; font-size: 12px; font-weight: bold; font-family: "source_sans_prosemibold";}
 .w207h193 h1, .w414h193 h1, .w351h193 h1{ font-size: 17px;}
 
 .w414h193{width: 394px; height: 173px;}
