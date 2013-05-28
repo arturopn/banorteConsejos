@@ -865,7 +865,7 @@ div.menuActividad{z-index:1;}
 .destacado{text-align: left; padding: 5px;}
 .destacado h3 { color: #666; font-weight: bold; font-family: "source_sans_prosemibold"; font-size: 12px;}
 .destacado p.anuncio {color: #666; font-size: 18px; width: 150px;}
-.destacado p.post {color: #666; font-size: 12px; width: 350px; margin-bottom:0;}
+.destacado p.post {color: #666; font-size: 12px; width: 290px; margin-bottom:0;}
 
 .borderl{ border-right: 1px #ccc solid;}
 
