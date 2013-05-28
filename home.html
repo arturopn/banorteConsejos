@@ -36,7 +36,7 @@
         <div class="separadorbarra floatL margin15r"></div>
         <img src="assets/img/icons/search.png" class="floatL margin14t margin15r fotologin"/>
         <div class="separadorbarra floatL margin15r"></div>
-        <img src="assets/img/icons/interrogacion.png" class="floatL margin14t margin15r"/>
+        <img src="assets/img/icons/interrogacion.png" class="floatL margin14t margin15r clickhelp"/>
         <div class="separadorbarra floatL margin15r"></div>
         <img src="assets/img/icons/logout.png" class="floatL margin14t margin15r"/>
         <div class="separadorbarra floatL"></div>
@@ -516,7 +516,10 @@
 		
         $(".scroll").niceScroll();
 
-      $(".tododesta").width(1000);
+       var cantidadDestacado = $(".destacado").length;
+        var anchoDestacado = $(".destacado").width() + 30;
+        var anchoscrollDestacado = cantidadDestacado * anchoDestacado;
+      $(".tododesta").width(anchoscrollDestacado);
        
 
        $(".dk_label").change(function(){

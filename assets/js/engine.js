@@ -54,7 +54,7 @@ $(".clickhelp").click(function(){$("div.help").show();});
 $(".cerrarhelp").click(function(){$("div.help").hide();})
 
 $("textarea").focus(function(){
-	 $(".participa").animate({height:"245px"},1000), 
+	 $(".participa").animate({height:"230px"},1000), 
 
 	 $(".participaBottom").show(1000);
 	 $(".botonpublicar").hide(400);
