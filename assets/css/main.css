@@ -799,7 +799,7 @@ height: 170px; width: 25.6%; padding-right: 16px;}
 .w300h129{ width: 299px; height: 51px; padding: 10px; border: 1px #a3a3a3 solid;}
 .w207h234 h2{font-size: 14px; margin-bottom: 0; margin-left: 10px;}
 .w207h234 p{ font-size: 14px; margin-top: 17px;}
-.w207h234 .line188{ margin-top: 15px;}
+.w207h234 .line188{ margin-top: 12px;}
 
 
 .bgwhite { background: #fff; border: 1px solid #A3A3A3;}
@@ -857,7 +857,7 @@ div.menuActividad{z-index:1;}
 .line370{ width: 370px; height: 1px; background:#cccccc;}
 
 .socialicons {margin-top: 5px;}
-.socialicons p{margin-top: 0;}
+.socialicons p{margin-top: 0; font-size:10px; text-align:center;}
 .twit { border-top: #fff solid 1px;}
 .twit h2{ text-align: left; padding: 0 10px; margin-bottom: 0; margin-top: 5px;}
 .twit p { font-size: 14px; text-align: left; padding: 0 10px;}
