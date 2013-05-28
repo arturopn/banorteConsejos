@@ -839,6 +839,9 @@ padding: 10px;}
 
 .3lines{cursor:pointer;}
 
+
+#conversacion{ background: #fff; margin-left: 14px; width: 514px; height: 300px; display: none;}
+
 div.menuActividad{z-index:1;}
 
 .wrapper{ width: 1050px; margin: 0 auto;}
@@ -966,6 +969,10 @@ textarea.comment{ width: 260px; height: 30px; resize:none; padding:10px; margin-
 
 .ff244 { margin-top: 10px;}
 
+#participantes div.w227h129{ margin-left: 35px;}
+
+.iniciar{cursor: pointer;}
+.publicar{cursor: pointer;}
 .directorioin th{text-align: left;}
 .directorioin td{ text-align: left;}
 .actcuadro{position: absolute; top: 0; left: -50px; background: #fff; width: 50px; height: 45px; padding: 5px 0 5px 5px; z-index: 899;}

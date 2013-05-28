@@ -93,10 +93,23 @@
           <p class="font22 prolight floatL" style="margin:10px 19px;">Conversaciones Grupales</p>
           <img class="floatL" src="assets/img/lines/separadorfooter.gif"/> </div>
         <div style="height:390px;">
-          <p style="font-size:14px;" class="taleft padding10">Arrastre los usuarios que desee agregar a la conversación o de clic sobre el nombre.</p>
-          <div class="floatL width55">  
-            <div class="floatL width100 margin10l scroll" style="height:300px;">
-              <div class=" width50 floatL">
+          <p style="font-size:14px;" class="taleft padding10">Da clic los usuarios que desee agregar a la conversación o de clic sobre el nombre.</p>
+          <div class="floatL width55 ">  
+             <div id="conversacion"></div>
+            <div id="personas" class="floatL width100 margin10l scroll" style="height:300px;">
+              <div class="persona width50 floatL">
+                <div class="clearfix personaInfo margin5b bgwhite w227h129" >
+                	<div class="floatL width20" style="height:90px;">
+                		<img class="floatL margin10l margin5t" src="assets/img/photos/fotohome.png"/>
+                    </div>
+                  <div class="floatL width80" style="height:100px;">
+                    <p class="post font16 margin10t">Juan Jose Alberto Gonzalez Pedraza</p>
+                    <h2 class="post">Región: Norte</h2>
+                    <h2 class="post">Empresa: Lacteos y derivados , S.A de C.V</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="persona width50 floatL">
                 <div class="clearfix margin5b bgwhite w227h129" >
                 	<div class="floatL width20" style="height:90px;">
                 		<img class="floatL margin10l margin5t" src="assets/img/photos/fotohome.png"/>
@@ -108,7 +121,7 @@
                   </div>
                 </div>
               </div>
-              <div class=" width50 floatL">
+              <div class="persona width50 floatL">
                 <div class="clearfix margin5b bgwhite w227h129" >
                 	<div class="floatL width20" style="height:90px;">
                 		<img class="floatL margin10l margin5t" src="assets/img/photos/fotohome.png"/>
@@ -120,7 +133,7 @@
                   </div>
                 </div>
               </div>
-              <div class=" width50 floatL">
+              <div class="persona width50 floatL">
                 <div class="clearfix margin5b bgwhite w227h129" >
                 	<div class="floatL width20" style="height:90px;">
                 		<img class="floatL margin10l margin5t" src="assets/img/photos/fotohome.png"/>
@@ -132,7 +145,7 @@
                   </div>
                 </div>
               </div>
-              <div class=" width50 floatL">
+              <div class="persona width50 floatL">
                 <div class="clearfix margin5b bgwhite w227h129" >
                 	<div class="floatL width20" style="height:90px;">
                 		<img class="floatL margin10l margin5t" src="assets/img/photos/fotohome.png"/>
@@ -144,19 +157,7 @@
                   </div>
                 </div>
               </div>
-              <div class=" width50 floatL">
-                <div class="clearfix margin5b bgwhite w227h129" >
-                	<div class="floatL width20" style="height:90px;">
-                		<img class="floatL margin10l margin5t" src="assets/img/photos/fotohome.png"/>
-                    </div>
-                  <div class="floatL width80" style="height:100px;">
-                    <p class="post font16 margin10t">Juan Jose Alberto Gonzalez Pedraza</p>
-                    <h2 class="post">Región: Norte</h2>
-                    <h2 class="post">Empresa: Lacteos y derivados , S.A de C.V</h2>
-                  </div>
-                </div>
-              </div>
-              <div class=" width50 floatL">
+              <div class="persona width50 floatL">
                 <div class="clearfix margin5b bgwhite w227h129" >
                 	<div class="floatL width20" style="height:90px;">
                 		<img class="floatL margin10l margin5t" src="assets/img/photos/fotohome.png"/>
@@ -171,17 +172,19 @@
             </div>
             <div class="floatL width100 padding10">
               <input type="text" class="input3 width70" />
-              <a href="index.html" class="btn width20  bga20 line25" style="margin-top:2px; margin-left:10px;">INICIAR</a> </div>
+              <a class="iniciar btn width20  bga20 line25" style="margin-top:2px; margin-left:10px;">INICIAR</a> </div>
           </div>
+
+
           
           <div class="floatL width10">
           <img src="assets/img/icons/chat_mas.png">
           <img src="assets/img/icons/file_mas.png">
           <img src="assets/img/icons/chat_delete.png">
           </div>
-          <div class="floatL width35 margin-25t">
+          <div class="floatL width35 margin-25t" >
           <p class="aleft floatL width40 font14">Participantes</p><p class="arigth floatL width50">0 usuarios</p>
-          	<div class=" width95 floatL scroll" style="height:335px; background-color:#FFF; border:1px solid #CCC;">
+          	<div id="participantes" class=" width95 floatL scroll" style="height:335px; background-color:#FFF; border:1px solid #CCC; padding:10px 0;">
                
               </div>
           </div>
@@ -304,7 +307,27 @@
          $(".pestanasBusqueda a").click(function(){
           $(".scroll").niceScroll();
         });
+
+
+         $(".iniciar").click(function(){
+         $(this).text("Publicar");
+         $(this).removeClass("iniciar");
+         $(this).addClass("publicar");
+         $("#personas").hide();
+         $("#conversacion").show();
+         });
        });
+
+         $(".persona").each(function(){
+          $(this).click(function(){
+            var persona = $(this).html();
+            $("#participantes").append(persona);
+            $(this).remove();
+
+          });
+
+         });
+        
            /* var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
