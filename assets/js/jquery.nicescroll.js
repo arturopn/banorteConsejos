@@ -49,7 +49,7 @@
   var clsMutationObserver = window.MutationObserver || window.WebKitMutationObserver || false;
   
   var _globaloptions = {
-      zindex:"auto",
+      zindex:"701",
       cursoropacitymin:0.6,
       cursoropacitymax:1,
       cursorcolor:"#424242",
