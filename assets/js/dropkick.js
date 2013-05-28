@@ -399,4 +399,8 @@
       }
     });
   });
+if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i))) {
+  $("html").removeClass("dk_fouc");
+  $(".drop").removeClass("stylize");
+}
 })(jQuery, window, document);
