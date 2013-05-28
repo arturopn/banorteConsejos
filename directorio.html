@@ -821,7 +821,6 @@
 <script type="text/javascript" src="assets/js/iosslider.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>
-<script type="text/javascript" src="assets/js/engine.js"></script>
 <script type="text/javascript" src="assets/js/dropkick.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script type="text/javascript">
@@ -836,6 +835,7 @@
 							if(value == 'Directivo')
 								$('.optdir').show();
 						}});
+
 			$('.drop').dropkick({ 
 			change: function (value, label) {
 				$('#input4,#input5,#inputnombre').hide();
@@ -844,6 +844,7 @@
 				else
 					$('#input' + value).show();
 			}});
+
 					$.tabs('tab-directorio');
 				
           $(".scroll").niceScroll();
@@ -886,5 +887,6 @@
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));*/
         </script>
+        <script type="text/javascript" src="assets/js/engine.js"></script>
 </body>
 </html>

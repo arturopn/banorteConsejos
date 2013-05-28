@@ -6,6 +6,10 @@ if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i)
   $(".drop").removeClass("drop");
 }
 
+$(".dk_toggle").click(function(){
+             $(".dk_container").removeClass("dk_open");
+          });
+
 	
 /*$(".dk_toggle").click(function(){
     alert("hola");
