@@ -37,8 +37,13 @@ $(document).ready(function() {
 
 	$('.fotologin').click(function(){	$('div.fotobg').toggle(400); });
 
-	$("#actreciente .menu3lines").click(function(){ $('div.actividadopen').show(400); });
-	$(".cuadroinside").click(function(){ $('div.actividadopen').hide(400); });
+	$("#actreciente .menu3lines").click(function(){ $('div.actividadopen').show(400); 
+      $(".nicescroll-rails").css("z-index","690");
+});
+	$(".cuadroinside").click(function(){ $('div.actividadopen').hide(400);
+	$(".nicescroll-rails").css("z-index","701"); 
+
+});
 
 $(".btnacerca").click(function(){
 texto = $(this).text();
@@ -47,8 +52,11 @@ $("span.tituloacerca").text(texto);
 
 $(".dropclick").toggle(function(){
    $(".temporaldrop").animate({height:"260px"},1000);
+   $(".nicescroll-rails").css("z-index","690");
  
-}, function(){ $(".temporaldrop").animate({height:"31px"},1000);});
+}, function(){ $(".temporaldrop").animate({height:"31px"},1000);
+  $(".nicescroll-rails").css("z-index","701");
+});
 
 $(".clickhelp").click(function(){$("div.help").show();});
 $(".cerrarhelp").click(function(){$("div.help").hide();})
@@ -59,12 +67,15 @@ $("textarea").focus(function(){
 	 $(".participaBottom").show(1000);
 	 $(".botonpublicar").hide(400);
 
+	 $(".nicescroll-rails").css("z-index","690");
+
 	});
 
 $("textarea").blur(function(){
 	 $(".participa").animate({height:"24px"},1000),
 	  $(".participaBottom").hide(1000);
       $(".botonpublicar").show(400);
+      $(".nicescroll-rails").css("z-index","701");
 	});
 });
 
