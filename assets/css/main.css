@@ -974,6 +974,8 @@ textarea.comment{ width: 260px; height: 30px; resize:none; padding:10px; margin-
 
 #participantes div.w227h129{ margin-left: 35px;}
 
+img.tip{cursor: pointer;}
+
 
 .iniciar{cursor: pointer;}
 .publicar{cursor: pointer;}
