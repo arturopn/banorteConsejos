@@ -115,7 +115,7 @@
             <div class="width15 greyselect floatL" style="margin-top:2px; margin-left:10px;">
               <input type="text" class="inputSearch" value="APELLIDO"/>
             </div>
-            <div class="width15 greyselect floatL" style="margin-top:2px; margin-left:10px;">
+            <div class="lastselect width15 greyselect floatL" style="margin-top:2px; margin-left:10px;">
               <select class="drop" name="region">
                 <option>REGIÓN</option>
               </select>
@@ -596,7 +596,14 @@
             length: 30,
             moreText: ""
           }); 
-
+if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i))) {
+            $("select").css({"width":"100px",
+              "height":"190px", 
+              "font-size":"170px",
+              "position":"relative",
+              "top":"3px" });
+            $(".lastselect").removeClass("width15");
+          }
           $('.truncate2').jTruncate({
             length: 50,
             moreText: ""
