@@ -853,6 +853,7 @@ div.menuActividad{z-index:1;}
 #footer2 ul li a{font-size: 16px; content: #666666; margin: 0 5px;}
 
 .line188{ width: 188px; height: 1px; background:#cccccc;}
+.line300{ width: 300px; height: 1px; background:#cccccc;}
 
 .socialicons {margin-top: 5px;}
 .socialicons p{margin-top: 0;}
@@ -864,6 +865,7 @@ div.menuActividad{z-index:1;}
 .destacado{text-align: left; padding: 5px;}
 .destacado h3 { color: #666; font-weight: bold; font-family: "source_sans_prosemibold"; font-size: 12px;}
 .destacado p.anuncio {color: #666; font-size: 18px; width: 150px;}
+.destacado p.post {color: #666; font-size: 12px; width: 350px; margin-bottom:0;}
 
 .borderl{ border-right: 1px #ccc solid;}
 
