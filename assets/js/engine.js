@@ -104,7 +104,7 @@ alert("hola");
 		$("div.contactos").hide(400);
 	});*/
 	$(".chatButton").click(function(){
-		$("div.contactos").toggle(400);
+		$("div.contactos").toggle();
 	});
 
 
@@ -125,11 +125,14 @@ $(".contacto").click(function(){
 	
 	$(document).bind('click', function(e) {
 		var $clicked = $(e.target);
-		if (! $clicked.parents().hasClass("chatButton") && !$clicked.hasClass("chatButton")){
-			$("div.contactos").hide(400);
+		if (! $clicked.parents().hasClass("chatButton") && !$clicked.hasClass("chatButton") && ! $clicked.parents().hasClass("contacto") && !$clicked.hasClass("contacto") ){
+			$("div.contactos").hide();
 		}
 		if (! $clicked.parents().hasClass("menu3lines") && !$clicked.hasClass("menu3lines")){
-			$(".actividadopen").hide(400);
+			$(".actividadopen").hide();
+		}
+		if (! $clicked.parents().hasClass("fotologin") && !$clicked.hasClass("fotologin")){
+			$(".fotobg").hide();
 		}
 		if (! $clicked.parents().hasClass("dropclick") && !$clicked.hasClass("dropclick")){
 			$(".temporaldrop").animate({height:"31px"},1000);

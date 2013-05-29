@@ -934,7 +934,7 @@ ul.documentos li span { font-size: 12px;}
 .w465h120{width: 400px; height: 135px; padding: 10px; margin-top: 5px;}
 
 .w465h120 .comment{ margin-top: 0px; text-align: left;}
- p.nota {font-size: 17px !important; margin-top: 10px;}
+ p.nota {font-size: 17px !important; margin-top: 10px; word-wrap: break-word; }
 
  .chatButton{ cursor: pointer;}
  .chats{float:left; cursor:pointer;}
@@ -984,6 +984,8 @@ textarea.comment{ width: 260px; height: 26px; resize:none; padding:10px; margin-
 .ff244 { margin-top: 10px;}
 
 .socialicons{width: 18px; height: 18px;}
+.postderecha .socialicons{ height:auto; }
+.postderecha .w465h120{ height:auto; }
 
 #participantes div.w227h129{ margin-left: 35px;}
 
