@@ -107,12 +107,6 @@ alert("hola");
 		$("div.contactos").toggle(400);
 	});
 
-<<<<<<< HEAD
-$(".chatButton").toggle(function(){
-	$("div.contactos").show(400);
-}, function(){
-	$("div.contactos").hide(400);
-})
 
 $(".contacto").click(function(){
 	nombreDeContacto = $("h2",this).text();
@@ -124,16 +118,6 @@ $(".contacto").click(function(){
 	//$(".ventanachat img").attr("src",foto);
 	//$(".ventanachat").show(400);
 });
-=======
-	$(".contacto").click(function(){
-		nombreDeContacto = $("h2",this).text();
-		foto = $("img",this).attr("src");
-		$('#ventanas').append('<div class="ventanachat relative"><div class="cerrarchat"></div><div class="floatL width90"><h2>' + nombreDeContacto +'</h2></div><div class="floatL tiempochat"><span>Ver más</span></div><img class="floatL foto-contacto" src="' + foto +'"><textarea class="conversacion"></textarea><textarea class="comment"></textarea></div>');
-		$( ".ventanachat" ).draggable();
-		//$(".ventanachat h2").text(nombreDeContacto);
-		//$(".ventanachat img").attr("src",foto);
-		//$(".ventanachat").show(400);
-	});
 
 	$(".cerrarchat").live('click',function(){
 		$(this).parent().hide(400);
@@ -152,7 +136,6 @@ $(".contacto").click(function(){
 			$(".nicescroll-rails").css("z-index","701")
 		}
 	});
->>>>>>> cfbaa76d7adfac4f54781d096a7f64af6578ba45
 
 });
 
