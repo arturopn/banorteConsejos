@@ -1,5 +1,10 @@
-
 $(document).ready(function() {
+	$('.camara').click(function(){
+	window.location.href = 'http:google.com';
+}); 
+ 	$('.eventos').click(function(){
+	window.location.href = 'http:google.com';
+}); 
  
 if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i))) {
   $("html").removeClass("dk_fouc");
@@ -65,8 +70,9 @@ $(".dropclick").toggle(function(){
    $(".temporaldrop").animate({height:"260px"},1000);
    $(".nicescroll-rails").css("z-index","690");
  
-}, function(){ $(".temporaldrop").animate({height:"31px"},1000);
-  $(".nicescroll-rails").css("z-index","701");
+}, function(){ 
+		$(".temporaldrop").animate({height:"31px"},1000);
+  		$(".nicescroll-rails").css("z-index","701")
 });
 
 $(".clickhelp").click(function(){$("div.help").show();});
@@ -100,7 +106,7 @@ $(".chatButton").toggle(function(){
 $(".contacto").click(function(){
 	nombreDeContacto = $("h2",this).text();
 	foto = $("img",this).attr("src");
-	$('#ventanas').append('<div class="ventanachat relative"><div class="cerrarchat"></div><div class="floatL width90"><h2>' + nombreDeContacto +'</h2></div><div class="floatL width100 tiempochat"><span>1 Día</span><span>1 Semana</span><span>1 Mes</span><span>Toda</span></div><img class="floatL foto-contacto" src="' + foto +'"><textarea class="conversacion"></textarea><textarea class="comment"></textarea></div>');
+	$('#ventanas').append('<div class="ventanachat relative"><div class="cerrarchat"></div><div class="floatL width90"><h2>' + nombreDeContacto +'</h2></div><div class="floatL tiempochat"><span>Ver más</span></div><img class="floatL foto-contacto" src="' + foto +'"><textarea class="conversacion"></textarea><textarea class="comment"></textarea></div>');
 	$( ".ventanachat" ).draggable();
 	//$(".ventanachat h2").text(nombreDeContacto);
 	//$(".ventanachat img").attr("src",foto);
@@ -110,5 +116,3 @@ $(".contacto").click(function(){
 $(".cerrarchat").live('click',function(){
    $(this).parent().hide(400);
 });
-	
-

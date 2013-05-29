@@ -11,6 +11,7 @@ ul{	margin:0;	padding:0; list-style:none; }
 /*			- Paddings/Margins/Widths/Borders -			*/
 .m0 { margin: 0;}
 .m0auto			{ margin:0 auto; }
+.m10{ margin:10px !important;}
 .margin-1r	{ margin-right:-1px	 !important;}
 .margin-5r	{ margin-right:-5px	 !important;}
 .margin-10r	{ margin-right:-10px !important;}
@@ -165,12 +166,14 @@ ul{	margin:0;	padding:0; list-style:none; }
 .width20	{width:20% !important;}
 .width25	{width:25% !important;}
 .width30	{width:30% !important;}
-.width35	{width:35% !important;}
 .width33	{width:33% !important;}
+.width35	{width:35% !important;}
+.width38	{width:38% !important;}
 .width40	{width:40% !important;}
 .width43	{width:43% !important;}
 .width45	{width:45% !important;}
 .width50	{width:50% !important;}
+.width53	{width:53% !important;}
 .width55	{width:55% !important;}
 .width60	{width:60% !important;}
 .width65	{width:65% !important;}
@@ -184,6 +187,7 @@ ul{	margin:0;	padding:0; list-style:none; }
 .width90	{width:90% !important;}
 .width94	{width:94% !important;}
 .width95	{width:95% !important;}
+.width97	{width:97% !important;}
 .width100	{width:100% !important;}
 
 table{border-collapse: collapse;}
@@ -567,6 +571,7 @@ padding: 12px; margin-left: 15px;}
 .ff244 .more{position:absolute; bottom:4px !important; right:4px !important;}
 
 .more{position:absolute; bottom:10px; right:20px;}
+.socialicons .more{ background:url(../img/icons/like.png); width:20px; height:22px; display:block; position:inherit; bottom:5px; right:10px; cursor:pointer; background-repeat:no-repeat; }
 
 
 
@@ -796,6 +801,7 @@ height: 170px; width: 25.6%; padding-right: 16px;}
 
 .w207h234{ width: 187px; height: 214px; padding: 10px; border: 1px #a3a3a3 solid;}
 .w227h129{ width: 227px; height: 129px; padding: 10px; border: 1px #a3a3a3 solid;}
+.w326h40{ width: 326px; height: 40px; padding: 10px; border: 1px #a3a3a3 solid;}
 .w300h129{ width: 299px; height: 51px; padding: 10px; border: 1px #a3a3a3 solid;}
 .w207h234 h2{font-size: 14px; margin-bottom: 0; margin-left: 10px;}
 .w207h234 p{ font-size: 14px; margin-top: 17px;}
@@ -815,7 +821,7 @@ background: #D5D5D5;
 border: solid 1px white;}
 
 .twitter h2, .twitter p{ z-index: 700}
-
+.twitter h2{margin:5px 0 3px 10px; font-size:17px;}
 .w207h193{ width: 187px;
 height: 173px;
 padding: 10px;}
@@ -838,9 +844,9 @@ padding: 10px;}
 	text-overflow:ellipsis;}
 
 .3lines{cursor:pointer;}
+.eventos{cursor:pointer;}
 
-
-#conversacion{ background: #fff; margin-left: 14px; width: 514px; height: 300px; display: none;}
+#conversacion{ background: #fff; margin-left: 14px; width: 467px; height: 300px; display: none; border:1px solid #CCC;}
 
 div.menuActividad{z-index:1;}
 
@@ -872,9 +878,9 @@ div.menuActividad{z-index:1;}
 
 .lineh142{ width: 1px; height: 148px; background:#ccc;}
 
-div.respuesta label{margin-top: 8px; font-size: 16px;}
+div.respuesta label{margin-top: 8px; font-size: 14px;}
 div.respuestas {margin-left:15px;}
-p.pregunta{ width: 325px; font-size: 16px; text-align: left; margin-top: 10px;}
+p.pregunta{ width: 325px; font-size: 14px; text-align: left; margin-top: 10px;}
 
 .clickhelp{cursor: pointer;}
 .notificaciones{ padding-top: 10px; padding-bottom: 0; border-bottom: 1px #ccc solid;}
@@ -904,6 +910,7 @@ height:37px;
 .height450{height: 450px !important;}
 
 .post{text-align: left; margin-left: 20px;}
+.post2{text-align: left;}
 .post h1 { width: 296px; font-size: 33px;}
 .post h2{ font-size: 16px;}
 .post h3{ font-size: 13px; margin-bottom: 0;}
@@ -930,7 +937,7 @@ ul.documentos li span { font-size: 12px;}
  .chatButton{ cursor: pointer;}
  .chats{float:left; cursor:pointer;}
  .tiempochat span{margin-left:10px; padding-left:10px; text-align:left; text-decoration:underline; cursor:pointer; font-size:12px;}
- .tiempochat{margin-top:-10px;}
+ .tiempochat{margin-top:-10px; text-align:right; width:260px;}
  
 
 div.contactos{position: absolute; bottom: 85px; display: none; right: 130px; width: 280px; height: 300px; background: #F9F9F9; border: #ccc 1px solid; padding: 10px;}
@@ -945,7 +952,7 @@ textarea.conversacion{ width: 225px;; height: 180px; resize:none; padding-left: 
 
 textarea.comment{ width: 260px; height: 30px; resize:none; padding:10px; margin-top:5px; font-size:14px;}
 
-.chaticon, .chaticon2{background: url(../img/icons/chat.png); width: 30px; height: 26px; margin-top: 5px;}
+.chaticon, .chaticon2{background: url(../img/icons/chat.png); width: 30px; height: 26px; margin-top: 5px; background-repeat:no-repeat;}
 .chaticon2{background: url(../img/icons/chatgris.png);}
 
 
