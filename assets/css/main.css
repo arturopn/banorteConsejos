@@ -937,11 +937,13 @@ ul.documentos li span { font-size: 12px;}
  .chatButton{ cursor: pointer;}
  .chats{float:left; cursor:pointer;}
  .tiempochat span{margin-left:10px; padding-left:10px; text-align:left; text-decoration:underline; cursor:pointer; font-size:12px;}
- .tiempochat{margin-top:-10px; text-align:right; width:260px;}
+ .tiempochat{margin-top:-17px; text-align:right; width:260px;}
  
 
 div.contactos{position: absolute; bottom: 85px; display: none; right: 130px; width: 280px; height: 300px; background: #F9F9F9; border: #ccc 1px solid; padding: 10px;}
 .contacto{ padding: 5px 10px; cursor: pointer;}
+.ventanachat p{margin:2px !important;}
+.ventanachat h2{margin-bottom:2px !important;}
 .contacto h2{ font-family: "source_sans_prolight"; color:#333; margin-left: 10px; font-size: 13px; margin-bottom:0;}
 
 div.ventanachat{position: absolute; bottom: 85px; /*display: none;*/ right: 433px; width: 280px; height: 300px; background: #F9F9F9; border: #ccc 1px solid; padding: 10px;;}
@@ -960,7 +962,7 @@ textarea.comment{ width: 260px; height: 26px; resize:none; padding:10px; margin-
 
 .borderb{border-bottom: 1px solid #ccc;}
 
-.foto-contacto{position: absolute; top: 60px; left: 20px;}
+.foto-contacto{position: absolute; top: 65px; left: 20px;}
 .foto-usuario{position: absolute; top: 257px; left: 20px;}
 
 .camara{background: url(../img/icons/camara.png) no-repeat center; width: 81px; height: 26px; border-right: 1px #ccc solid; cursor: pointer;}

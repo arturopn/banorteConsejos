@@ -105,8 +105,9 @@ $(".chatButton").toggle(function(){
 
 $(".contacto").click(function(){
 	nombreDeContacto = $("h2",this).text();
+	consejoNombre = $("p", this).text();
 	foto = $("img",this).attr("src");
-	$('#ventanas').append('<div class="ventanachat relative"><div class="cerrarchat"></div><div class="floatL width90"><h2>' + nombreDeContacto +'</h2></div><div class="floatL tiempochat"><span>Ver más</span></div><img class="floatL foto-contacto" src="' + foto +'"><textarea class="conversacion"></textarea><textarea class="comment"></textarea></div>');
+	$('#ventanas').append('<div class="ventanachat relative"><div class="cerrarchat"></div><div class="floatL width90"><h2>' + nombreDeContacto +'</h2><p>' + consejoNombre +'</p></div><div class="floatL tiempochat"><span>Ver más</span></div><img class="floatL foto-contacto" src="' + foto +'"><textarea class="conversacion"></textarea><textarea class="comment"></textarea></div>');
 	$( ".ventanachat" ).draggable();
 	//$(".ventanachat h2").text(nombreDeContacto);
 	//$(".ventanachat img").attr("src",foto);
