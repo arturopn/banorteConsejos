@@ -108,16 +108,16 @@ alert("hola");
 	});
 
 
-$(".contacto").click(function(){
-	nombreDeContacto = $("h2",this).text();
-	consejoNombre = $("p", this).text();
-	foto = $("img",this).attr("src");
-	$('#ventanas').append('<div class="ventanachat relative"><div class="cerrarchat"></div><div class="floatL width90"><h2>' + nombreDeContacto +'</h2><p>' + consejoNombre +'</p></div><div class="floatL tiempochat"><span>Ver más</span></div><img class="floatL foto-contacto" src="' + foto +'"><textarea class="conversacion"></textarea><textarea class="comment"></textarea></div>');
-	$( ".ventanachat" ).draggable();
-	//$(".ventanachat h2").text(nombreDeContacto);
-	//$(".ventanachat img").attr("src",foto);
-	//$(".ventanachat").show(400);
-});
+	$(".contacto").click(function(){
+		nombreDeContacto = $("h2",this).text();
+		consejoNombre = $("p", this).text();
+		foto = $("img",this).attr("src");
+		$('#ventanas').append('<div class="ventanachat relative"><div class="cerrarchat"></div><div class="floatL width90"><h2>' + nombreDeContacto +'</h2><p>' + consejoNombre +'</p></div><div class="floatL tiempochat"><span>Ver más</span></div><img class="floatL foto-contacto" src="' + foto +'"><textarea class="conversacion"></textarea><textarea class="comment"></textarea></div>');
+		$( ".ventanachat" ).draggable();
+		//$(".ventanachat h2").text(nombreDeContacto);
+		//$(".ventanachat img").attr("src",foto);
+		//$(".ventanachat").show(400);
+	});
 
 	$(".cerrarchat").live('click',function(){
 		$(this).parent().hide(400);
@@ -134,10 +134,10 @@ $(".contacto").click(function(){
 		if (! $clicked.parents().hasClass("fotologin") && !$clicked.hasClass("fotologin")){
 			$(".fotobg").hide();
 		}
-		if (! $clicked.parents().hasClass("dropclick") && !$clicked.hasClass("dropclick")){
+		/*if (! $clicked.parents().hasClass("dropclick") && !$clicked.hasClass("dropclick")){
 			$(".temporaldrop").animate({height:"31px"},1000);
 			$(".nicescroll-rails").css("z-index","701")
-		}
+		}*/
 	});
 
 });
