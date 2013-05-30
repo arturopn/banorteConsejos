@@ -774,7 +774,8 @@ label.little{font-family: 'source_sans_prolight'; font-size: 12px; color: #66666
 #directoriohead img{ float:left; margin-right:10px; }
 .encuesta{ height:auto; padding:15px 15px 40px; }
 .encuesta td{ font-size:13px; font-family:"source_sans_proregular"; }
-.encuesta .more{ background:url(../img/icons/more.png); width:20px; height:22px; display:block; position:absolute; bottom:5px; right:10px; cursor:pointer; }
+.encuesta .more, .btnmas{ background:url(../img/icons/more.png); width:20px; height:22px; display:block; position:absolute; bottom:5px; right:10px; cursor:pointer; }
+.btnmas{ bottom:20px; }
 .borBT{ border-bottom:1px solid #CCC; border-top:1px solid #CCC; padding:8px 0; }
 
 .font33{font-size: 33px !important;}
@@ -998,3 +999,7 @@ img.tip{cursor: pointer;}
 .directorioin th{text-align: left;}
 .directorioin td{ text-align: left;}
 .actcuadro{position: absolute; top: 0; left: -50px; background: #fff; width: 50px; height: 45px; padding: 5px 0 5px 5px; z-index: 899;}
+
+.icons-like{ padding-top:24px; background:url(../img/icons/like.png) center 0 no-repeat; width:18px; display:block; }
+.icons-comentario{ padding-top:24px; background:url(../img/icons/comment.png) center 0 no-repeat; width:18px; display:block; }
+.icons-fav{ padding-top:24px; background:url(../img/icons/favourite.png) center 0 no-repeat; width:18px; display:block; }
