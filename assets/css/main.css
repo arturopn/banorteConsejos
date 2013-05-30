@@ -573,6 +573,7 @@ padding: 12px; margin-left: 15px;}
 .ff244 .more{position:absolute; bottom:4px !important; right:4px !important;}
 
 .more{position:absolute; bottom:10px; right:20px;}
+.more2{position:absolute; bottom:18px; right:20px;}
 .socialicons .more{ background:url(../img/icons/like.png); width:20px; height:22px; display:block; position:inherit; bottom:5px; right:10px; cursor:pointer; background-repeat:no-repeat; }
 
 
@@ -582,10 +583,10 @@ padding: 12px; margin-left: 15px;}
 .ff32 p{font-size: 18px; line-height: 20px; margin-left: 10px;}
 .ff32 h2{ font-size: 17px; border-bottom: 1px solid #ccc; border-top: 1px #ccc solid; width: 93%;}
 
-.ff33{background: #fff; margin-left: 10px; width: 283px; height: 135px; font-family: 'source_sans_prolight'; text-align: left; padding: 10px; }
-.ff33 h1{ font-size: 18px; text-align: left; margin-top: 5px;}
+.ff33{background: #fff; margin-left: 10px; width: 283px; height: 107px; font-family: 'source_sans_prolight'; text-align: left; padding: 10px; }
+.ff33 h1{ font-size: 16px; text-align: left; margin: 5px 0 0; min-height:40px;}
 .ff33 p{font-size: 12px; line-height: 20px;}
-.ff33 h2{ font-size: 14px; border-bottom: 1px solid #ccc; border-top: 1px #ccc solid; width: 93%;}
+.ff33 h2{ font-size: 14px; border-bottom: 1px solid #ccc; border-top: 1px #ccc solid; height: 25px;line-height: 22px;}
 .ff31 .more{bottom:10px; right:20px;}
 
 .ff31 .more{position:absolute; bottom:10px; right:20px;}
