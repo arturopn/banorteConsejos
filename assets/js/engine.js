@@ -72,6 +72,8 @@ alert("hola");
 
 	$(".dropclick").toggle(function(){
 		$(".temporaldrop").animate({height:"260px"},1000);
+		$("#ascrail2000").show(1000);
+		$("#ascrail2000").css("z-index","999");
 		$(".nicescroll-rails").css("z-index","690");
 	}, function(){ 
 		$(".temporaldrop").animate({height:"31px"},1000);
