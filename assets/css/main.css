@@ -839,6 +839,7 @@ padding: 10px;}
 
 .f7{background:#F7F7F7; border: 1px solid #A3A3A3;}
 .h230{height: 230px !important;}
+.h185{height: 185px !important;}
 
 .height300{height: 330px;}
 .header{width:240px;
@@ -1003,3 +1004,5 @@ img.tip{cursor: pointer;}
 .icons-like{ padding-top:24px; background:url(../img/icons/like.png) center 0 no-repeat; width:18px; display:block; }
 .icons-comentario{ padding-top:24px; background:url(../img/icons/comment.png) center 0 no-repeat; width:18px; display:block; }
 .icons-fav{ padding-top:24px; background:url(../img/icons/favourite.png) center 0 no-repeat; width:18px; display:block; }
+.icons-fav-off{ padding-top:24px; background:url(../img/icons/favourite2.png) center 0 no-repeat; width:18px; display:block; }
+.icons-comments{ padding-top:24px; background:url(../img/icons/globo.png) center 0 no-repeat; width:31px; display:block; }
