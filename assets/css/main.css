@@ -178,6 +178,7 @@ ul{	margin:0;	padding:0; list-style:none; }
 .width60	{width:60% !important;}
 .width65	{width:65% !important;}
 .width66	{width:66% !important;}
+.width68	{width:68% !important;}
 .width70	{width:70% !important;}
 .width71	{width:71% !important;}
 .width75	{width:75% !important;}
@@ -573,7 +574,7 @@ padding: 12px; margin-left: 15px;}
 .ff244 .more{position:absolute; bottom:4px !important; right:4px !important;}
 
 .more{position:absolute; bottom:10px; right:20px;}
-.more2{position:absolute; bottom:18px; right:20px;}
+.more2{ background:url(../img/icons/more.png); width:20px; height:22px; display:block; position:absolute; bottom:13px; right:10px; cursor:pointer; background-repeat:no-repeat; }
 .socialicons .more{ background:url(../img/icons/like.png); width:20px; height:22px; display:block; position:inherit; bottom:5px; right:10px; cursor:pointer; background-repeat:no-repeat; }
 
 
@@ -585,16 +586,16 @@ padding: 12px; margin-left: 15px;}
 
 .ff33{background: #fff; margin-left: 10px; width: 283px; height: 107px; font-family: 'source_sans_prolight'; text-align: left; padding: 10px; }
 .ff33 h1{ font-size: 16px; text-align: left; margin: 5px 0 0; min-height:40px;}
-.ff33 p{font-size: 12px; line-height: 20px;}
+.ff33 p{ font-size: 12px;line-height: 15px; margin-bottom: 5px; min-height: 30px;}
 .ff33 h2{ font-size: 14px; border-bottom: 1px solid #ccc; border-top: 1px #ccc solid; height: 25px;line-height: 22px;}
 .ff31 .more{bottom:10px; right:20px;}
 
 .ff31 .more{position:absolute; bottom:10px; right:20px;}
 
 #actreciente { width: 50px; padding: 0px; border-top: 2px #ccc solid; border-bottom: 2px #ccc solid; border-left: 2px #ccc solid;}
-#actreciente img{ display: block; cursor: pointer; z-index: 22; position: relative; top:9px; height: 170px;
-margin-left: 15px;
-margin-bottom:12px;
+#actreciente img{ display: block; cursor: pointer; z-index: 22; position: relative; top:2px; height: 170px;
+margin-left: 17px;
+margin-bottom:8px;
 margin-top: 0px;}
 
 .searchresults{ padding: 0px 0; }
@@ -801,7 +802,7 @@ label.little{font-family: 'source_sans_prolight'; font-size: 12px; color: #66666
 height: 170px; padding-right: 16px;}
 
 .line26{ line-height: 26px;}
-#ascrail2000, #ascrail2002-hr, #ascrail2000-hr{display:none;}
+#ascrail2000, #ascrail2002-hr, #ascrail2000-hr, #ascrail2003{display:none;}
 
 .w207h234{ width: 187px; height: 214px; padding: 10px; border: 1px #a3a3a3 solid;}
 .w227h129{ width: 227px; height: 129px; padding: 10px; border: 1px #a3a3a3 solid;}
@@ -826,9 +827,12 @@ border: solid 1px white;}
 
 .twitter h2, .twitter p{ z-index: 700}
 .twitter h2{margin:5px 0 3px 10px; font-size:17px;}
-.w207h193{ width: 187px;
-height: 173px;
-padding: 10px;}
+.twitter h3{margin:5px 0 3px 10px; font-size:14px;}
+.w207h193{
+	width: 187px;
+	height: 173px;
+	padding: 10px;
+}
 
 .w207h193 a, .w414h193 a, .w351h193 a, .temporaldrop a{color: #666; font-size: 12px; font-weight: bold; font-family: "source_sans_prosemibold";}
 .w207h193 h1, .w414h193 h1, .w351h193 h1{ font-size: 17px;}
@@ -871,6 +875,7 @@ div.menuActividad{z-index:1;}
 .socialicons p{margin-top: 0; font-size:10px; text-align:center;}
 .twit { border-top: #fff solid 1px;}
 .twit h2{ text-align: left; padding: 0 10px; margin-bottom: 0; margin-top: 5px;}
+.twit h3{ text-align: left; padding: 0 10px; margin-bottom: 0; margin-top: 5px;}
 .twit p { font-size: 14px; text-align: left; padding: 0 10px;}
 
 

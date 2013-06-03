@@ -96,6 +96,7 @@ label {font-size: 23px; display: block;}
 .arigth{text-align:right;}
 .aleft{text-align:left;}
 .acenter{text-align:center;}
+.normal{font-family:'source_sans_prolight'; color:#333;}
 
 /* Color */
 .title, .bgorange-trans *, .contact-box p { color:#FFF; }
