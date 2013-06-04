@@ -942,7 +942,7 @@ ul.documentos li span { font-size: 12px;}
 .w465h120{width: 400px; height: 135px; padding: 10px; margin-top: 5px;}
 
 .w465h120 .comment{ margin-top: 0px; text-align: left;}
- p.nota {font-size: 17px !important; margin-top: 10px; word-wrap: break-word; }
+ p.nota {font-size: 15px !important; margin-top: 10px; word-wrap: break-word; }
 
  .chatButton{ cursor: pointer;}
  .chats{float:left; cursor:pointer;}
@@ -1011,3 +1011,5 @@ img.tip{cursor: pointer;}
 .icons-fav{ padding-top:24px; background:url(../img/icons/favourite.png) center 0 no-repeat; width:18px; display:block; }
 .icons-fav-off{ padding-top:24px; background:url(../img/icons/favourite2.png) center 0 no-repeat; width:18px; display:block; }
 .icons-comments{ padding-top:24px; background:url(../img/icons/globo.png) center 0 no-repeat; width:31px; display:block; }
+.icons-edit{ padding-top:24px; background:url(../img/icons/edit.png) center 0 no-repeat; width:18px; display:block; }
+.icons-delete{ padding-top:24px; background:url(../img/icons/delete.png) center 0 no-repeat; width:18px; display:block; }
