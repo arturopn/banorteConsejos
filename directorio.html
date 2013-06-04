@@ -845,7 +845,7 @@
 
 					$.tabs('tab-directorio');
 				
-          $(".scroll").niceScroll();
+          $(".scroll").niceScroll({touchbehavior:false});
           $('#tablogros').one('click',function(){
           $('#slidelogros .slide').each(function(index){ if( index == 0 ) $('#navlogros').append('<a class="on"></a>'); else $('#navlogros').append('<a></a>'); });
 				
