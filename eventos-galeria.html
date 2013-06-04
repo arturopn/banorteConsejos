@@ -135,7 +135,7 @@
     <ul>
       <div class="fotosconfirmados">
       <li><a class="fancybox-thumb" rel="galeria" href="assets/img/photos/galeria.png"><img src="assets/img/photos/fotodetail1.png" class="tip" title="Juan Luis Guerra </br> <small>Consejo Regional</small>"/></a></li>
-      <li><a class="fancybox-thumb" rel="galeria" href="assets/img/photos/galeria.png"><img src="assets/img/photos/fotodetail1.png" class="tip" title="Juan Luis Guerra </br> <small>Consejo Regional</small>"/></a></li>
+      <li><a class="fancybox-thumb" rel="galeria" href="assets/img/photos/galeria2.png"><img src="assets/img/photos/fotodetail1.png" class="tip" title="Juan Luis Guerra </br> <small>Consejo Regional</small>"/></a></li>
       <li><a class="fancybox-thumb" rel="galeria" href="assets/img/photos/galeria.png"><img src="assets/img/photos/fotodetail1.png" class="tip" title="Juan Luis Guerra </br> <small>Consejo Regional</small>"/></a></li>
      <li><a class="fancybox-thumb" rel="galeria" href="assets/img/photos/galeria.png"><img src="assets/img/photos/fotodetail1.png" class="tip" title="Juan Luis Guerra </br> <small>Consejo Regional</small>"/></a></li>
        </div>
@@ -344,25 +344,62 @@
         $(".scroll").niceScroll();
        
 
-       $(".fancybox-thumb").fancybox({
+
+
+       (function ($, F) {
+    F.transitions.resizeIn = function() {
+        var previous = F.previous,
+            current  = F.current,
+            startPos = previous.wrap.stop(true).position(),
+            endPos   = $.extend({opacity : 1}, current.pos);
+
+        startPos.width  = previous.wrap.width();
+        startPos.height = previous.wrap.height();
+
+        previous.wrap.stop(true).trigger('onReset').remove();
+
+        delete endPos.position;
+
+        current.inner.hide();
+
+        current.wrap.css(startPos).animate(endPos, {
+            duration : current.nextSpeed,
+            easing   : current.nextEasing,
+            step     : F.transitions.step,
+            complete : function() {
+                F._afterZoomIn();
+
+                current.inner.fadeIn("fast");
+            }
+        });
+    };
+
+}(jQuery, jQuery.fancybox));
+
+$(".fancybox-thumb")
+    .attr('rel', 'gallery')
+    .fancybox({
+        nextMethod : 'resizeIn',
+        nextSpeed  : 0,
+        
+        prevMethod : false,
+        
         helpers : {
-          title : {
-            type: 'inside'
-          }/*,
-          thumbs  : {
-            width : 70,
-            height  : 70
-          }*/
+            title : {
+                type : 'inside'
+            }
         }
-      });
+    });
       
-      $('.fancybox-media').fancybox({
-        openEffect  : 'none',
-        closeEffect : 'none',
+     /* $('.fancybox-media').fancybox({
+        openEffect  : 'fade',
+        closeEffect : 'fade',
         helpers : {
           media : {}
         }
-      });
+      });*/
+
+
            /* var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
