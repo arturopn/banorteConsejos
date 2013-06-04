@@ -140,11 +140,25 @@
       lists[lists.length] = $select;
 
       // Focus events
+      if (!$.browser.msie) {
+
+      // old / orig. focus events
       $dk.bind('focus.dropkick', function (e) {
         $dk.addClass('dk_focus');
       }).bind('blur.dropkick', function (e) {
         $dk.removeClass('dk_open dk_focus');
       });
+
+  } else {
+
+      $("body").click( function(event) {          
+        if (!$(event.target).parents('.dk_container').length) {
+          _closeDropdown($dk);
+        }           
+      });
+
+  }
+
 
       setTimeout(function () {
         $select.hide();
@@ -398,5 +412,7 @@
         _handleKeyBoardNav(e, $dk);
       }
     });
+
+    
   });
 })(jQuery, window, document);
