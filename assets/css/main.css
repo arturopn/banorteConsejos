@@ -855,7 +855,7 @@ border: solid 1px white;}
 .3lines{cursor:pointer;}
 .eventos{cursor:pointer;}
 
-#conversacion{ background: #fff; margin-left: 14px; width: 512px; height: 300px; border:1px solid #CCC;}
+#conversacion{ background: #fff; margin-left: 14px; width: 467px; height: 300px; border:1px solid #CCC; display:none;}
 
 div.menuActividad{z-index:1;}
 
