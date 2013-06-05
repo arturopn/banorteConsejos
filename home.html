@@ -170,19 +170,36 @@
               <div class="width80 divrecientes floatR margin35r">
                 <div class="width100">
                   <select id="recientes" class="drop-filtro" name="recientes">
-                    <option value="1">Más recientes</option>
-                    <option value="2">Más comentados</option>
-                    <option value="3">Más gustados</option>
-                    <option value="4">Consejo</option>
-                    <option value="5">Usuario</option>
+                    <option>Más recientes</option>
+                    <option>Más comentados</option>
+                    <option>Más gustados</option>
+                    <option value="consejo">Consejo</option>
+                    <option value="usuario">Usuario</option>
                   </select>
                 </div>
               </div>
             </div>
             <div class="width80 margin10t margin25l">
-              <input id="inputnombre" type="text" class="input width100 obj" placeholder="Nombre"/>
-              <input id="input4" type="text" class="input width100 hidden" placeholder="Tipo Consejo"/>
-              <input id="input5" type="text" class="input width100 hidden" placeholder="Nombre de Usuario"/>
+              <input id="nomusuario" type="text" class="input width100 hidden" placeholder="Nombre de Usuario"/>
+              <div id="pconsejo">
+                <label for="actividad">Consejo:</label>
+                <div class="width80 floatR margin35r">
+                  <div class="width100">
+                    <select class="dropconsejo" name="dconsejo2">
+                      <option>Consejo 1</option>
+                      <option>Consejo 2</option>
+                    </select>
+                  </div>
+                </div>
+                <label for="actividad">Por actividad:</label>
+                <div class="width80 floatR margin35r">
+                  <div class="width100">
+                    <select class="dropconsejo" name="dact2">
+                      <option>Fisica</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
             </div>
             <a href="index.html" class="btn width30  bgred line30 floatR margin10t margin30r">FILTRAR</a> </div>
         </div>
@@ -553,11 +570,7 @@
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
         $(document).ready(function(){
-					if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i))) {
-						$('.ventanachat textarea').bind('touchstart', function(){
-							$(this).focus();
-						});
-					}
+
 																	 
           $(".tip").tipTip();
         	$('.drop-por').dropkick({ 
@@ -572,14 +585,21 @@
 				if(value == 'Directivo')
 					$('.optdir').show();
 			}});
+					
 			$('.drop-filtro').dropkick({ 
-			change: function (value, label) {
-				$('#input4,#input5,#inputnombre').hide();
-				if(value < 4)
-					$('#inputnombre').show();
-				else
-					$('#input' + value).show();
-			}});
+				change: function (value, label) {
+					$('#nomusuario, #pconsejo').hide();
+					if(value == 'usuario')
+						$('#nomusuario').show();
+					if(value == 'consejo'){
+						$('#pconsejo').show();
+					}
+				}
+			});
+
+						$('.dropconsejo').dropkick();
+						$('#pconsejo').hide();
+			
             $('div.fotobg').hide();
 			
 			
