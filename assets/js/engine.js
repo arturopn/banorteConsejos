@@ -108,14 +108,20 @@ alert("hola");
 	$(".chatButton").click(function(){
 		$("div.contactos").toggle();
 	});
-
-
 	$(".contacto").click(function(){
 		nombreDeContacto = $("h2",this).text();
 		consejoNombre = $("p", this).text();
 		foto = $("img",this).attr("src");
 		$('#ventanas').append('<div class="ventanachat relative"><div class="cerrarchat"></div><div class="floatL width90"><h2>' + nombreDeContacto +'</h2><p>' + consejoNombre +'</p></div><div class="floatL tiempochat"><span>Ver más</span></div><img class="floatL foto-contacto" src="' + foto +'"><textarea class="conversacion"></textarea><textarea class="comment"></textarea></div>');
 		$( ".ventanachat" ).draggable();
+		//$(".ventanachat h2").text(nombreDeContacto);
+		//$(".ventanachat img").attr("src",foto);
+		//$(".ventanachat").show(400);
+	});
+
+	$(".quienLike").click(function(){
+		$('#quienVentana').append('<div class="quien-like scroll-like"><div class="cerrarchat"></div><div class="clearfix contacto borderb margin10t"><img class="floatL" src="assets/img/photos/fotohome2.png"><h2 class="floatL">Luis Mario Gonzalez Barrientos</h2><p class="floatL margin10l margin5t margin0b">Area de Contabilidad</p></div><div class="clearfix contacto borderb"><img class="floatL" src="assets/img/photos/fotohome2.png"><h2 class="floatL">Luis Mario Gonzalez Barrientos</h2><p class="floatL margin10l margin5t margin0b">Area de Contabilidad</p></div><div class="clearfix contacto borderb"><img class="floatL" src="assets/img/photos/fotohome2.png"><h2 class="floatL">Luis Mario Gonzalez Barrientos</h2><p class="floatL margin10l margin5t margin0b">Area de Contabilidad</p></div><div class="clearfix contacto borderb"><img class="floatL" src="assets/img/photos/fotohome2.png"><h2 class="floatL">Luis Mario Gonzalez Barrientos</h2><p class="floatL margin10l margin5t margin0b">Area de Contabilidad</p></div><div class="clearfix contacto borderb"><img class="floatL" src="assets/img/photos/fotohome2.png"><h2 class="floatL">Juan Jose Gonzalez Barrientos</h2><p class="floatL margin10l margin5t margin0b">Consejo Regional MNorte</p></div></div>'
+			);  $(".scroll-like").niceScroll();
 		//$(".ventanachat h2").text(nombreDeContacto);
 		//$(".ventanachat img").attr("src",foto);
 		//$(".ventanachat").show(400);
