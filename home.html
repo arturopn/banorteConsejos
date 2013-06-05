@@ -553,6 +553,12 @@
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
         $(document).ready(function(){
+					if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPad/i))) {
+						$('.ventanachat textarea').bind('touchstart', function(){
+							$(this).focus();
+						});
+					}
+																	 
           $(".tip").tipTip();
         	$('.drop-por').dropkick({ 
 			change: function (value, label) {
