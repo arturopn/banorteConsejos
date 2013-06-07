@@ -55,7 +55,7 @@ alert("hola");
 
 	$('.fotologin').click(function(){	$('div.fotobg').toggle(400); });
 
-	$("#actreciente .menu3lines").click(function(){ 
+	$(".menu3lines").click(function(){ 
 		$('div.actividadopen').show(400); 
 		$(".nicescroll-rails").css("z-index","690");
 	});
