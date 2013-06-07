@@ -143,7 +143,7 @@ alert("hola");
 					$(".participa").animate({height:"24px"},1000);
 		$(".participaBottom").hide(1000);
 		$(".botonpublicar").show(400);
-		$(".nicescroll-rails").css("z-index","701");
+		
 		}
 		/*if (! $clicked.parents().hasClass("dropclick") && !$clicked.hasClass("dropclick")){
 			$(".temporaldrop").animate({height:"31px"},1000);
