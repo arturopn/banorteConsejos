@@ -130,13 +130,13 @@ alert("hola");
 	
 	$(document).bind('click', function(e) {
 		var $clicked = $(e.target);
-		if (! $clicked.parents().hasClass("chatButton") && !$clicked.hasClass("chatButton") && ! $clicked.parents().hasClass("contacto") && !$clicked.hasClass("contacto") ){
+		if (! $clicked.parents().hasClass("chatButton") && !$clicked.hasClass("chatButton") && ! $clicked.parents().hasClass("contacto") && !$clicked.hasClass("contacto")  && ! $clicked.parents().hasClass("contactos") && !$clicked.hasClass("contactos")  && ! $clicked.parents().hasClass("ventanachat") && !$clicked.hasClass("ventanachat") ){
 			$("div.contactos").hide();
 		}
-		if (! $clicked.parents().hasClass("menu3lines") && !$clicked.hasClass("menu3lines")){
+		if (! $clicked.parents().hasClass("menu3lines") && ! $clicked.parents().hasClass("actividadopen") && !$clicked.hasClass("actividadopen") && !$clicked.hasClass("menu3lines")){
 			$(".actividadopen").hide();
 		}
-		if (! $clicked.parents().hasClass("fotologin") && !$clicked.hasClass("fotologin")){
+		if (! $clicked.parents().hasClass("fotologin") && !$clicked.hasClass("fotologin") && ! $clicked.parents().hasClass("fotobg") && !$clicked.hasClass("fotobg")){
 			$(".fotobg").hide();
 		}
 		if (! $clicked.parents().hasClass("coment") && !$clicked.hasClass("coment")){
