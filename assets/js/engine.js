@@ -83,22 +83,19 @@ alert("hola");
 	$(".clickhelp").click(function(){$("div.help").show();});
 	$(".cerrarhelp").click(function(){$("div.help").hide();})
 
-	$("textarea").focus(function(){
-		$(".participa").animate({height:"230px"},1000); 
+	$(".coment").click(function(){
+		$('.participa').animate({height:"230px"},1000); 
 
 		$(".participaBottom").show(1000);
 		$(".botonpublicar").hide(400);
 
 		$(".nicescroll-rails").css("z-index","690");
-
 	});
 
-	$("textarea").blur(function(){
-		$(".participa").animate({height:"24px"},1000);
-		$(".participaBottom").hide(1000);
-		$(".botonpublicar").show(400);
-		$(".nicescroll-rails").css("z-index","701");
-	});
+		
+	
+
+
 
 	/*$(".chatButton").toggle(function(){
 		$("div.contactos").show(400);
@@ -141,6 +138,12 @@ alert("hola");
 		}
 		if (! $clicked.parents().hasClass("fotologin") && !$clicked.hasClass("fotologin")){
 			$(".fotobg").hide();
+		}
+		if (! $clicked.parents().hasClass("coment") && !$clicked.hasClass("coment")){
+					$(".participa").animate({height:"24px"},1000);
+		$(".participaBottom").hide(1000);
+		$(".botonpublicar").show(400);
+		$(".nicescroll-rails").css("z-index","701");
 		}
 		/*if (! $clicked.parents().hasClass("dropclick") && !$clicked.hasClass("dropclick")){
 			$(".temporaldrop").animate({height:"31px"},1000);
