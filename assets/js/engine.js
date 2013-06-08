@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-	$('.camara').click(function(){
-		window.location.href = 'http:google.com';
-	}); 
-
 	$('.eventos').click(function(){
 		window.location.href = 'http:google.com';
 	}); 
@@ -109,7 +105,7 @@ alert("hola");
 		nombreDeContacto = $("h2",this).text();
 		consejoNombre = $("p", this).text();
 		foto = $("img",this).attr("src");
-		$('#ventanas').append('<div class="ventanachat relative"><div class="cerrarchat"></div><div class="floatL width90"><h2>' + nombreDeContacto +'</h2><p>' + consejoNombre +'</p></div><div class="floatL tiempochat"><span>Ver más</span></div><img class="floatL foto-contacto" src="' + foto +'"><textarea class="conversacion"></textarea><textarea class="comment"></textarea></div>');
+		$('#ventanas').append('<div class="ventanachat relative"><div class="cerrarchat"></div><div class="floatL width15"><img class="floatL" src="' + foto +'"></div><div class="floatL width80 aleft"><h2>' + nombreDeContacto +'</h2><p>' + consejoNombre +'</p></div><div class="floatR tiempochat"><span>Ver más</span></div><div class="floatL conversacionarea"><div class="replymessage"><div class="floatL width100 aleft"><p class="font12 bold width65 floatL">Israel Cantú</p><p class="floatR width30 font10 arigth">13/06/2013 13:11</p><p class="width100 font12 floatL">Hola Marco ya subiste el ayuntamiento?</p></div><div class="floatL width100 aleft margin5t"><p class="font12 bold width65 floatL">Marcos</p><p class="floatR width30 font10 arigth">13/06/2013 13:13</p><p class="width100 font12 floatL">Si ya es nivel 7</p></div><div class="floatL width100 aleft margin5t"><p class="font12 bold width65 floatL">Israel Cantú</p><p class="floatR width30 font10 arigth">13/06/2013 13:20</p><p class="width100 font12 floatL">Si lo veo te voy a saquear!</p></div></div></div><textarea class="comment"></textarea></div>');
 		$( ".ventanachat" ).draggable();
 		//$(".ventanachat h2").text(nombreDeContacto);
 		//$(".ventanachat img").attr("src",foto);

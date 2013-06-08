@@ -12,10 +12,9 @@
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
 <link href="assets/css/dropkick.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="assets/js/jquery.js"></script>
+<link href="assets/css/fancybox.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="assets/css/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
 <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-<script type="text/javascript" src="assets/js/engine.js"></script>
-<script type="text/javascript" src="assets/js/dropkick.js"></script>
 </head>
 <body>
 <div id="contenedor">
@@ -156,7 +155,7 @@
       </div>
     </div>
     <div class="clearfix" style="z-index:701; position:relative;">
-    <div id="quienVentana"
+    <div id="quienVentana"></div>
       <div id="actreciente" class="floatL relative" style="z-index:702; position:relative;">
         <div class="clearfix">
           <div class="menu3lines"></div>
@@ -183,7 +182,7 @@
             <div class="width80 margin5t margin25l">
               <input id="nomusuario" type="text" class="input width100 hidden" placeholder="Nombre de Usuario"/>
               <div id="pconsejo">
-                <label for="actividad" class="font16 margin5b">Consejo:</label>
+                <label for="actividad" class="font14 margin5b margin10t">Tipo:</label>
                 <div class="width100 floatL margin15r">
                   <div class="width100">
                     <select class="dropconsejo" name="dconsejo2">
@@ -192,14 +191,14 @@
                     </select>
                   </div>
                 </div>
-                <label for="actividad" class="font16 margin5b">Por actividad:</label>
+                <!--<label for="actividad" class="font16 margin5b">Por actividad:</label>
                 <div class="width100 floatL margin15r">
                   <div class="width100">
                     <select class="dropconsejo" name="dact2">
                       <option>Fisica</option>
                     </select>
                   </div>
-                </div>
+                </div>-->
               </div>
             </div>
             <a href="index.html" class="btn width30  bgred line30 floatR margin10t margin30r">FILTRAR</a> </div>
@@ -226,8 +225,33 @@
                 <p style="font-size:9px; margin-left:10px; margin:0 0 0 10px; text-align:right;">15 Mayo 2013</p>
               </div>
             </div>
-            <div style="min-height:120px;">
-              <p style="margin-top:0 !important;">"La nueva interfaz de la versión mobile de Banorte es de las mejores que he probado en cuestión de..." </p>
+            <div class="textPost">
+              <p class="truncate1">La nueva interfaz de la versión mobile de Banorte  es la mejor que he visto </p>
+            </div>
+            <div class="fotoPost">
+            <a class="fancybox-thumb" href="assets/img/photos/postFotogde.jpg" rel="gallery"><img src="assets/img/photos/postFoto.jpg"></a>
+            </div>
+            <div class="line188"></div>
+            <div class="clearfix">
+              <div class="socialicons floatL tip" title="Dale like"><a href="#" class="icons-like"></a>
+                <a href="#" class="quienLike"><p>30</p></a>
+              </div>
+              <div class="socialicons floatL margin5l tip" title="Escribe tu comentario"><a href="#" class="icons-comentario"></a>
+                <a href="#"><p>29</p></a>
+              </div>
+              <div class="socialicons floatL margin5l"><a href="#" class="icons-fav-off"></a></div>
+            </div>
+            <a class="btnmas"></a> </div>
+          <div id="" class="floatL w207h234 bgwhite relative margin1l" align="left">
+            <div class="clearfix margin5b" > <img class="floatL" src="assets/img/photos/fotohome.png"/>
+              <div class="floatL width75">
+                <p style="font-size:14px; margin-left:10px; margin:0 0 0 10px;">Juan Jose Pedraza</p>
+                <p style="font-size:10px; margin-left:10px; margin:0 0 0 10px;">Consejo Regional Noreste</p>
+                <p style="font-size:9px; margin-left:10px; margin:0 0 0 10px; text-align:right;">15 Mayo 2013</p>
+              </div>
+            </div>
+            <div class="fotoCompletaPost">
+            <a class="fancybox-thumb" href="assets/img/photos/postFotogde.jpg" rel="gallery"><img src="assets/img/photos/postFoto2.jpg"></a>
             </div>
             <div class="line188"></div>
             <div class="clearfix">
@@ -559,14 +583,25 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script type="text/javascript" src="assets/js/engine.js"></script>
+<script type="text/javascript" src="assets/js/dropkick.js"></script>
 <script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>
 <script type="application/javascript" src="assets/js/iscroll.js"></script>
 <script type="text/javascript" src="assets/js/jquery.tipTip.js"></script>
 <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.jtruncate.js"></script> 
+<script type="text/javascript" src="assets/js/fancybox.js"></script>
+
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script>
+<script>  
         $(document).ready(function(){
+			$('.truncate1').jTruncate({
+            length: 50,
+			minTrail:0,
+            moreText: ""
+          }); 
 														 
           $(".tip").tipTip();
 		  
@@ -620,9 +655,22 @@
     if($(".dk_label").text() == "Usuario"){
       alert("hola");
     }
-});
-   
+});  
+$(".fancybox-thumb")
+    .attr('rel', 'gallery')
+    .fancybox({
+        nextMethod : 'resizeIn',
+        nextSpeed  : 0,
         
+        prevMethod : false,
+        
+        helpers : {
+            title : {
+                type : 'inside'
+            }
+        }
+    });
+	       
         //
        
 

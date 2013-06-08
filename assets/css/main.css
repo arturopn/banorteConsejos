@@ -441,6 +441,21 @@ padding: 0 10px;
 	z-index: -1;
 }
 
+.textPost{
+	margin-top:0px !important;
+	min-height:38px;
+	max-height:38px;
+}
+.fotoPost{
+	min-height:65px;
+	max-height:65px;
+	margin-top:5px;
+}
+.fotoCompletaPost{
+	min-height:105px;
+	max-height:105px;
+	margin-top:20px;
+}
 .contenidohome {padding: 10px !important; height: 479px !important;}
 
 div#box{display: none;}
@@ -961,7 +976,8 @@ div.ventanachat{position: absolute; bottom: 85px; /*display: none;*/ right: 433p
 .ventanachat h2{ font-family: "source_sans_prolight"; color:#333; font-size: 17px;}
 
 .ventanachat textarea{ border: 1px solid #ccc;}
-textarea.conversacion{ width: 225px;; height: 180px; resize:none; padding-left: 55px; padding-top: 20px; background: url(../img/icons/chat.png) bottom left #fff no-repeat;}
+.conversacionarea{ border: 1px solid #ccc; width: 260px; height: 180px; resize:none; padding: 10px; background: url(../img/icons/chat.png) bottom left #fff no-repeat;}
+.replymessage{height: 160px; width: 260px;}
 
 textarea.comment{ width: 260px; height: 26px; resize:none; padding:10px; margin-top:5px; font-size:14px;}
 
