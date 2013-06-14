@@ -342,7 +342,7 @@
         </div>
       </div>
     </div>
-    <div class="clearfix" style="position:relative; bottom:5px;">
+    <div class="clearfix" style="position:relative; bottom:4px;">
       <div class="floatL w207h193 f7 eventos">
         <div class="clearfix"> <img class="floatL" src="assets/img/icons/reloj.png"/>
           <h1 class="floatL margin5l margin5t">EVENTOS</h1>
@@ -359,12 +359,12 @@
         <div class="clearfix borderb"> <img class="floatL" src="assets/img/icons/agenda.gif"/>
           <h1 class="floatL margin5l">DESTACADOS</h1>
           <a href="#" class="floatR margin10l margin5b">Ver todos</a> </div>
-        <div class="clearfix scroll" style="height:150px; overflow-y:hidden;">
-          <div class="clearfix tododesta" style="overflow-y:hidden; height:138px;" >
+        <div class="clearfix scroll" style="height:170px; overflow-y:hidden;">
+          <div class="clearfix tododesta" style="overflow-y:hidden; height:147px;" >
             <div class="floatL desta clearfix relative">
               <div class="destacado floatL">
                 <h3>13 de Septiembre 2013</h3>
-                <div style="min-height:62px;">
+                <div class="contenido">
                   <p class="anuncio">Banorte superó en rendimiento el IPC</p>
                 </div>
                 <div class="line188"></div>
@@ -379,14 +379,16 @@
             </div>
             <div class="floatL desta clearfix">
               <div class="destacado floatL">
-                <div class="floatL" style="width:50px; margin-top:-3px;"> <img class="floatL" src="assets/img/photos/fotohome.png"/> </div>
-                <div class="floatL" style="margin-top:-3px;">
-                  <div class="floatL" style="width:150px;">
+                <div class="floatL" style="width:50px;">
+                	<img src="assets/img/photos/fotohome.png"/>
+                </div>
+                	<div class="floatL">
+                  <div>
                     <h2 style="margin-bottom:0;">Juan Jose Pedraza</h2>
                     <p style="margin-bottom:7px; font-size:10px;">Consejo Regional Metropolitano</p>
                   </div>
 				</div>
-                 <div class="floatL clear" style="width:185px; height:50px;">
+                 <div class="clear contenidopost">
                   <p style="margin-left:0 !important; margin:5px 0; font-size:11px;">"La nueva interfaz de la versión mobile de Banorte es de las mejores que he probado en cuestión de..."</p>
                   </div>
                 <div class="line188 clear"></div>
@@ -446,32 +448,42 @@
           </div>
         </div>
       </div>
-      <div class="floatL w351h193 bgwhite margin1l padding10">
+      <div class="encuestas floatL">
         <div class="clearfix borderb"> <img class="floatL" src="assets/img/icons/red.png"/>
           <h1 class="floatL margin5l">ENCUESTAS</h1>
           <a href="#" class="floatR margin10l margin5b">Ver todos</a> </div>
         <p class="pregunta">¿Qué tan importante son para usted las reuniones que organiza el Consejo Regional Metropolitano durante este año o los años anteriores? </p>
         <div class="clearfix respuestas">
-          <div class="floatL clearfix respuesta  margin-10t">
-            <input type="radio" class="floatL margin10t" name="poco"/>
-            <label for="poco" class="floatL">Poco</label>
-          </div>
-          <div class="floatL clearfix respuesta margin50l  margin-10t">
-            <input type="radio" class="floatL margin10t" name="poco"/>
-            <label for="poco" class="floatL">Regular</label>
-          </div>
+        <table class="floatL" width="310" border="0" cellspacing="5" cellpadding="5">
+        	<form name="form1" method="post" action="">
+              <tr>
+                <td width="155">
+                	<input type="radio" name="radio" id="radio" value="radio">
+                    <label for="radio">Poco</label>
+                </td>
+                <td width="155">
+                	<input type="radio" name="radio" id="radio" value="radio">
+                    <label for="radio">Regular</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                	<input type="radio" name="radio" id="radio" value="radio">
+                    <label for="radio">Mucho</label>
+                </td>
+                <td>
+                	<input type="radio" name="radio" id="radio" value="radio">
+                    <label for="radio">Nada</label>
+                </td>
+              </tr>
+              </form>
+		</table>
         </div>
         <div class="clearfix respuestas">
-          <div class="floatL clearfix respuesta  margin-10t">
-            <input type="radio" class="floatL margin15t" name="poco"/>
-            <label for="poco" class="floatL">Mucho</label>
-          </div>
-          <div class="floatL clearfix respuesta margin40l  margin-10t">
-            <input type="radio" class="floatL margin15t" name="poco"/>
-            <label for="poco" class="floatL">Diferente</label>
-          </div>
         </div>
-        <div class="floatR width70 margin15t arigth"> <a href="#" style="font-weight:normal; color:#FFF !important;" class="btn bgred width30 line20">VOTAR</a> </div>
+        <div class="votar">
+        	<a href="#" style="font-weight:normal; color:#FFF !important;" class="btn bgred line20">VOTAR</a>
+        </div>
       </div>
     </div>
     <!-- <div class="clearfix">
@@ -669,15 +681,8 @@ $(".fancybox-thumb")
                 type : 'inside'
             }
         }
-    });
-	       
+    }); 
         //
-       
-
-        
-
-        
-       
            /* var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';

@@ -817,7 +817,11 @@ label.little{font-family: 'source_sans_prolight'; font-size: 12px; color: #66666
 height: 170px; padding-right: 16px;}
 
 .line26{ line-height: 26px;}
+
+/*Scrolls */
 #ascrail2000, #ascrail2001, #ascrail2002-hr, #ascrail2000-hr, #ascrail2003{display:none;}
+div#ascrail2003-hr{top:535px !important;}
+div#ascrail2000{z-index:705 !important;}
 
 .w207h234{ width: 187px; height: 214px; padding: 10px; border: 1px #a3a3a3 solid;}
 .w227h129{ width: 227px; height: 129px; padding: 10px; border: 1px #a3a3a3 solid;}
@@ -827,6 +831,15 @@ height: 170px; padding-right: 16px;}
 .w207h234 p{ font-size: 14px; margin-top: 17px;}
 .w207h234 .line188{ margin-top: 12px;}
 
+
+/*Seccion Encuestas */
+.encuestas{ background: #fff; border: 1px solid #A3A3A3; height: 173px; width: 331px; margin: 0 0 0 1px; padding:10px; position:relative;}
+.encuestas h1{font-size: 17px;}
+.encuestas a{color: #666666; font-family: "source_sans_prosemibold"; font-size: 12px; font-weight: bold;}
+.encuestas label{font-size:12px;}
+.encuestas label, input{float:left;}
+.encuestas .votar{float:right; text-align:right; position:absolute; top:165px; right:10px; width:60%;}
+	
 
 .bgwhite { background: #fff; border: 1px solid #A3A3A3;}
 
@@ -895,9 +908,12 @@ div.menuActividad{z-index:1;}
 
 
 .destacado{text-align: left; padding: 5px;}
+.destacado .contenido{ height:75px; overflow:hidden;}
+.destacado .contenidopost{ height:54px; width:185px; overflow:hidden;}
 .destacado h3 { color: #666; font-weight: bold; font-family: "source_sans_prosemibold"; font-size: 12px;}
 .destacado p.anuncio {color: #666; font-size: 18px; width: 150px;}
 .destacado p.post {color: #666; font-size: 12px; width: 290px; margin-bottom:0;}
+.destacado .btnmas{bottom:17px !important;}
 
 .borderl{ border-right: 1px #ccc solid;}
 
