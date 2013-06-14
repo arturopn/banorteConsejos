@@ -112,6 +112,9 @@ alert("hola");
 		//$(".ventanachat").show(400);
 	});
 
+	var z = 10;
+	$('.ventanachat').live('mousedown', function(){ $(this).css('z-index',z); z++; });
+
 	$(".quienLike").click(function(){
 		$('#quienVentana').append('<div class="quien-like scroll-like"><div class="cerrarchat"></div><div class="clearfix contacto borderb margin10t"><img class="floatL" src="assets/img/photos/fotohome2.png"><h2 class="floatL">Luis Mario Gonzalez Barrientos</h2><p class="floatL margin10l margin5t margin0b">Area de Contabilidad</p></div><div class="clearfix contacto borderb"><img class="floatL" src="assets/img/photos/fotohome2.png"><h2 class="floatL">Luis Mario Gonzalez Barrientos</h2><p class="floatL margin10l margin5t margin0b">Area de Contabilidad</p></div><div class="clearfix contacto borderb"><img class="floatL" src="assets/img/photos/fotohome2.png"><h2 class="floatL">Luis Mario Gonzalez Barrientos</h2><p class="floatL margin10l margin5t margin0b">Area de Contabilidad</p></div><div class="clearfix contacto borderb"><img class="floatL" src="assets/img/photos/fotohome2.png"><h2 class="floatL">Luis Mario Gonzalez Barrientos</h2><p class="floatL margin10l margin5t margin0b">Area de Contabilidad</p></div><div class="clearfix contacto borderb"><img class="floatL" src="assets/img/photos/fotohome2.png"><h2 class="floatL">Juan Jose Gonzalez Barrientos</h2><p class="floatL margin10l margin5t margin0b">Consejo Regional MNorte</p></div></div>'
 			);  $(".scroll-like").niceScroll();
