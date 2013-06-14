@@ -194,6 +194,7 @@ ul{	margin:0;	padding:0; list-style:none; }
 table{border-collapse: collapse;}
 .borderb td{ border-bottom: 1px #ccc solid; padding: 10px 0;}
 .padding10tb td{padding: 10px 0;}
+.justificado{text-align:justify;}
 
 .directorioperfil input, .directorioperfil textarea{ margin-bottom: 10px;}
 
