@@ -987,14 +987,16 @@ div.quien-like{position: absolute; bottom: 7px; left:50px; width: 230px; height:
 .contacto{ padding: 5px 10px; cursor: pointer;}
 .ventanachat p{margin:2px !important;}
 .ventanachat h2{margin-bottom:2px !important;}
-.contacto h2{ font-family: "source_sans_prolight"; color:#333; margin-left: 10px; font-size: 13px; margin-bottom:0;}
-
+.contacto h2, p{ font-family: "source_sans_prolight"; color:#333; margin-left: 10px; font-size: 13px; margin-bottom:0;}
+.contacto p{font-size:12px;}
+.perschat h2, p{ font-family: "source_sans_prolight"; color:#333; margin-left: 10px; font-size: 13px; margin-bottom:0;}
+.perschat p{font-size:12px; margin:0 0 0 10px !important;}
 div.ventanachat{position: absolute; bottom: 85px; /*display: none;*/ right: 433px; width: 280px; height: 300px; background: #F9F9F9; border: #ccc 1px solid; padding: 10px;;}
 .ventanachat h2{ font-family: "source_sans_prolight"; color:#333; font-size: 17px;}
 
 .ventanachat textarea{ border: 1px solid #ccc;}
 .conversacionarea{ border: 1px solid #ccc; width: 260px; height: 180px; resize:none; padding: 10px; background: url(../img/icons/chat.png) bottom left #fff no-repeat;}
-.replymessage{height: 160px; width: 260px;}
+.replymessage{height: 160px; width: 260px; overflow:hidden;}
 
 textarea.comment{ width: 260px; height: 26px; resize:none; padding:10px; margin-top:5px; font-size:14px;}
 
