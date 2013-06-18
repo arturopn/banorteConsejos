@@ -7,6 +7,7 @@ img {	border: none; }
 ul{	margin:0;	padding:0; list-style:none; }
 .block {	display: block;	}
 .relative{ position:relative; }
+.overf{overflow:hidden;}
 
 /*			- Paddings/Margins/Widths/Borders -			*/
 .m0 { margin: 0;}
@@ -841,6 +842,32 @@ div#ascrail2000{z-index:705 !important;}
 .encuestas label, input{float:left;}
 .encuestas .votar{float:right; text-align:right; position:absolute; top:165px; right:10px; width:60%;}
 	
+/*Favoritos*/
+.fav .btnmas{ background:url(../img/icons/more.png); width:20px; height:22px; display:block; position:absolute; bottom:0px; right:0px; cursor:pointer; }
+
+/* Chat - Totales */
+.chat-tot{background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    height: 100px;
+    margin: 5px 0 0 5px;
+    padding: 7px 19px;
+    text-align: left;
+    width: 270px;
+}
+.chat-tot p{ font-size:12px; margin:0;}
+.chat-tot h1{ font-size:16px; margin-bottom:3px;}
+.chat-tot .fecha{font-size:10px; text-align:right;}
+.chat-tot .comment{float:left; font-size:12px; height:42px; margin-left:10px; overflow:hidden;}
+.chat-tot .more2{
+	 background: url("../img/icons/more.png") no-repeat scroll 0 0 transparent;
+    bottom: 5px;
+    cursor: pointer;
+    display: block;
+    height: 22px;
+    position: absolute;
+    left: 275px;
+    width: 20px;
+}
 
 .bgwhite { background: #fff; border: 1px solid #A3A3A3;}
 
@@ -877,7 +904,8 @@ border: solid 1px white;}
 .height300{height: 330px;}
 .header{width:240px;
 	display:block;
-	overflow:hidden;
+	
+	:hidden;
 	white-space:nowrap;
 	text-overflow:ellipsis;}
 
@@ -901,7 +929,7 @@ div.menuActividad{z-index:1;}
 .line370{ width: 370px; height: 1px; background:#cccccc;}
 
 .socialicons {margin-top: 5px;}
-.socialicons p{margin-top: 0; font-size:10px; text-align:center;}
+.socialicons p{margin: 0; font-size:10px; text-align:center;}
 .twit { border-top: #fff solid 1px;}
 .twit h2{ text-align: left; padding: 0 10px; margin-bottom: 0; margin-top: 5px;}
 .twit h3{ text-align: left; padding: 0 10px; margin-bottom: 0; margin-top: 5px;}
@@ -969,9 +997,9 @@ ul.documentos li span { font-size: 12px;}
 
 .postderecha{text-align: left;}
 .postderecha h3{font-family: "source_sans_prosemibold"; font-size:15px;}
-.postderecha h1{font-size: 22px;}
+.postderecha h1{font-size: 18px;}
 
-.w465h120{width: 400px; height: 135px; padding: 10px; margin-top: 5px;}
+.w465h120{width: 400px; height: 135px; padding: 10px 10px 5px 10px; margin-top: 5px;}
 
 .w465h120 .comment{ margin-top: 0px; text-align: left;}
  p.nota {font-size: 15px !important; margin-top: 10px; word-wrap: break-word; }
