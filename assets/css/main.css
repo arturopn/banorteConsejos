@@ -957,8 +957,10 @@ p.pregunta{ width: 325px; font-size: 14px; text-align: left; margin-top: 10px;}
 .bordert {border-top: 1px #ccc solid;}
 .notificaciones p{ font-size: 14px; margin-left: 10px; position: relative; bottom: 2px; width: 222px;}
 
-.forumnot{ padding-top: 10px; padding-bottom: 0; border-bottom: 1px #ccc solid; padding-left: 10px;}
-.forumnot p{ font-size: 14px; margin-left: 10px; position: relative; bottom: 2px; width: 180px; text-align: left;}
+.forumnot{ padding:10px; border-bottom: 1px #ccc solid;}
+.forumnot2{ padding:10px; border-bottom: 1px #ccc solid; background-color:#E6E6E6;}
+
+.forumnot p, .forumnot2 p{ font-size: 14px; margin-left: 10px; position: relative; bottom: 2px; width: 180px; text-align: left;}
 
 .w248{ width: 248px; height: 292px; border:solid #cccccc 1px; margin:0 7px;}
 .w404{ width: 404px; height: 292px; border:solid #cccccc 1px; margin:0 5px;}
