@@ -13,10 +13,9 @@
 
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/main.css">
 <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
 <link href="assets/css/dropkick.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/datepicker.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="contenedor">
@@ -98,23 +97,20 @@
     </div>
     <div id="tab-directorio" class="relative">
       <div id="consejeros" class="tabs-cont clearfix acerca scroll">
-        <div class="searchtop clearfix">
-          <p class="font22 prolight floatL" style="margin:19px;">Filtro:</p>
-          <div class="separadorV64 floatL"></div>
-          <div class="clearfix busquedaop">
-            <label class="little floatL margin10t margin20l">AÑO</label>
-            <div class="width15 greyselect floatL" style="margin-top:2px; margin-left:10px;">
-              <select class="drop" name="año">
-                <option>2013</option>
-              </select>
+      	<div class="searchtop clearfix">
+        	<p class="font22 prolight floatL" style="margin:19px;">Filtro:</p>
+        <div class="separadorV64 floatL"></div>
+        <div class="calendar clearfix busquedaop">
+            <div class="floatL width35">
+                    <label for="date1">De:</label>
+                    <input name="date1" id="date1" class="date-pick dp-applied"/>                    
             </div>
-            <label class="little floatL margin10t margin20l">MES</label>
-            <div class="width15 greyselect floatL margin10l" style="margin-top:2px;">
-              <select class="drop" name="consejo">
-                <option>ENERO</option>
-              </select>
+           	<div class=" floatL width30">
+            		<label for="date2">A: </label>
+		    		<input name="date2" id="date2" class="date-pick dp-applied"/>   
             </div>
-            <a href="index.html" class="btn width10  bga20 line30  " style="margin-top:2px; margin-left:10px;">BUSCAR</a> </div>
+            	<a href="index.html" class="btn width10  bga20 line30  " style="margin-top:2px; margin-left:10px;">BUSCAR</a>
+        </div>
         </div>
         <div class=" padding20-0 clearfix">
           <div id="slidefavs" class="iosSlider">
@@ -410,6 +406,9 @@
   </div>
 </div>
 <script type="text/javascript" src="assets/js/jquery.js"></script> 
+<script type="text/javascript" src="assets/js/date.js"></script>
+<!--[if IE]><script type="text/javascript" src="scripts/jquery.bgiframe.js"></script><![endif]-->
+<script type="text/javascript" src="assets/js/jquery.datepicker.js"></script>
 <script src="js/vendor/modernizr-2.6.2.min.js"></script> 
 <script type="text/javascript" src="assets/js/engine.js"></script> 
 <script type="text/javascript" src="assets/js/dropkick.js"></script> 
@@ -425,6 +424,8 @@
             moreText: ""
           }); 
       	$('.drop').dropkick();
+		
+			$('.date-pick').datePicker({startDate:'01/01/1996'});
 			
 				$('#slidefavs .slide').each(function(index){ if( index == 0 ) $('#navfavs').append('<a class="on"></a>'); else $('#navfavs').append('<a></a>'); });
 				$('#slidefavs').iosSlider({

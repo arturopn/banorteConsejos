@@ -327,7 +327,7 @@ html, body{ min-width:1024px; }
 	-moz-box-shadow: 1px 1px 0px #cccccc;
 	box-shadow:  1px 1px 0px #cccccc;
 }
-.input3 {
+.input3, .calendar input {
     padding: 5px 0 5px 10px; 
 	font-size: 15px;
 	text-shadow: 0px 1px 0px #fff;
@@ -859,7 +859,7 @@ div#ascrail2000{z-index:705 !important;}
 .chat-tot .fecha{font-size:10px; text-align:right;}
 .chat-tot .comment{float:left; font-size:12px; height:42px; margin-left:10px; overflow:hidden;}
 .chat-tot .more2{
-	 background: url("../img/icons/more.png") no-repeat scroll 0 0 transparent;
+	 background: url(../img/icons/more.png) no-repeat scroll 0 0 transparent;
     bottom: 5px;
     cursor: pointer;
     display: block;
@@ -868,6 +868,25 @@ div#ascrail2000{z-index:705 !important;}
     left: 275px;
     width: 20px;
 }
+
+/* Calendarios */
+.calendar label{font-size:16px; float:left; padding:0 10px;}
+a.dp-choose-date {
+	float: left;
+	width: 27px;
+	height: 27px;
+	padding: 0;
+	margin: 2px 3px 0;
+	display: block;
+	text-indent: -2000px;
+	overflow: hidden;
+	background: url(../img/icons/calendario.png) no-repeat; 
+}
+a.dp-choose-date.dp-disabled {
+	background-position: 0 -20px;
+	cursor: default;
+}
+
 
 .bgwhite { background: #fff; border: 1px solid #A3A3A3;}
 
