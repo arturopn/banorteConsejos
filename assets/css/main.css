@@ -296,7 +296,7 @@ html, body{ min-width:1024px; }
 }
 .copyright{
 	float:left;
-	width:290px;
+	width:300px;
 	height:30px;
 	font-size:12px;
 	color:#111;
@@ -827,7 +827,7 @@ div#ascrail2000{z-index:705 !important;}
 
 .w207h234{ width: 187px; height: 214px; padding: 10px; border: 1px #a3a3a3 solid;}
 .w227h129{ width: 227px; height: 129px; padding: 10px; border: 1px #a3a3a3 solid;}
-.w326h40{ width: 93%; height: 40px; padding: 10px; border: 1px #a3a3a3 solid;}
+.w326h40{ width: 95%; height: 40px; padding: 10px; border: 1px #a3a3a3 solid;}
 .w300h129{ width: 299px; height: 51px; padding: 10px; border: 1px #a3a3a3 solid;}
 .w207h234 h2{font-size: 14px; margin-bottom: 0; margin-left: 10px;}
 .w207h234 p{ font-size: 14px; margin-top: 17px;}
@@ -868,6 +868,8 @@ div#ascrail2000{z-index:705 !important;}
     left: 275px;
     width: 20px;
 }
+/* Chat Grupales */
+.persona{padding:2px 10px;}
 
 /* Calendarios */
 .calendar label{font-size:16px; float:left; padding:0 10px;}
@@ -954,7 +956,7 @@ div.menuActividad{z-index:1;}
 .twit h3{ text-align: left; padding: 0 10px; margin-bottom: 0; margin-top: 5px;}
 .twit p { font-size: 14px; text-align: left; padding: 0 10px;}
 
-
+/* Seccion de destacados HOME */
 .destacado{text-align: left; padding: 5px;}
 .destacado .contenido{ height:75px; overflow:hidden;}
 .destacado .contenidopost{ height:54px; width:185px; overflow:hidden;}
@@ -962,6 +964,10 @@ div.menuActividad{z-index:1;}
 .destacado p.anuncio {color: #666; font-size: 18px; width: 150px;}
 .destacado p.post {color: #666; font-size: 12px; width: 290px; margin-bottom:0;}
 .destacado .btnmas{bottom:17px !important;}
+.destacado .fotoDesta{float:left; width:25%;}
+.destacado h2{font-size:14px; margin-bottom:0;}
+.destacado .consejo{font-size:10px; margin:0 0 7px;}
+.destacado .contenidopost p{margin-left:0 !important; margin:5px 0; font-size:11px;}
 
 .borderl{ border-right: 1px #ccc solid;}
 
