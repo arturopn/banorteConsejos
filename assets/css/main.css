@@ -889,6 +889,10 @@ a.dp-choose-date.dp-disabled {
 	cursor: default;
 }
 
+/*Post Detalle */
+.mainpost{
+	height:70px;
+}
 
 .bgwhite { background: #fff; border: 1px solid #A3A3A3;}
 
