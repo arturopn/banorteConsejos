@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+<link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/dropkick.css" rel="stylesheet" type="text/css" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+html, body{min-width:inherit;
+}
+</style>
+</head>
+<body>
+<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+<div class="addmensaje">
+  <div class="floatL width100">
+    	<div class="foto-cont"><img class="floatL margin10l" src="assets/img/photos/fotohome.png"/></div>
+        <div class="nombre-menssage"><p>Luis Mario Gonzalez Perez</p></div>
+        <div class="floatL"><a class="menos"></a></div>
+        <div class="mensaje">
+        	<p>"La nueva interfaz de la versión mobile de Banorte es de las mejores que he probado en cuestión de segundos es fácil de entender su navegación y las nuevas funcionalidades facilitan aún más nuestros movimientos, felicidades por esta innovación"</p>
+        </div>
+        <div class="comentario">
+        </div>
+        <div class="btns-comentario">
+        	<div class="addfoto floatL"></div>
+        	<div class="addvideo floatL"></div>
+            <div class="addlink"></div>
+            <div class="comment"><p> Comentar</p></div>
+        </div>
+  </div>
+</div>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script> 
+<script src="js/vendor/modernizr-2.6.2.min.js"></script> 
+<script type="text/javascript" src="assets/js/jquery.js"></script> 
+<script type="text/javascript" src="assets/js/fancybox.js"></script> 
+<script src="js/plugins.js"></script> 
+<script src="js/main.js"></script> 
+<script type="text/javascript" src="assets/js/tabs.js"></script> 
+<script type="text/javascript" src="assets/js/iosslider.js"></script> 
+<script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script> 
+<script type="text/javascript" src="assets/js/engine.js"></script> 
+<script type="text/javascript" src="assets/js/dropkick.js"></script> 
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> 
+<script type="text/javascript">
+        $(document).ready(function(){
+					$('.drop').dropkick();
+					$.tabs('tab-directorio');
+				
+          $(".scroll").niceScroll();
+          $('#tablogros').one('click',function(){
+          $('#slidelogros .slide').each(function(index){ if( index == 0 ) $('#navlogros').append('<a class="on"></a>'); else $('#navlogros').append('<a></a>'); });
+		  function openFB(w,h,url){
+				w = parseInt(w);
+				h = parseInt(h);
+				$.fancybox({
+					href: url + '',
+					width : w,
+					height : h,
+					type : 'iframe',
+					autoSize  : false
+				});
+		  }
+				
+          $('#slidelogros').iosSlider({
+              snapToChildren: true,
+              navSlideSelector: $('#navlogros a'),
+              onSlideChange: function(args){ 
+                var index = args.currentSlideNumber; index--;
+                $('#navlogros .on').removeClass('on');
+                $('#navlogros a:eq(' + index +')').addClass('on');
+              }
+            });
+          });
+        });
+        
+           /* var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));*/
+        </script>
+</body>
+</html>

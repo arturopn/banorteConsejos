@@ -1109,3 +1109,17 @@ img.tip{cursor: pointer;}
 .icons-comments{ padding-top:24px; background:url(../img/icons/globo.png) center 0 no-repeat; width:31px; display:block; }
 .icons-edit{ padding-top:24px; background:url(../img/icons/edit.png) center 0 no-repeat; width:18px; display:block; }
 .icons-delete{ padding-top:24px; background:url(../img/icons/delete.png) center 0 no-repeat; width:18px; display:block; }
+
+.addmensaje{padding:10px; height:390px; width:505px; background:#FFF; border:1px solid #999;}
+.addmensaje .menos{position:relative; top:50px; left:50px; background:url(../img/btns/menos.png); background-repeat:no-repeat;}
+.addmensaje .foto-cont{margin:10px; width:20%; float:left; height:45px;}
+.addmensaje .nombre-menssage{width:60%; float:left; height:45px;}
+.addmensaje .more{padding:10px; float:right; width:20%; height:45px;}
+.addmensaje .mensaje{width:80%; margin:0 auto; clear:both; text-align:justify;}
+.addmensaje .comentario{width:80%; border:1px solid #999; height:40px; padding:10px; margin:10px auto 0;}
+.addmensaje .btns-comentario{width:80%; clear:both; border:1px solid #999; margin:0 auto; height:35px; padding:0 10px; border-top:none;}
+.addmensaje .addvideo, .addmensaje .addfoto{width:5%; height:35px; border-right:1px solid #999; padding:0 15px; background:url(../img/btns/video.png); background-repeat:no-repeat; background-position:center; cursor:pointer;}
+.addmensaje .addfoto{background:url(../img/btns/foto.png); background-repeat:no-repeat; background-position:center; margin-left:-10px;}
+.addmensaje .addlink{width:50%; float:left; border-right: 1px solid #999; height:35px;}
+.addmensaje .comment{height:15px; width:29%; float:left; background:#A20000; text-align:center; padding:10px 0; margin:0 -10px 0 1px; cursor:pointer;}
+.addmensaje .comment p{font-size:14px; color:#fff;}
