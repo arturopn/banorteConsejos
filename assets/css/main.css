@@ -1110,6 +1110,8 @@ img.tip{cursor: pointer;}
 .icons-edit{ padding-top:24px; background:url(../img/icons/edit.png) center 0 no-repeat; width:18px; display:block; }
 .icons-delete{ padding-top:24px; background:url(../img/icons/delete.png) center 0 no-repeat; width:18px; display:block; }
 
+/* Ventana agregar un Comentario Home */
+
 .addmensaje{padding:10px; height:300px; width:505px; background:#FFF; border:1px solid #999; margin:15px auto;}
 .addmensaje .menos{position:relative; top:50px; left:50px; background:url(../img/btns/menos.png); background-repeat:no-repeat;}
 .addmensaje .foto-cont{width:10%; float:left; height:45px;}
@@ -1124,3 +1126,12 @@ img.tip{cursor: pointer;}
 .addmensaje .addlink{width:50%; float:left; border-right: 1px solid #999; height:35px;}
 .addmensaje .comment{height:15px; width:28%; float:left; background:#A20000; text-align:center; padding:10px 0; margin:0 -10px 0 1px; cursor:pointer;}
 .addmensaje .comment p{font-size:14px; color:#fff;}
+
+/* Ventana Alerta */
+.ventana_alerta{ width:400px; height:150px; border:1px solid #999; background:#FFF; margin:3px auto;}
+.ventana_alerta p{font-size:18px; font-family:"source_sans_prolight", serif;}
+.ventana_alerta .interior{width:380px; height:120px; border:1px solid #999; margin:10px auto; background:#FFF;} 
+.ventana_alerta .boton_ok{width:90px; height:5px; padding:10px; background:#CCC; text-align:center; border:1px solid #666; clear:both; float:right; margin: 10px 20px 0 0; line-height:10px; cursor:pointer;}
+.ventana_alerta .boton_ok:hover{background:#666;}
+.ventana_alerta .boton_ok a{font-size:16px; color:#000; text-align:center; }
+.ventana_alerta .boton_ok a:hover{ color:#fff;}
