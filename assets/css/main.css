@@ -1103,6 +1103,7 @@ img.tip{cursor: pointer;}
 .actcuadro{position: absolute; top: 0; left: -50px; background: #fff; width: 50px; height: 45px; padding: 5px 0 5px 5px; z-index: 899;}
 
 .icons-like{ padding-top:24px; background:url(../img/icons/like.png) center 0 no-repeat; width:18px; display:block; }
+.icons-likeover{ padding-top:24px; background:url(../img/icons/likeover.png) center 0 no-repeat; width:18px; display:block; }
 .icons-comentario{ padding-top:24px; background:url(../img/icons/comment.png) center 0 no-repeat; width:18px; display:block; }
 .icons-fav{ padding-top:24px; background:url(../img/icons/favourite.png) center 0 no-repeat; width:18px; display:block; }
 .icons-fav-off{ padding-top:24px; background:url(../img/icons/favourite2.png) center 0 no-repeat; width:18px; display:block; }
