@@ -965,6 +965,7 @@ div.menuActividad{z-index:1;}
 .destacado{text-align: left; padding: 5px;}
 .destacado .contenido{ height:75px; overflow:hidden;}
 .destacado .contenidopost{ height:54px; width:185px; overflow:hidden;}
+.contforodest{ height:41px; width:185px; overflow:hidden;}
 .destacado h3 { color: #666; font-weight: bold; font-family: "source_sans_prosemibold"; font-size: 12px;}
 .destacado p.anuncio {color: #666; font-size: 18px; width: 150px;}
 .destacado p.post {color: #666; font-size: 12px; width: 290px; margin-bottom:0;}
@@ -973,6 +974,9 @@ div.menuActividad{z-index:1;}
 .destacado h2{font-size:14px; margin-bottom:0;}
 .destacado .consejo{font-size:10px; margin:0 0 7px;}
 .destacado .contenidopost p{margin-left:0 !important; margin:5px 0; font-size:11px;}
+.destacado .contforodest p{margin-left:0 !important; margin:0; font-size:11px;}
+.destacado .ver_foro{width:60px; height:19px; padding:0 7px; background:#a20000; float:right; margin-bottom:3px; text-align:center; line-height:15px;}
+.destacado .ver_foro a{color:#fff; padding:0; font-weight:normal; font-style:normal; font-family:"source_sans_proregular", serif;}
 
 .borderl{ border-right: 1px #ccc solid;}
 
