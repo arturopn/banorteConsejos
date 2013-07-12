@@ -39,7 +39,7 @@
           <div class="separador width80 margin30l"></div>
           <div class="margin10t">
             <label for="nombre">Por nombre:</label>
-            <input type="text" class="input4 width77" name="nombre" placeholder="Claudia"/>
+            <input type="text" class="input4 width77" name="nombre" placeholder="Edith"/>
           </div>
           <div class="margin5t clearfix">
             <label for="consejo">Por:</label>
@@ -112,11 +112,11 @@
           <div class="clearfix margin20b">
             <div class="floatL width30">
               <label for"nombres">Nombre(s)</label>
-              <input type="text" value="Juan antonio" class="input width90 margin5b" name="nombres" id="nombres">
+              <input type="text" placeholder="Juan Antonio" class="input width90 margin5b" name="nombres" id="nombres">
             </div>
             <div class="floatL width30 margin10l">
               <label for"nombres">&nbsp;</label>
-              <input type="text" value="Garza Cruz" class="input width90 margin5b" name="Apellidos" id="Apellidos">
+              <input type="text" placeholder="Garza Cruz" class="input width90 margin5b" name="Apellidos" id="Apellidos">
             </div>
             <div class="floatL width35 clearfix margin10l relative">
               <div class="floatL width50">
@@ -128,11 +128,11 @@
           <div class="clearfix margin20b">
             <div class="floatL width30">
               <label for"nombres">Apellido paterno</label>
-              <input type="text" value="Juan antonio" class="input width90 margin5b" name="nombres" id="nombres">
+              <input type="text" placeholder="Juan antonio" class="input width90 margin5b" name="nombres" id="nombres">
             </div>
             <div class="floatL width30 margin10l">
               <label for"nombres">Apellido materno</label>
-              <input type="text" value="Garza Cruz" class="input width90 margin5b" name="Apellidos" id="Apellidos">
+              <input type="text" placeholder="Garza Cruz" class="input width90 margin5b" name="Apellidos" id="Apellidos">
             </div>
           </div>
           <div class="clearfix margin20b">
@@ -816,7 +816,7 @@
 <script type="text/javascript" src="assets/js/jquery.js"></script>
 <script type="text/javascript" src="assets/js/fancybox.js"></script>
 <script src="js/plugins.js"></script>
-
+<script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
 <script type="text/javascript" src="assets/js/tabs.js"></script>
 <script type="text/javascript" src="assets/js/iosslider.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
@@ -825,6 +825,8 @@
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script type="text/javascript">
         $(document).ready(function(){
+			$('input[placeholder]').placeholder();
+			
 					$('.drop-por').dropkick({ 
 						change: function (value, label) {
 							$(' .optconsejo, .optdir').hide();
