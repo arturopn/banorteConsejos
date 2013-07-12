@@ -13,11 +13,14 @@
 <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
 <link href="assets/css/dropkick.css" rel="stylesheet" type="text/css" />
 <link href="assets/css/fancybox.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/scroll.css" rel="stylesheet" type="text/css" />
 <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
 <div id="contenedor">
+
   <div class="help hidden"><img src="assets/img/bg/help.png" style="position:absolute; top:0; left:-18px; z-index:9998;"/><img src="assets/img/btns/cerrarhelp.png" class="cerrarhelp" style="position:absolute; top:20px; right:50px; z-index:9999; cursor:pointer;"/></div>
+
   <div id="encabezado" >
     <div id="barra-top">
       <div class="logo margin5t"> <a href="index.html"><img src="assets/img/photos/logo.png"></a> </div>
@@ -90,71 +93,58 @@
       </div>
     </div>
   </div>
+
   <div id="contenidoin" class="contenidohome" >
     <div class="clearfix relative" style="z-index:703;">
       <div id="participa" class="coment relative floatL">
         <textarea class="participa"></textarea>
-        <div class="participaBottom clearfix relative">
-          <a href="#" target="_blank"><div class="camara floatL"></div></a>
-          <a href="index.html" class="btn width15 bgred" style="position:absolute; line-height:25px; right:0; botton:0; z-index:801;">PUBLICAR</a> </div>
-        <a href="#" class="btn width15  bgred line26 botonpublicar " style="position:absolute; right:2px; bottom:7px; z-index:8888;">PUBLICAR</a> </div>
-      <div class="temporaldrop floatL margin1l">
-        	<div class="dropclick borderb" style="height:31px;">
-            <span class="red margin10r">14</span>Notificaciones Nuevas
-            </div>
-            <div class="scroll floatL" style="height:200px;">
-            <div class="clearfix notificaciones">
-            	<div class="floatL">
-            		<img class="floatL" src="assets/img/icons/commentgray.png"/>
-              		<a href="#"><p class="floatL normal">Federico Idelfonso Carmona comento tu pulicación</p></a>
-                </div>
-                <div class="floatR">
-              		<span class="floatR arigth margin20r font11">Mayo 16 de 2013</span>
-                    </div></div>
-            <div class="clearfix  notificaciones ">
-            	<div class="floatL">
-            		<img class="floatL" src="assets/img/icons/relojgray.png"/>
-              		<a href="#"><p class="floatL normal">Jose Carlos Tirado comento tu pulicación</p></a>
-            	</div>
-              <div class="floatR">
-              	<span class="floatR arigth margin20r font11">Mayo 16 de 2013</span>
-              </div>
-              </div>
-            <div class="clearfix  notificaciones ">
-            	<div class="floatL">
-            		<img class="floatL" src="assets/img/icons/relojgray.png"/>
-              		<a href="#"><p class="floatL normal">Rafel Rojas Gonzalez comento tu pulicación</p></a>
-            	</div>
-              <div class="floatR">
-              	<span class="floatR arigth margin20r font11">Mayo 16 de 2013</span>
-              </div>
-              </div>
-            <div class="clearfix  notificaciones ">
-            	<div class="floatL">
-            		<img class="floatL" src="assets/img/icons/relojgray.png"/>
-              		<a href="#"><p class="floatL normal">Juan José Gonzalez comento tu pulicación</p></a>
-            	</div>
-              <div class="floatR">
-              	<span class="floatR arigth margin20r font11">Mayo 16 de 2013</span>
-              </div>
-              </div>
-            <div class="clearfix  notificaciones ">
-            	<div class="floatL">
-            		<img class="floatL" src="assets/img/icons/relojgray.png"/>
-              		<a href="#"><p class="floatL normal">Juan José Gonzalez comento tu pulicación</p></a>
-            	</div>
-              <div class="floatR">
-              	<span class="floatR arigth margin20r font11">Mayo 16 de 2013</span>
-              </div>
-              </div>
-      	</div>
-        <div class="floatR margin10r margin5t">
-        	<a href="notificaciones.html" class="floatR margin10l">Ver todos</a>
+        <div class="participaBottom clearfix relative"> 
+        	<a href="#" target="_blank">
+          <div class="camara floatL"></div>
+          </a>
+          <a href="index.html" class="btn width15 bgred" style="position:absolute; line-height:25px; right:0; botton:0; z-index:801;">PUBLICAR</a> 
         </div>
+        <a href="#" class="btn width15  bgred line26 botonpublicar " style="position:absolute; right:2px; bottom:7px; z-index:8888;">PUBLICAR</a>
+      </div>
+      <div class="temporaldrop floatL margin1l">
+        <div class="dropclick borderb" style="height:31px;"> <span class="red margin10r">14</span>Notificaciones Nuevas </div>
+        <div class="vscroll floatL" style="height:200px;">
+          <div class="clearfix notificaciones">
+            <div class="floatL"> <img class="floatL" src="assets/img/icons/commentgray.png"/> <a href="#">
+              <p class="floatL normal">Federico Idelfonso Carmona comento tu pulicación</p>
+              </a> </div>
+            <div class="floatR"> <span class="floatR arigth margin20r font11">Mayo 16 de 2013</span> </div>
+          </div>
+          <div class="clearfix  notificaciones ">
+            <div class="floatL"> <img class="floatL" src="assets/img/icons/relojgray.png"/> <a href="#">
+              <p class="floatL normal">Jose Carlos Tirado comento tu pulicación</p>
+              </a> </div>
+            <div class="floatR"> <span class="floatR arigth margin20r font11">Mayo 16 de 2013</span> </div>
+          </div>
+          <div class="clearfix  notificaciones ">
+            <div class="floatL"> <img class="floatL" src="assets/img/icons/relojgray.png"/> <a href="#">
+              <p class="floatL normal">Rafel Rojas Gonzalez comento tu pulicación</p>
+              </a> </div>
+            <div class="floatR"> <span class="floatR arigth margin20r font11">Mayo 16 de 2013</span> </div>
+          </div>
+          <div class="clearfix  notificaciones ">
+            <div class="floatL"> <img class="floatL" src="assets/img/icons/relojgray.png"/> <a href="#">
+              <p class="floatL normal">Juan José Gonzalez comento tu pulicación</p>
+              </a> </div>
+            <div class="floatR"> <span class="floatR arigth margin20r font11">Mayo 16 de 2013</span> </div>
+          </div>
+          <div class="clearfix  notificaciones ">
+            <div class="floatL"> <img class="floatL" src="assets/img/icons/relojgray.png"/> <a href="#">
+              <p class="floatL normal">Juan José Gonzalez comento tu pulicación</p>
+              </a> </div>
+            <div class="floatR"> <span class="floatR arigth margin20r font11">Mayo 16 de 2013</span> </div>
+          </div>
+        </div>
+        <div class="floatR margin10r margin5t"> <a href="notificaciones.html" class="floatR margin10l">Ver todos</a> </div>
       </div>
     </div>
     <div class="clearfix" style="z-index:701; position:relative;">
-    <div id="quienVentana"></div>
+      <div id="quienVentana"></div>
       <div id="actreciente" class="floatL relative" style="z-index:702; position:relative;">
         <div class="clearfix">
           <div class="menu3lines"></div>
@@ -214,8 +204,8 @@
           </div>
           <a href="index.html" class="btn width30  bgred line40 floatR margin10t margin30r">BUSCAR</a> </div>
       </div>
-      <div class="scroll floatL" style="width:629px; height:240px; position:relative; z-index:700;">
-        <div class="clearfix widthscroll" style="height:240px; overflow-y:hidden;">
+      <div class="floatL hscroll" style="height:240px; width:629px;">
+        <div class="clearfix">
           <div id="" class="floatL w207h234 bgwhite relative margin1l" align="left">
             <div class="clearfix margin5b" > <img class="floatL" src="assets/img/photos/fotohome.png"/>
               <div class="floatL width75">
@@ -227,17 +217,15 @@
             <div class="textPost">
               <p class="truncate1">La nueva interfaz de la versión mobile de Banorte  es la mejor que he visto </p>
             </div>
-            <div class="fotoPost">
-            <a class="fancybox" href="assets/img/photos/postFotogde.jpg"><img src="assets/img/photos/postFoto.jpg"></a>
-            </div>
+            <div class="fotoPost"> <a class="fancybox" href="assets/img/photos/postFotogde.jpg"><img src="assets/img/photos/postFoto.jpg"></a> </div>
             <div class="line188"></div>
             <div class="clearfix">
-              <div class="socialicons floatL tip" title="Dale like"><a href="#" class="icons-likeover"></a>
-                <a href="#" class="quienLike"><p>30</p></a>
-              </div>
-              <div class="socialicons floatL margin5l tip" title="Escribe tu comentario"><a href="#" class="icons-comentario"></a>
-                <a href="#"><p>29</p></a>
-              </div>
+              <div class="socialicons floatL tip" title="Dale like"><a href="#" class="icons-likeover"></a> <a href="#" class="quienLike">
+                <p>30</p>
+                </a> </div>
+              <div class="socialicons floatL margin5l tip" title="Escribe tu comentario"><a href="#" class="icons-comentario"></a> <a href="#">
+                <p>29</p>
+                </a> </div>
               <div class="socialicons floatL margin5l"><a href="#" class="icons-fav-off"></a></div>
             </div>
             <a onClick="openFB('550','380','add_mensaje.html')" class="btnmas"></a> </div>
@@ -249,17 +237,15 @@
                 <p style="font-size:9px; margin-left:10px; margin:0 0 0 10px; text-align:right;">15 Mayo 2013</p>
               </div>
             </div>
-            <div class="fotoCompletaPost">
-            <a class="fancybox" href="assets/img/photos/postFotogde.jpg"><img src="assets/img/photos/postFoto2.jpg"></a>
-            </div>
+            <div class="fotoCompletaPost"> <a class="fancybox" href="assets/img/photos/postFotogde.jpg"><img src="assets/img/photos/postFoto2.jpg"></a> </div>
             <div class="line188"></div>
             <div class="clearfix">
-              <div class="socialicons floatL tip" title="Dale like"><a href="#" class="icons-like"></a>
-                <a href="#" class="quienLike"><p>30</p></a>
-              </div>
-              <div class="socialicons floatL margin5l tip" title="Escribe tu comentario"><a href="#" class="icons-comentario"></a>
-                <a href="#"><p>29</p></a>
-              </div>
+              <div class="socialicons floatL tip" title="Dale like"><a href="#" class="icons-like"></a> <a href="#" class="quienLike">
+                <p>30</p>
+                </a> </div>
+              <div class="socialicons floatL margin5l tip" title="Escribe tu comentario"><a href="#" class="icons-comentario"></a> <a href="#">
+                <p>29</p>
+                </a> </div>
               <div class="socialicons floatL margin5l"><a href="#" class="icons-fav-off"></a></div>
             </div>
             <a onClick="openFB('420','160','ventana_alerta.html')" class="btnmas"></a> </div>
@@ -276,12 +262,12 @@
             </div>
             <div class="line188"></div>
             <div class="clearfix">
-              <div class="socialicons floatL tip" title="Dale like"><a href="#" class="icons-like"></a>
-                <a href="#"><p>29</p></a>
-              </div>
-              <div class="socialicons floatL margin5l tip" title="Escribe tu comentario"><a href="#" class="icons-comentario"></a>
-                <a href="#"><p>29</p></a>
-              </div>
+              <div class="socialicons floatL tip" title="Dale like"><a href="#" class="icons-like"></a> <a href="#">
+                <p>29</p>
+                </a> </div>
+              <div class="socialicons floatL margin5l tip" title="Escribe tu comentario"><a href="#" class="icons-comentario"></a> <a href="#">
+                <p>29</p>
+                </a> </div>
               <div class="socialicons floatL margin5l "><a href="#" class="icons-fav"></a></div>
             </div>
             <a onClick="openFB('550','380','add_mensaje.html')" class="btnmas"></a> </div>
@@ -306,12 +292,12 @@
             </div>
             <div class="line188"></div>
             <div class="clearfix">
-              <div class="socialicons floatL tip" title="Dale like"><a href="#" class="icons-like"></a>
-                <a href="#"><p>29</p></a>
-              </div>
-              <div class="socialicons floatL margin5l tip" title="Escribe tu comentario"><a href="#" class="icons-comentario"></a>
-                <a href="#"><p>29</p></a>
-              </div>
+              <div class="socialicons floatL tip" title="Dale like"><a href="#" class="icons-like"></a> <a href="#">
+                <p>29</p>
+                </a> </div>
+              <div class="socialicons floatL margin5l tip" title="Escribe tu comentario"><a href="#" class="icons-comentario"></a> <a href="#">
+                <p>29</p>
+                </a> </div>
               <div class="socialicons floatL margin5l "><a href="#" class="icons-fav"></a></div>
             </div>
             <a onClick="openFB('550','380','add_mensaje.html')" class="btnmas"></a> </div>
@@ -321,7 +307,7 @@
         <div class="clearfix width100" style="height:30px;"> <img class="floatL margin80l margin5t" src="assets/img/icons/twittergray.png"/>
           <h2 class="floatL">EN TWITTER</h2>
         </div>
-        <div class="scroll" style="height:180px; z-index:700; position:relative;">
+        <div class="vscroll" style="height:180px;">
           <div class="twit clearfix relative">
             <h3><strong>@ConsejerosGFB</strong></h3>
             <p>Inversionistas <span class="red">#BRIC</span> pierden apetito por las acciones</p>
@@ -358,8 +344,8 @@
         <div class="clearfix borderb"> <img class="floatL" src="assets/img/icons/agenda.gif"/>
           <h1 class="floatL margin5l">DESTACADOS</h1>
           <a href="#" class="floatR margin10l margin5b">Ver todos</a> </div>
-        <div class="clearfix scroll" style="height:170px; overflow-y:hidden;">
-          <div class="clearfix tododesta" style="overflow-y:hidden; height:147px;" >
+        <div class="clearfix hscroll" style="height:160px;">
+          <div class="clearfix tododesta" >
             <div class="floatL desta clearfix relative">
               <div class="destacado floatL">
                 <h3>13 de Septiembre 2013</h3>
@@ -368,91 +354,85 @@
                 </div>
                 <div class="line188"></div>
                 <div class="clearfix">
-              <div class="socialicons floatL tip" title="Dale like"><a href="#" class="icons-like"></a>
-                <a href="#"><p>29</p></a>
-              </div>
-            </div>
-            <a class="btnmas"></a>
-              </div>
-              <div class="lineh142 floatL"></div>
-            </div>
-            <div class="floatL desta clearfix">
-              <div class="destacado floatL">
-                
-                	<div class="floatL">
-                  <div>
-                    <h2>Juan Jose Pedraza</h2>
-                    <p class="consejo">Consejo Regional Metropolitano</p>
-                  </div>
-				</div>
-                 <div class="clear contforodest">
-                  <p>"La nueva interfaz de la versión mobile de Banorte es de las mejores que he probado en cuestión de..."</p>
-                  </div>
-                  <div class="ver_foro"><a class="btn" href="#">Ver más</a></div>
-                <div class="line188 clear"></div>
-                <div class="clearfix">
-              <div class="socialicons floatL tip" title="Dale like"><a href="#" class="icons-like"></a>
-                <a href="#"><p>29</p></a>
-              </div>
-              <div class="socialicons floatL margin5l tip" title="Escribe tu comentario"><a href="#" class="icons-comentario"></a>
-                <a href="#"><p>29</p></a>
-              </div>
-              <div class="socialicons floatL margin5l"><a href="#" class="icons-fav-off"></a></div>
-            </div>
-              </div>
-              <div class="lineh142 floatL"></div>
-            </div>
-            <div class="floatL desta clearfix">
-              <div class="destacado floatL">
-                <div class="fotoDesta">
-                	<img src="assets/img/photos/fotohome.png"/>
+                  <div class="socialicons floatL tip" title="Dale like"><a href="#" class="icons-like"></a> <a href="#">
+                    <p>29</p>
+                    </a> </div>
                 </div>
-                	<div class="floatL">
+                <a class="btnmas"></a> </div>
+              <div class="lineh142 floatL"></div>
+            </div>
+            <div class="floatL desta clearfix">
+              <div class="destacado floatL">
+                <div class="floatL">
                   <div>
                     <h2>Juan Jose Pedraza</h2>
                     <p class="consejo">Consejo Regional Metropolitano</p>
                   </div>
-				</div>
-                 <div class="clear contenidopost">
+                </div>
+                <div class="clear contforodest">
                   <p>"La nueva interfaz de la versión mobile de Banorte es de las mejores que he probado en cuestión de..."</p>
-                  </div>
+                </div>
+                <div class="ver_foro"><a class="btn" href="#">Ver más</a></div>
                 <div class="line188 clear"></div>
                 <div class="clearfix">
-              <div class="socialicons floatL tip" title="Dale like"><a href="#" class="icons-like"></a>
-                <a href="#"><p>29</p></a>
-              </div>
-              <div class="socialicons floatL margin5l tip" title="Escribe tu comentario"><a href="#" class="icons-comentario"></a>
-                <a href="#"><p>29</p></a>
-              </div>
-              <div class="socialicons floatL margin5l"><a href="#" class="icons-fav-off"></a></div>
-            </div>
+                  <div class="socialicons floatL tip" title="Dale like"><a href="#" class="icons-like"></a> <a href="#">
+                    <p>29</p>
+                    </a> </div>
+                  <div class="socialicons floatL margin5l tip" title="Escribe tu comentario"><a href="#" class="icons-comentario"></a> <a href="#">
+                    <p>29</p>
+                    </a> </div>
+                  <div class="socialicons floatL margin5l"><a href="#" class="icons-fav-off"></a></div>
+                </div>
               </div>
               <div class="lineh142 floatL"></div>
             </div>
             <div class="floatL desta clearfix">
               <div class="destacado floatL">
-                <div class="fotoDesta">
-                	<img src="assets/img/photos/fotohome.png"/>
-                </div>
-                	<div class="floatL">
+                <div class="fotoDesta"> <img src="assets/img/photos/fotohome.png"/> </div>
+                <div class="floatL">
                   <div>
                     <h2>Juan Jose Pedraza</h2>
                     <p class="consejo">Consejo Regional Metropolitano</p>
                   </div>
-				</div>
-                 <div class="clear contenidopost">
+                </div>
+                <div class="clear contenidopost">
                   <p>"La nueva interfaz de la versión mobile de Banorte es de las mejores que he probado en cuestión de..."</p>
-                  </div>
+                </div>
                 <div class="line188 clear"></div>
                 <div class="clearfix">
-              <div class="socialicons floatL tip" title="Dale like"><a href="#" class="icons-like"></a>
-                <a href="#"><p>29</p></a>
+                  <div class="socialicons floatL tip" title="Dale like"><a href="#" class="icons-like"></a> <a href="#">
+                    <p>29</p>
+                    </a> </div>
+                  <div class="socialicons floatL margin5l tip" title="Escribe tu comentario"><a href="#" class="icons-comentario"></a> <a href="#">
+                    <p>29</p>
+                    </a> </div>
+                  <div class="socialicons floatL margin5l"><a href="#" class="icons-fav-off"></a></div>
+                </div>
               </div>
-              <div class="socialicons floatL margin5l tip" title="Escribe tu comentario"><a href="#" class="icons-comentario"></a>
-                <a href="#"><p>29</p></a>
-              </div>
-              <div class="socialicons floatL margin5l"><a href="#" class="icons-fav-off"></a></div>
+              <div class="lineh142 floatL"></div>
             </div>
+            <div class="floatL desta clearfix">
+              <div class="destacado floatL">
+                <div class="fotoDesta"> <img src="assets/img/photos/fotohome.png"/> </div>
+                <div class="floatL">
+                  <div>
+                    <h2>Juan Jose Pedraza</h2>
+                    <p class="consejo">Consejo Regional Metropolitano</p>
+                  </div>
+                </div>
+                <div class="clear contenidopost">
+                  <p>"La nueva interfaz de la versión mobile de Banorte es de las mejores que he probado en cuestión de..."</p>
+                </div>
+                <div class="line188 clear"></div>
+                <div class="clearfix">
+                  <div class="socialicons floatL tip" title="Dale like"><a href="#" class="icons-like"></a> <a href="#">
+                    <p>29</p>
+                    </a> </div>
+                  <div class="socialicons floatL margin5l tip" title="Escribe tu comentario"><a href="#" class="icons-comentario"></a> <a href="#">
+                    <p>29</p>
+                    </a> </div>
+                  <div class="socialicons floatL margin5l"><a href="#" class="icons-fav-off"></a></div>
+                </div>
               </div>
               <div class="lineh142 floatL"></div>
             </div>
@@ -464,15 +444,13 @@
                 </div>
                 <div class="line188"></div>
                 <div class="clearfix">
-              <div class="socialicons floatL tip" title="Dale like"><a href="#" class="icons-like"></a>
-                <a href="#"><p>29</p></a>
-              </div>
-            </div>
-            <a class="btnmas"></a>
-              </div>
+                  <div class="socialicons floatL tip" title="Dale like"><a href="#" class="icons-like"></a> <a href="#">
+                    <p>29</p>
+                    </a> </div>
+                </div>
+                <a class="btnmas"></a> </div>
               <div class="lineh142 floatL"></div>
             </div>
-            
           </div>
         </div>
       </div>
@@ -482,36 +460,25 @@
           <a href="#" class="floatR margin10l margin5b">Ver todos</a> </div>
         <p class="pregunta">¿Qué tan importante son para usted las reuniones que organiza el Consejo Regional Metropolitano durante este año o los años anteriores? </p>
         <div class="clearfix respuestas">
-        <table class="floatL" width="310" border="0" cellspacing="5" cellpadding="5">
-        	<form name="form1" method="post" action="">
+          <table class="floatL" width="310" border="0" cellspacing="5" cellpadding="5">
+            <form name="form1" method="post" action="">
               <tr>
-                <td width="155">
-                	<input type="radio" name="radio" id="radio" value="radio">
-                    <label for="radio">Poco</label>
-                </td>
-                <td width="155">
-                	<input type="radio" name="radio" id="radio" value="radio">
-                    <label for="radio">Regular</label>
-                </td>
+                <td width="155"><input type="radio" name="radio" id="radio" value="radio">
+                  <label for="radio">Poco</label></td>
+                <td width="155"><input type="radio" name="radio" id="radio" value="radio">
+                  <label for="radio">Regular</label></td>
               </tr>
               <tr>
-                <td>
-                	<input type="radio" name="radio" id="radio" value="radio">
-                    <label for="radio">Mucho</label>
-                </td>
-                <td>
-                	<input type="radio" name="radio" id="radio" value="radio">
-                    <label for="radio">Nada</label>
-                </td>
+                <td><input type="radio" name="radio" id="radio" value="radio">
+                  <label for="radio">Mucho</label></td>
+                <td><input type="radio" name="radio" id="radio" value="radio">
+                  <label for="radio">Nada</label></td>
               </tr>
-              </form>
-		</table>
+            </form>
+          </table>
         </div>
-        <div class="clearfix respuestas">
-        </div>
-        <div class="votar">
-        	<a href="#" style="font-weight:normal; color:#FFF !important;" class="btn bgred line20">VOTAR</a>
-        </div>
+        <div class="clearfix respuestas"> </div>
+        <div class="votar"> <a href="#" style="font-weight:normal; color:#FFF !important;" class="btn bgred line20">VOTAR</a> </div>
       </div>
     </div>
     <!-- <div class="clearfix">
@@ -523,6 +490,7 @@
     </div>
    </div>-->
   </div>
+
   <div id="footer">
     <div class="wrapper relative" align="left">
       <div class="clearfix">
@@ -539,105 +507,85 @@
               <li><a href="#">Acerca de</a></li>
             </ul>
             <img class="floatR" src="assets/img/lines/separadorfooter.gif"/> </div>
-          <div class="contactos scroll">
+          <div class="contactos vscroll" id="cscroll">
             <div class="clearfix contacto borderb">
-            	<div class="floatL width15">
-					<img class="floatL" src="assets/img/photos/fotohome2.png">
-				</div>
-				<div class="perschat floatL width70 alert">
-					<h2>Mariano Raul Barrientos</h2>
-					<p>Consejo Regional Metropolitano</p>
-				</div>
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Mariano Raul Barrientos</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
               <div class="chaticon floatR"></div>
             </div>
             <div class="clearfix contacto borderb">
-            <div class="floatL width15">
-					<img class="floatL" src="assets/img/photos/fotohome.png">
-				</div>
-				<div class="perschat floatL width70 alert">
-					<h2>Juan Cerrano Marquez</h2>
-					<p>Consejo Regional Metropolitano</p>
-				</div>
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Juan Cerrano Marquez</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
               <div class="chaticon floatR"></div>
             </div>
             <div class="clearfix contacto borderb">
-            <div class="floatL width15">
-					<img class="floatL" src="assets/img/photos/fotohome2.png">
-				</div>
-				<div class="perschat floatL width70 alert">
-					<h2>Jorge Perez Barrientos</h2>
-					<p>Consejo Regional Metropolitano</p>
-				</div>
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Jorge Perez Barrientos</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
               <div class="chaticon floatR"></div>
             </div>
             <div class="clearfix contacto borderb">
-            <div class="floatL width15">
-					<img class="floatL" src="assets/img/photos/fotohome2.png">
-				</div>
-				<div class="perschat floatL width70 alert">
-					<h2>Benito Juarez Solis</h2>
-					<p>Consejo Regional Metropolitano</p>
-				</div>
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Benito Juarez Solis</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
               <div class="chaticon2 floatR"></div>
             </div>
             <div class="clearfix contacto borderb">
-            	<div class="floatL width15">
-					<img class="floatL" src="assets/img/photos/fotohome2.png">
-				</div>
-				<div class="perschat floatL width70 alert">
-					<h2>Mariano Raul Barrientos</h2>
-					<p>Consejo Regional Metropolitano</p>
-				</div>
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Mariano Raul Barrientos</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
               <div class="chaticon floatR"></div>
             </div>
             <div class="clearfix contacto borderb">
-            <div class="floatL width15">
-					<img class="floatL" src="assets/img/photos/fotohome.png">
-				</div>
-				<div class="perschat floatL width70 alert">
-					<h2>Juan Cerrano Marquez</h2>
-					<p>Consejo Regional Metropolitano</p>
-				</div>
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Juan Cerrano Marquez</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
               <div class="chaticon floatR"></div>
             </div>
             <div class="clearfix contacto borderb">
-            <div class="floatL width15">
-					<img class="floatL" src="assets/img/photos/fotohome2.png">
-				</div>
-				<div class="perschat floatL width70 alert">
-					<h2>Jorge Perez Barrientos</h2>
-					<p>Consejo Regional Metropolitano</p>
-				</div>
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Jorge Perez Barrientos</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
               <div class="chaticon floatR"></div>
             </div>
             <div class="clearfix contacto borderb">
-            <div class="floatL width15">
-					<img class="floatL" src="assets/img/photos/fotohome2.png">
-				</div>
-				<div class="perschat floatL width70 alert">
-					<h2>Benito Juarez Solis</h2>
-					<p>Consejo Regional Metropolitano</p>
-				</div>
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Benito Juarez Solis</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
               <div class="chaticon2 floatR"></div>
             </div>
             <div class="clearfix contacto borderb">
-            	<div class="floatL width15">
-					<img class="floatL" src="assets/img/photos/fotohome2.png">
-				</div>
-				<div class="perschat floatL width70 alert">
-					<h2>Mariano Raul Barrientos</h2>
-					<p>Consejo Regional Metropolitano</p>
-				</div>
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Mariano Raul Barrientos</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
               <div class="chaticon floatR"></div>
             </div>
             <div class="clearfix contacto borderb">
-            <div class="floatL width15">
-					<img class="floatL" src="assets/img/photos/fotohome.png">
-				</div>
-				<div class="perschat floatL width70 alert">
-					<h2>Juan Cerrano Marquez</h2>
-					<p>Consejo Regional Metropolitano</p>
-				</div>
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Juan Cerrano Marquez</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
               <div class="chaticon floatR"></div>
             </div>
           </div>
@@ -669,6 +617,7 @@
       </div>
     </div>
   </div>
+
 </div>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
@@ -677,100 +626,95 @@
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script type="text/javascript" src="assets/js/engine.js"></script>
 <script type="text/javascript" src="assets/js/dropkick.js"></script>
-<script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>
-<script type="application/javascript" src="assets/js/iscroll.js"></script>
+<!--<script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>
+<script type="application/javascript" src="assets/js/iscroll.js"></script>-->
 <script type="text/javascript" src="assets/js/jquery.tipTip.js"></script>
+<script type="text/javascript" src="assets/js/mCustomScrollbar.js"></script>
 <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.jtruncate.js"></script> 
+<script type="text/javascript" src="assets/js/jquery.jtruncate.js"></script>
 <script type="text/javascript" src="assets/js/fancybox.js"></script>
-
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script type="text/javascript">
 
 function openFB(w,h,url){
-				w = parseInt(w);
-				h = parseInt(h);
-				$.fancybox({
-					href: url + '',
-					width : w,
-					height : h,
-					type : 'iframe',
-					autoSize  : false
-				});
-		  }
-        $(document).ready(function(){
-			
-			 
-		  
-			$(".fancybox").fancybox();
+	w = parseInt(w);
+	h = parseInt(h);
+	$.fancybox({
+		href: url + '',
+		width : w,
+		height : h,
+		type : 'iframe',
+		autoSize  : false
+	});
+}
 
-			$('.truncate1').jTruncate({
-            length: 50,
-			minTrail:0,
-            moreText: ""
-          }); 
-		  
-		 
-														 
-          $(".tip").tipTip();
-		  
-        	$('.drop-por').dropkick({ 
-			change: function (value, label) {
-				$('#input4,#input5,#inputnombre, .optconsejo, .optdir').hide();
-				if(value < 4)
-					$('#inputnombre').show();
-				if(value >= 4)
-					$('#input' + value).show();
-				if(value == 'Consejero')
-					$('.optconsejo').show();
-				if(value == 'Directivo')
-					$('.optdir').show();
-			}});
-					
-			$('.drop-filtro').dropkick({ 
-				change: function (value, label) {
-					$('#nomusuario, #pconsejo').hide();
-					if(value == 'usuario')
-						$('#nomusuario').show();
-					if(value == 'consejo'){
-						$('#pconsejo').show();
-					}
-				}
-			});
+$(document).ready(function(){
 
-						$('.drop').dropkick();
-						$('.dropconsejo').dropkick();
-						$('#pconsejo').hide();
-			
-            $('div.fotobg').hide();
-			
-			
-        //scroll horizontal para el div de la parte superior
-        var cantidad = $(".w207h234").length;
-        var ancho = $(".w207h234").width() + 30;
-        var anchoscroll = cantidad * ancho;
-         $(".widthscroll").width(anchoscroll);
-		 
-        });
-		
-        $(".scroll").niceScroll();
+	$(".fancybox").fancybox();
 
-       var cantidadDestacado = $(".destacado").length;
-        var anchoDestacado = $(".destacado").width() + 70;
-        var anchoscrollDestacado = cantidadDestacado * anchoDestacado;
-      $(".tododesta").width(anchoscrollDestacado);
-       
+	$('.truncate1').jTruncate({
+		length: 50,
+		minTrail:0,
+		moreText: ""
+	}); 	
+												 
+	$(".tip").tipTip();
+	
+	$('.drop-por').dropkick({ 
+	change: function (value, label) {
+		$('#input4,#input5,#inputnombre, .optconsejo, .optdir').hide();
+		if(value < 4)
+			$('#inputnombre').show();
+		if(value >= 4)
+			$('#input' + value).show();
+		if(value == 'Consejero')
+			$('.optconsejo').show();
+		if(value == 'Directivo')
+			$('.optdir').show();
+	}});
+			
+	$('.drop-filtro').dropkick({ 
+		change: function (value, label) {
+			$('#nomusuario, #pconsejo').hide();
+			if(value == 'usuario')
+				$('#nomusuario').show();
+			if(value == 'consejo'){
+				$('#pconsejo').show();
+			}
+		}
+	});
+	
+	$('.drop').dropkick();
+	$('.dropconsejo').dropkick();
+	$('#pconsejo').hide();
 
-       $(".dk_label").change(function(){
-    if($(".dk_label").text() == "Usuario"){
-      alert("hola");
-    }
-});  
-        //
-           /* var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));*/
-        </script>
+	$('div.fotobg').hide();
+	
+	
+	//scroll horizontal para el div de la parte superior
+	var cantidad = $(".w207h234").length;
+	var ancho = $(".w207h234").width() + 30;
+	var anchoscroll = cantidad * ancho;
+  $(".widthscroll").width(anchoscroll);
+	
+	//$(".scroll").niceScroll();
+	
+	var cantidadDestacado = $(".destacado").length;
+	var anchoDestacado = $(".destacado").width() + 70;
+	var anchoscrollDestacado = cantidadDestacado * anchoDestacado;
+	$(".tododesta").width(anchoscrollDestacado);
+
+});
+	 
+	
+/*$(".dk_label").change(function(){
+	if($(".dk_label").text() == "Usuario"){	alert("hola");	}
+});*/  
+			//
+/* var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+s.parentNode.insertBefore(g,s)}(document,'script'));*/
+</script>
 </body>
 </html>

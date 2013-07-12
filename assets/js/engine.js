@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+	$(".hscroll").mCustomScrollbar({
+		horizontalScroll:true,
+		scrollInertia:250
+	});
+	$(".vscroll").mCustomScrollbar({
+		scrollInertia:250
+	});	
+
 	$('.eventos').click(function(){
 		window.location.href = 'http:google.com';
 	}); 
@@ -12,11 +20,6 @@ $(document).ready(function() {
 	$(".dk_toggle").click(function(){
 		$(".dk_container").removeClass("dk_open");
 	});
-
-
-/*$(".dk_toggle").click(function(){
-alert("hola");
-});*/
 
 //fix html5 placeholder attribute for ie7 & ie8
 	if (jQuery.browser.msie && jQuery.browser.version.substr(0,1) < 9) { // ie7&ie8
@@ -89,8 +92,6 @@ alert("hola");
 
 		$(".nicescroll-rails").css("z-index","690");
 	});
-
-		
 	
 
 
@@ -100,17 +101,28 @@ alert("hola");
 	}, function(){
 		$("div.contactos").hide(400);
 	});*/
+	$("#cscroll").mCustomScrollbar({
+		scrollInertia:250
+	});
 	$(".chatButton").click(function(){
-		$("div.contactos").toggle();
+		$("div.contactos").toggle("fast", function(){
+			var customScrollbar=$("#cscroll").find(".mCSB_scrollTools");
+			customScrollbar.css({"opacity":0});
+			$("#cscroll").mCustomScrollbar("update");
+			customScrollbar.animate({opacity:1},"slow");
+		});
 	});
 	$(".contacto").click(function(){
 		nombreDeContacto = $("h2",this).text();
 		consejoNombre = $("p", this).text();
 		foto = $("img",this).attr("src");
-		$('#ventanas').append('<div class="ventanachat relative"><div class="cerrarchat"></div><div class="floatL width15"><img class="floatL" src="' + foto +'"></div><div class="floatL width80 aleft"><h2>' + nombreDeContacto +'</h2><p>' + consejoNombre +'</p></div><div class="floatR tiempochat"><span>Ver más</span></div><div class="floatL conversacionarea"><div class="replymessage scroll"><div class="floatL width100 aleft"><p class="font12 bold width65 floatL">Israel Cantú</p><p class="floatR width30 font10 arigth">13/06/2013 13:11</p><p class="width100 font12 floatL">Hola Marco ya subiste el ayuntamiento?</p></div><div class="floatL width100 aleft margin5t"><p class="font12 bold width65 floatL">Marcos</p><p class="floatR width30 font10 arigth">13/06/2013 13:13</p><p class="width100 font12 floatL">Si ya es nivel 7</p></div><div class="floatL width100 aleft margin5t"><p class="font12 bold width65 floatL">Israel Cantú</p><p class="floatR width30 font10 arigth">13/06/2013 13:20</p><p class="width100 font12 floatL">Si lo veo te voy a saquear!</p></div></div></div><textarea class="comment"></textarea></div>');
+		$('#ventanas').append('<div class="ventanachat relative"><div class="cerrarchat"></div><div class="floatL width15"><img class="floatL" src="' + foto +'"></div><div class="floatL width80 aleft"><h2>' + nombreDeContacto +'</h2><p>' + consejoNombre +'</p></div><div class="floatR tiempochat"><span>Ver más</span></div><div class="floatL conversacionarea"><div class="replymessage"><div class="floatL width100 aleft"><p class="font12 bold width65 floatL">Israel Cantú</p><p class="floatR width30 font10 arigth">13/06/2013 13:11</p><p class="width100 font12 floatL">Hola Marco ya subiste el ayuntamiento?</p></div><div class="floatL width100 aleft"><p class="font12 bold width65 floatL">Israel Cantú</p><p class="floatR width30 font10 arigth">13/06/2013 13:11</p><p class="width100 font12 floatL">Hola Marco ya subiste el ayuntamiento?</p></div><div class="floatL width100 aleft"><p class="font12 bold width65 floatL">Israel Cantú</p><p class="floatR width30 font10 arigth">13/06/2013 13:11</p><p class="width100 font12 floatL">Hola Marco ya subiste el ayuntamiento?</p></div><div class="floatL width100 aleft"><p class="font12 bold width65 floatL">Israel Cantú</p><p class="floatR width30 font10 arigth">13/06/2013 13:11</p><p class="width100 font12 floatL">Hola Marco ya subiste el ayuntamiento?</p></div><div class="floatL width100 aleft margin5t"><p class="font12 bold width65 floatL">Marcos</p><p class="floatR width30 font10 arigth">13/06/2013 13:13</p><p class="width100 font12 floatL">Si ya es nivel 7</p></div><div class="floatL width100 aleft margin5t"><p class="font12 bold width65 floatL">Israel Cantú</p><p class="floatR width30 font10 arigth">13/06/2013 13:20</p><p class="width100 font12 floatL">Si lo veo te voy a saquear!</p></div></div></div><textarea class="comment"></textarea></div>');
 		$( ".ventanachat" ).draggable();
 		$('.ventanachat textarea').click(function(){ $( ".ventanachat" ).draggable("disable"); });
 		$('.ventanachat textarea').blur(function(){ $( ".ventanachat" ).draggable("enable"); });
+		$(".replymessage").mCustomScrollbar({
+			scrollInertia:250
+		});	
 		//$(".ventanachat h2").text(nombreDeContacto);
 		//$(".ventanachat img").attr("src",foto);
 		//$(".ventanachat").show(400);
@@ -120,7 +132,10 @@ alert("hola");
 
 	$(".quienLike").click(function(){
 		$('#quienVentana').append('<div class="quien-like scroll-like"><div class="cerrarchat"></div><div class="clearfix contacto borderb margin10t"><div class="floatL width15"><img class="floatL" src="assets/img/photos/fotohome2.png"></div><div class="floatL width80 aleft"><h2>Mariano Mario Barrientos</h2><p>Consejo Regional Metropolitano</p></div></div><div class="clearfix contacto borderb"><img class="floatL" src="assets/img/photos/fotohome2.png"><h2 class="floatL">Luis Mario Gonzalez Barrientos</h2><p class="floatL margin10l margin5t margin0b">Area de Contabilidad</p></div><div class="clearfix contacto borderb"><img class="floatL" src="assets/img/photos/fotohome2.png"><h2 class="floatL">Luis Mario Gonzalez Barrientos</h2><p class="floatL margin10l margin5t margin0b">Area de Contabilidad</p></div><div class="clearfix contacto borderb"><img class="floatL" src="assets/img/photos/fotohome2.png"><h2 class="floatL">Luis Mario Gonzalez Barrientos</h2><p class="floatL margin10l margin5t margin0b">Area de Contabilidad</p></div><div class="clearfix contacto borderb"><img class="floatL" src="assets/img/photos/fotohome2.png"><h2 class="floatL">Juan Jose Gonzalez Barrientos</h2><p class="floatL margin10l margin5t margin0b">Consejo Regional MNorte</p></div></div>'
-			);  $(".scroll-like").niceScroll();
+			);  
+		$(".scroll-like").mCustomScrollbar({
+			scrollInertia:250
+		});
 		//$(".ventanachat h2").text(nombreDeContacto);
 		//$(".ventanachat img").attr("src",foto);
 		//$(".ventanachat").show(400);
