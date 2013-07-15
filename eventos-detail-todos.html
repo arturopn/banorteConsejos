@@ -15,19 +15,13 @@
 
         <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/dropkick.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/scroll.css" rel="stylesheet" type="text/css" />
         <script type="text/javascript" src="assets/js/jquery.js"></script>
+        <script type="text/javascript" src="assets/js/mCustomScrollbar.js"></script>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script type="text/javascript" src="assets/js/engine.js"></script>
         <script type="text/javascript" src="assets/js/dropkick.js"></script>
         <script type="text/javascript" src="assets/js/jquery.tipTip.js"></script>
-        <script type="text/javascript">
-        $(document).ready(function(){
-        $('.drop').dropkick();
-         $(".tip").tipTip({defaultPosition:"left"});
-       
- 
-        });
-        </script>
         </head>
         <body>
 <div id="contenedor">
@@ -122,7 +116,7 @@
             <div class="margin20l margin10t" style="clear:both"> <img src="assets/img/photos/fotoevento.png" /></div>
           </div>
                   <div class="floatL clearfix padding10" style="width:530px; height:209px;">
-            <div class="width66 floatL taleft scroll" style="height:205px; padding: 0 10px;">
+            <div class="width66 floatL taleft vscroll" style="height:205px; padding: 0 10px;">
                       <h1 class="prolight font22 ">Reunión de Consejeros Regionales </br>
                 SALA C Hotel Intercontinental</h1>
                       <p class="prolight font14">Lorem ipsum dolor sit amet neque, Nullam gravida! Vel Ut auctor nisl nostra, Vivamus nulla lorem mus pede eget lorem. Pellentesque litora Duis! Ridiculus ante, diam ut mattis. Lorem ipsum dolor sit amet neque, Nullam gravida! Vel Ut auctor nisl nostra, Vivamus nulla lorem mus pede eget lorem. Pellentesque litora Duis! Ridiculus ante, diam ut mattis. Lorem ipsum dolor sit amet neque, Nullam gravida! Vel Ut auctor nisl nostra, Vivamus nulla lorem mus pede eget lorem. Pellentesque litora Duis! Ridiculus ante, diam ut mattis. Lorem ipsum dolor sit amet neque, Nullam gravida! Vel Ut auctor nisl nostra, Vivamus nulla lorem mus pede eget lorem. Pellentesque litora Duis! Ridiculus ante, diam ut mattis.</p>
@@ -376,11 +370,7 @@
           var cantidad = $(".box24").length;
         var ancho = $(".box24").width() + 30;
         var anchoscroll = cantidad * ancho;
-         $(".widthscroll").width(anchoscroll);
-
-      
-        $(".scroll").niceScroll();
-       
+         $(".widthscroll").width(anchoscroll);       
 
        $(".fancybox-thumb").fancybox({
         helpers : {

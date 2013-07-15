@@ -529,7 +529,7 @@ z-index: 808;
 #directoriohead span{ color: #A92626;}
 #directoriohead { color: #333333; font-size: 20px;}
 
-.directorioin{ padding: 30px; height: 311px; width:64.6% !important;}
+.directorioin{ padding: 30px 0 30px 30px; height: 360px; width:67.6% !important;}
 .directorioin2{  height: 311px;}
 
 .font13{ font-size: 13px;}

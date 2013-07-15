@@ -15,6 +15,7 @@
         <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/fancybox.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/dropkick.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/scroll.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="assets/css/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
     </head>
     <body>
@@ -101,7 +102,7 @@
 
 <div id="tab-directorio" class="relative">
          
- <div id="consejeros" class="tabs-cont clearfix acerca scroll" style="overflow-y:hidden;">
+ <div id="consejeros" class="tabs-cont clearfix acerca" style="overflow-y:hidden;">
   <div class="clearfix borderb margin10b">
 <div class="floatL">
   <div class="clearfix margin120l">
@@ -157,7 +158,7 @@
    <img src="assets/img/misc/proximosforos.png" class="margin30t"/>
  </div>
 
- <div class="floatL margin20l scroll" style="height:160px; width:886px;">
+ <div class="floatL margin20l hscroll" style="height:160px; width:886px;">
   <div class="clearfix widthscroll" height="150">
    <div class="box24 clearfix">
     <div class="boxpestana yellow"></div>
@@ -224,7 +225,7 @@
               <li><a href="#">Acerca de</a></li>
             </ul>
             <img class="floatR" src="assets/img/lines/separadorfooter.gif"/> </div>
-          <div class="contactos scroll">
+          <div class="contactos vscroll">
             <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome2.png">
               <h2  class="floatL">Luis Mario Gonzalez Barrientos</h2>
               <p  class="floatL margin10l margin5t margin0b">Area de Contabilidad</p>
@@ -317,8 +318,8 @@
         <script type="text/javascript" src="assets/js/dropkick.js"></script>
         <script type="text/javascript" src="assets/js/jquery.tipTip.js"></script>
         <script type="text/javascript" src="assets/js/tabs.js"></script>
-        <script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>
         <script type="text/javascript" src="assets/js/fancybox.js"></script>
+        <script type="text/javascript" src="assets/js/mCustomScrollbar.js"></script>
     <script type="text/javascript" src="assets/js/jquery.fancybox-media.js"></script>
     <script type="text/javascript" src="assets/js/jquery.fancybox-thumbs.js"></script>
         <script type="text/javascript">
@@ -338,10 +339,6 @@
         var ancho = $(".box24").width() + 30;
         var anchoscroll = cantidad * ancho;
          $(".widthscroll").width(anchoscroll);
-
-      
-        $(".scroll").niceScroll();
-       
 
        $(".fancybox-thumb").fancybox({
         helpers : {

@@ -97,7 +97,7 @@
   <div id="contenidoin" class="contenidohome" >
     <div class="clearfix relative" style="z-index:703;">
       <div id="participa" class="coment relative floatL">
-        <textarea class="participa"></textarea>
+        <textarea class="participa" placeholder="Escribe tus comentarios"></textarea>
         <div class="participaBottom clearfix relative"> 
         	<a href="#" target="_blank">
           <div class="camara floatL"></div>
@@ -626,10 +626,9 @@
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script type="text/javascript" src="assets/js/engine.js"></script>
 <script type="text/javascript" src="assets/js/dropkick.js"></script>
-<!--<script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>
-<script type="application/javascript" src="assets/js/iscroll.js"></script>-->
 <script type="text/javascript" src="assets/js/jquery.tipTip.js"></script>
 <script type="text/javascript" src="assets/js/mCustomScrollbar.js"></script>
+<script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
 <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.jtruncate.js"></script>
 <script type="text/javascript" src="assets/js/fancybox.js"></script>
@@ -649,6 +648,8 @@ function openFB(w,h,url){
 }
 
 $(document).ready(function(){
+	
+	$('input[placeholder]').placeholder();
 
 	$(".fancybox").fancybox();
 
