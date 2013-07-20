@@ -18,7 +18,7 @@
 <body>
 <div id="contenedor">
   <div id="encabezado" >
-    <div id="barra-top" class="clearfix">
+    <div id="barra-top">
       <div class="logo margin5t"> <a href="index.html"><img src="assets/img/photos/logo.png"></a> </div>
       <div class="clearfix floatR margin35r">
         <div class="floatL" align="left">
@@ -31,7 +31,7 @@
         <div class="separadorbarra floatL margin15r"></div>
         <img src="assets/img/icons/search.png" class="floatL margin14t margin15r fotologin"/>
         <div class="separadorbarra floatL margin15r"></div>
-        <img src="assets/img/icons/interrogacion.png" class="floatL margin14t margin15r"/>
+        <img src="assets/img/icons/interrogacion.png" class="floatL margin14t margin15r clickhelp"/>
         <div class="separadorbarra floatL margin15r"></div>
         <img src="assets/img/icons/logout.png" class="floatL margin14t margin15r"/>
         <div class="separadorbarra floatL"></div>
@@ -40,9 +40,9 @@
           <div class="separador width80 margin30l"></div>
           <div class="margin10t">
             <label for="nombre">Por nombre:</label>
-            <input type="text" class="input4 width77" name="nombre" placeholder="Edith"/>
+            <input type="text" class="input4 width77 margin30l" name="nombre" placeholder="Claudia"/>
           </div>
-          <div class="margin5t clearfix">
+          <div class="margin5t clear">
             <label for="consejo">Por:</label>
             <div class="width80 floatR margin35r">
               <div class="width100">
@@ -136,7 +136,7 @@
               <input type="text" placeholder="Garza Cruz" class="input width90 margin5b" name="Apellidos" id="Apellidos">
             </div>
           </div>
-          <div class="clearfix margin20b">
+          <div class="clearfix margin20b scrollto" id="scroll1">
             <div class="clearfix">
               <label for"fecha">Fecha de nacimiento</label>
               <div class="width15 greyselect bigger floatL" style="margin-top:2px; margin-left:0px;">
@@ -169,7 +169,7 @@
             </div>
             <div class="floatL margin20l"> </div>
           </div>
-          <div class="floatL">
+          <div class="floatL scrollto" id="scroll2">
             <label for"ciudad">Lugar de origen</label>
             <div class="width100 greyselect bigger floatL" style="margin-top:2px; margin-left:0px;">
               <select class="drop" name="ciudad">
@@ -177,20 +177,13 @@
               </select>
             </div>
           </div>
-          <div class="floatL margin20l">
+          <div id="test" class="floatL margin20l">
             <label for"estado">Estado</label>
             <div class="greyselect bigger floatL" style="margin-top:2px;  width:150px;">
               <select class="drop" name="estado">
                 <option>Estado</option>
-                <option>Estado</option>
-                <option>Estado</option>
-                <option>Estado</option>
-                <option>Estado</option>
-                <option>Estado</option>
-                <option>Estado</option>
-                <option>Estado</option>
-                <option>Estado</option>
-                <option>Estado</option>
+                <option>Aguascalientes</option>
+                <option>Baja California</option>
               </select>
             </div>
           </div>
@@ -231,7 +224,7 @@
             </tbody>
           </table>
           <div class="margin30b" align="left"><a href="#" class="btn width15 line30  bggray font13  ">ELIMINAR</a><a href="#" class="btn width15 line30  bggray font13 margin20l  ">MODIFICAR</a></div>
-          <div class="clearfix margin15b width100">
+          <div class="clearfix margin15b width100 scrollto" id="scroll3">
             <input type="text" class="input width15 floatL margin5r font20" placeholder="LADA">
             <input type="text" class="input width29 floatL margin5r font20" placeholder="NUMERO">
             <input type="text" class="input width15 floatL margin5r font20" placeholder="Ext.">
@@ -307,7 +300,7 @@
           <div class="clearfix margin10b">
             <div class="width35 floatL"></div>
           </div>
-          <div class="clearfix margin10b width100">
+          <div class="clearfix margin10b width100 scrollto" id="scroll4">
             <div class="width35 floatL">
               <select class="drop" name="socialNetTypeId">
                 <option>Red Social</option>
@@ -423,7 +416,7 @@
             <div class="width30 margin10r floatL">
               <input type="text" class="input width100 font20 margin10b" placeholder="Generación">
             </div>
-            <div class="width30 greyselect bigger floatL" style="margin-top:5px; margin-left:20px;">
+            <div class="width30 greyselect bigger floatL scrollto" id="scroll5" style="margin-top:5px; margin-left:20px;">
               <select class="drop" name="universidad">
                 <option>Universidad</option>
               </select>
@@ -718,82 +711,236 @@
   <div id="footer">
     <div class="wrapper relative" align="left">
       <div class="clearfix">
-        <div class="floatL">
-          <div class="floatL width60"> <img class="floatL" src="assets/img/lines/separadorfooter.gif"/>
-            <ul class="floatL margin15t margin10l margin10r">
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Eventos</a></li>
-              <li><a href="#">Foros</a></li>
-              <li><a href="#">Favoritos</a></li>
-              <li><a href="#">Destacados</a></li>
-              <li><a href="#">Encuestas</a></li>
-              <li><a href="#">Directorio</a></li>
-              <li><a href="#">Acerca de</a></li>
-            </ul>
-            <img class="floatR" src="assets/img/lines/separadorfooter.gif"/> </div>
-          <div class="contactos vscroll">
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome2.png">
-              <h2  class="floatL">Luis Mario Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Area de Contabilidad</p>
-              <div class="chaticon floatR margin-10t"></div>
+        <div class="floatL width57">
+          <ul class="floatL margin15t margin10l margin10r">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Foros</a></li>
+            <li><a href="#">Favoritos</a></li>
+            <li><a href="#">Destacados</a></li>
+            <li><a href="#">Encuestas</a></li>
+            <li><a href="#">Directorio</a></li>
+            <li><a href="#">Acerca de</a></li>
+          </ul>
+          <img class="floatR" src="assets/img/lines/separadorfooter.gif"/> </div>
+        <div class="contactos vscroll" id="cscroll">
+          <div class="clearfix contacto borderb">
+            <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+            <div class="perschat floatL width70 alert">
+              <h2>Mariano Raul Barrientos</h2>
+              <p>Consejo Regional Metropolitano</p>
             </div>
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome2.png">
-              <h2  class="floatL">Juan Jose Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Consejo Regional Metropolitano</p>
-              <div class="chaticon floatR margin-10t"></div>
+            <div class="chaticon floatR"></div>
+          </div>
+          <div class="clearfix contacto borderb">
+            <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome.png"> </div>
+            <div class="perschat floatL width70 alert">
+              <h2>Juan Cerrano Marquez</h2>
+              <p>Consejo Regional Metropolitano</p>
             </div>
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome.png">
-              <h2  class="floatL">Luis Mario Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Area de Contabilidad</p>
-              <div class="chaticon floatR margin-10t"></div>
+            <div class="chaticon floatR"></div>
+          </div>
+          <div class="clearfix contacto borderb">
+            <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+            <div class="perschat floatL width70 alert">
+              <h2>Jorge Perez Barrientos</h2>
+              <p>Consejo Regional Metropolitano</p>
             </div>
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome.png">
-              <h2  class="floatL">Luis Mario Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Consejo Regional Metropolitano</p>
-              <div class="chaticon2 floatR margin-10t"></div>
+            <div class="chaticon floatR"></div>
+          </div>
+          <div class="clearfix contacto borderb">
+            <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+            <div class="perschat floatL width70 alert">
+              <h2>Benito Juarez Solis</h2>
+              <p>Consejo Regional Metropolitano</p>
             </div>
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome2.png">
-              <h2  class="floatL">Luis Mario Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Area de Contabilidad</p>
-              <div class="chaticon floatR margin-10t"></div>
+            <div class="chaticon2 floatR"></div>
+          </div>
+          <div class="clearfix contacto borderb">
+            <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+            <div class="perschat floatL width70 alert">
+              <h2>Mariano Raul Barrientos</h2>
+              <p>Consejo Regional Metropolitano</p>
             </div>
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome.png">
-              <h2  class="floatL">Luis Mario Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Consejo Regional Metropolitano</p>
-              <div class="chaticon2 floatR margin-10t"></div>
+            <div class="chaticon floatR"></div>
+          </div>
+          <div class="clearfix contacto borderb">
+            <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome.png"> </div>
+            <div class="perschat floatL width70 alert">
+              <h2>Juan Cerrano Marquez</h2>
+              <p>Consejo Regional Metropolitano</p>
             </div>
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome2.png">
-              <h2  class="floatL">Luis Mario Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Area de Contabilidad</p>
-              <div class="chaticon floatR margin-10t"></div>
+            <div class="chaticon floatR"></div>
+          </div>
+          <div class="clearfix contacto borderb">
+            <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+            <div class="perschat floatL width70 alert">
+              <h2>Jorge Perez Barrientos</h2>
+              <p>Consejo Regional Metropolitano</p>
             </div>
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome.png">
-              <h2  class="floatL">Luis Mario Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Consejo Regional Metropolitano</p>
-              <div class="chaticon2 floatR margin-10t"></div>
+            <div class="chaticon floatR"></div>
+          </div>
+          <div class="clearfix contacto borderb">
+            <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+            <div class="perschat floatL width70 alert">
+              <h2>Benito Juarez Solis</h2>
+              <p>Consejo Regional Metropolitano</p>
             </div>
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome.png">
-              <h2  class="floatL">Luis Mario Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Area de Contabilidad</p>
-              <div class="chaticon floatR margin-10t"></div>
+            <div class="chaticon2 floatR"></div>
+          </div>
+          <div class="clearfix contacto borderb">
+            <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+            <div class="perschat floatL width70 alert">
+              <h2>Mariano Raul Barrientos</h2>
+              <p>Consejo Regional Metropolitano</p>
             </div>
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome2.png">
-              <h2  class="floatL">Luis Mario Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Consejo Regional Metropolitano</p>
-              <div class="chaticon2 floatR margin-10t"></div>
+            <div class="chaticon floatR"></div>
+          </div>
+          <div class="clearfix contacto borderb">
+            <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome.png"> </div>
+            <div class="perschat floatL width70 alert">
+              <h2>Juan Cerrano Marquez</h2>
+              <p>Consejo Regional Metropolitano</p>
+            </div>
+            <div class="chaticon floatR"></div>
+          </div>
+        </div>
+        <div class="grupales"> <a class="mas" onClick="openFB(880,452,'nuevo-grupal.html');">Crear Nuevo Chat</a>
+          <div id="gscroll" class="vscroll" style="height:175px">
+            <div class="clearfix grupo borderb">
+              <table class="width100">
+                <tbody>
+                  <tr>
+                    <td width="20%"><img src="assets/img/photos/grupal.jpg" width="39" height="39" alt=""></td>
+                    <td width="65%" valign="middle"><h2>Alianzas en exportación</h2></td>
+                    <td valign="middle" align="center"><div class="chaticon"></div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="clearfix grupo borderb">
+              <table class="width100">
+                <tbody>
+                  <tr>
+                    <td width="20%"><img src="assets/img/photos/grupal.jpg" width="39" height="39" alt=""></td>
+                    <td width="65%" valign="middle"><h2>Reforma energética</h2></td>
+                    <td valign="middle" align="center"><div class="chaticon"></div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="clearfix grupo borderb">
+              <table class="width100">
+                <tbody>
+                  <tr>
+                    <td width="20%"><img src="assets/img/photos/grupal.jpg" width="39" height="39" alt=""></td>
+                    <td width="65%" valign="middle"><h2>Incremento en la Bolsa</h2></td>
+                    <td valign="middle" align="center"><div class="chaticon"></div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="clearfix grupo borderb">
+              <table class="width100">
+                <tbody>
+                  <tr>
+                    <td width="20%"><img src="assets/img/photos/grupal.jpg" width="39" height="39" alt=""></td>
+                    <td width="65%" valign="middle"><h2>Alianzas en exportación</h2></td>
+                    <td valign="middle" align="center"><div class="chaticon"></div></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="clearfix grupo borderb">
+              <table class="width100">
+                <tbody>
+                  <tr>
+                    <td width="20%"><img src="assets/img/photos/grupal.jpg" width="39" height="39" alt=""></td>
+                    <td width="65%" valign="middle"><h2>Alianzas en exportación</h2></td>
+                    <td valign="middle" align="center"><div class="chaticon"></div></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
-          <div class="floatL clearfix chatButton width20">
-            <div class="floatL clearfix width100"> <img class="floatL margin10t margin15l" src="assets/img/icons/chat.png"/> <span class="floatL font17 margin10t margin5l">Chat en linea</span> </div>
-            <div class="floatL clearfix width100 margin-5t"> <span class="floatR font11 padding20r">(49 consejeros online)</span> </div>
+        </div>
+        <div class="totales vscroll" id="tscroll">
+          <div class="clearfix contacto total borderb">
+            <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+            <div class="perschat floatL width70 alert">
+              <h2>Mariano Raul Barrientos</h2>
+              <p>Consejo Regional Metropolitano</p>
+            </div>
+            <div class="chaticon floatR"></div>
           </div>
-          <img class="floatL" src="assets/img/lines/separadorfooter.gif"/>
-          <div class="floatL clearfix width15">
-            <div class="chats clearfix width45 margin10l"> <a href="chat-totales.html"><img class="floatL margin10t margin10l" src="assets/img/icons/chatgris.png"/></a> <span class="floatL font11 margin5l">Totales</span> </div>
-            <div class="chats clearfix width45 margin5l"> <a href="chat-grupales.html"><img class="floatL margin10t margin10l" src="assets/img/icons/chatgris.png"/></a> <span class="floatL font11 margin5l">Grupales</span> </div>
+          <div class="clearfix contacto total borderb">
+            <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome.png"> </div>
+            <div class="perschat floatL width70 alert">
+              <h2>Juan Cerrano Marquez</h2>
+              <p>Consejo Regional Metropolitano</p>
+            </div>
+            <div class="chaticon floatR"></div>
           </div>
-          <img class="floatL" src="assets/img/lines/separadorfooter.gif"/> </div>
-        	<div id="ventanas"> </div>
+          <div class="clearfix contacto total borderb">
+            <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome.png"> </div>
+            <div class="perschat floatL width70 alert">
+              <h2>Juan Cerrano Marquez</h2>
+              <p>Consejo Regional Metropolitano</p>
+            </div>
+            <div class="chaticon floatR"></div>
+          </div>
+          <div class="clearfix contacto total borderb">
+            <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+            <div class="perschat floatL width70 alert">
+              <h2>Jorge Perez Barrientos</h2>
+              <p>Consejo Regional Metropolitano</p>
+            </div>
+            <div class="chaticon floatR"></div>
+          </div>
+          <div class="clearfix grupo total borderb">
+            <table class="width100">
+              <tbody>
+                <tr>
+                  <td width="20%"><img src="assets/img/photos/grupal.jpg" width="39" height="39" alt=""></td>
+                  <td width="65%" valign="middle"><h2>Alianzas en exportación</h2></td>
+                  <td valign="middle" align="center"><div class="chaticon"></div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="clearfix grupo total borderb">
+            <table class="width100">
+              <tbody>
+                <tr>
+                  <td width="20%"><img src="assets/img/photos/grupal.jpg" width="39" height="39" alt=""></td>
+                  <td width="65%" valign="middle"><h2>Reforma energética</h2></td>
+                  <td valign="middle" align="center"><div class="chaticon"></div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="clearfix grupo total borderb">
+            <table class="width100">
+              <tbody>
+                <tr>
+                  <td width="20%"><img src="assets/img/photos/grupal.jpg" width="39" height="39" alt=""></td>
+                  <td width="65%" valign="middle"><h2>Incremento en la Bolsa</h2></td>
+                  <td valign="middle" align="center"><div class="chaticon"></div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="floatL clearfix chatButton width15" id="chat"> <img class="floatL margin10t margin15l" src="assets/img/icons/chat.png"/>
+          <div class="width70 floatR margin10t"> <span class="font17 block">Chat</span> <span class="font11 floatL">(49 consejeros online)</span> </div>
+        </div>
+        <div class="floatL clearfix chatButton width11" id="grupales">
+          <div class="floatL clearfix width100"> <img class="floatL margin10t margin10l" src="assets/img/icons/chatgris.png"/> <span class="floatL font17 margin10t margin5l">Grupales</span> </div>
+        </div>
+        <div class="floatL clearfix chatButton width11" id="totales">
+          <div class="floatL clearfix width100"> <img class="floatL margin10t margin10l" src="assets/img/icons/chatgris.png"/> <span class="floatL font17 margin10t margin5l">Totales</span> </div>
+        </div>
+        <div id="ventanas"> </div>
       </div>
       <div class="info-footer">
         <div class="copyright">
@@ -817,79 +964,86 @@
 <script type="text/javascript" src="assets/js/jquery.js"></script>
 <script type="text/javascript" src="assets/js/fancybox.js"></script>
 <script src="js/plugins.js"></script>
-<script type="text/javascript" src="assets/js/engine.js"></script>
 <script type="text/javascript" src="assets/js/mCustomScrollbar.js"></script>
 <script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
 <script type="text/javascript" src="assets/js/tabs.js"></script>
 <script type="text/javascript" src="assets/js/iosslider.js"></script>
 <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>
 <script type="text/javascript" src="assets/js/dropkick.js"></script>
+<script type="text/javascript" src="assets/js/engine.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script type="text/javascript">
-        $(document).ready(function(){
-			$('input[placeholder]').placeholder();
-			
-					$('.drop-por').dropkick({ 
-						change: function (value, label) {
-							$(' .optconsejo, .optdir').hide();
-							if(value == 'Consejero')
-								$('.optconsejo').show();
-							if(value == 'Directivo')
-								$('.optdir').show();
-						}});
-
-			$('.drop').dropkick({ 
+	$(document).ready(function(){
+		$('input[placeholder]').placeholder();
+	
+		$('.drop-por').dropkick({ 
 			change: function (value, label) {
-				$('#input4,#input5,#inputnombre').hide();
-				if(value < 4)
-					$('#inputnombre').show();
-				else
-					$('#input' + value).show();
-			}});
+				$(' .optconsejo, .optdir').hide();
+				if(value == 'Consejero')
+					$('.optconsejo').show();
+				if(value == 'Directivo')
+					$('.optdir').show();
+		}});
+	
+		$('.drop').dropkick();
+		
+		$.tabs('tab-directorio');
+		
+		$(".dk_options").addClass("scroll");
+		
+		$('#tablogros').one('click',function(){
+			$('#slidelogros .slide').each(function(index){ if( index == 0 ) $('#navlogros').append('<a class="on"></a>'); else $('#navlogros').append('<a></a>'); });
+			
+			$('#slidelogros').iosSlider({
+				snapToChildren: true,
+				navSlideSelector: $('#navlogros a'),
+				onSlideChange: function(args){ 
+					var index = args.currentSlideNumber; index--;
+					$('#navlogros .on').removeClass('on');
+					$('#navlogros a:eq(' + index +')').addClass('on');
+				}
+			});
+		});
+		
+		$(".dk_toggle").live('click',function(){
+			//$(".directorioin").scrollTop(-300);
+			//$(".vscroll").mCustomScrollbar("scrollTo",100);
+			var pos = $(this).offsetParent().position(); pos = pos.top; pos -= 40;
+			$(this).closest(".vscroll").mCustomScrollbar("update");
+			$(this).closest(".vscroll").mCustomScrollbar("scrollTo",pos);
+			//$(this).closest(".vscroll").mCustomScrollbar("disable");
+		});
+		
+		$(".dk_options a").live('click',function(){
+			//$(".directorioin").scrollTop(-300);
+			//$(".vscroll").mCustomScrollbar("scrollTo",100);
+			//var pos = $(this).offsetParent().offset(); pos = pos.top;
+			$(this).closest(".vscroll").mCustomScrollbar("update");
+		});
+		
+		$(".pestanas a").click(function(){
+			$(".dk_container").removeClass("dk_open");
+			var id = $(this).attr('href');
+			$(id).mCustomScrollbar("update");
+		});
 
-					$.tabs('tab-directorio');
-
-          $(".dk_options").addClass("scroll");
-				
-          $('#tablogros').one('click',function(){
-          $('#slidelogros .slide').each(function(index){ if( index == 0 ) $('#navlogros').append('<a class="on"></a>'); else $('#navlogros').append('<a></a>'); });
-				
-          $('#slidelogros').iosSlider({
-              snapToChildren: true,
-              navSlideSelector: $('#navlogros a'),
-              onSlideChange: function(args){ 
-                var index = args.currentSlideNumber; index--;
-                $('#navlogros .on').removeClass('on');
-                $('#navlogros a:eq(' + index +')').addClass('on');
-              }
-            });
-          });
-
-          $(".dk_toggle").click(function(){
-             $(".directorioin").scrollTop(300);
-          });
-
-          $(".pestanas a").click(function(){
-            $(".dk_container").removeClass("dk_open");
-          });
-        });
-		  function openFB(w,h,url){
-				w = parseInt(w);
-				h = parseInt(h);
-				$.fancybox({
-					href: url + '',
-					width : w,
-					height : h,
-					type : 'iframe',
-					autoSize  : false
-				});
-		  }
-        
-           /* var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));*/
-        </script>
+	});
+	function openFB(w,h,url){
+		w = parseInt(w);
+		h = parseInt(h);
+		$.fancybox({
+			href: url + '',
+			width : w,
+			height : h,
+			type : 'iframe',
+			autoSize  : false
+		});
+	}
+	
+	/* var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));*/
+	</script>
 </body>
 </html>

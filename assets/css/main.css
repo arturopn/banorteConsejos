@@ -1,6 +1,6 @@
 /*			- Resets -			*/
 
-a{text-decoration:none;}	
+a{text-decoration:none; cursor:pointer;}	
 button{	background:none; background-repeat:no-repeat;	border:none; cursor:pointer; margin:0;	padding:0; text-align:left; }
 form{	margin:0;	padding:0; }
 img {	border: none; }
@@ -163,7 +163,10 @@ ul{	margin:0;	padding:0; list-style:none; }
 
 .width5	{width:5% !important;}
 .width10	{width:10% !important;}
+.width11	{width:11% !important;}
+.width12	{width:11.5% !important;}
 .width15	{width:15% !important;}
+.width18	{width:18% !important;}
 .width20	{width:20% !important;}
 .width25	{width:25% !important;}
 .width30	{width:30% !important;}
@@ -176,6 +179,7 @@ ul{	margin:0;	padding:0; list-style:none; }
 .width50	{width:50% !important;}
 .width53	{width:53% !important;}
 .width55	{width:55% !important;}
+.width57	{width:57% !important;}
 .width60	{width:60% !important;}
 .width65	{width:65% !important;}
 .width66	{width:66% !important;}
@@ -513,7 +517,7 @@ z-index: 808;
  }
 
 .plabel, .biglabel { font-size: 18px; font-style: normal;}
-.acerca, .acerca2{ border: 1px #CCCCCC solid; height: 405px; width: 946px;}
+.acerca, .acerca2{ border: 1px #CCCCCC solid; height: 405px; width: 946px; overflow:hidden; }
 .acerca2{background-color:#FFF;}
 .acercaleft{border-right: 1px #CCCCCC solid; height: 405px; width: 273px; }
 .acercaleft2{ height: 405px; margin-left: 20px; margin-top: 20px; width: 251px;}
@@ -580,7 +584,7 @@ padding-left: 10px;}
 .ff31 h2{ font-size: 13px;}
 
 .ff244{background: white;
-width: 272px;
+width: 270px;
 height: 92px;
 font-family: 'source_sans_prolight';
 text-align: left;
@@ -601,7 +605,7 @@ padding: 12px; margin-left: 15px;}
 .ff32 p{font-size: 18px; line-height: 20px; margin-left: 10px;}
 .ff32 h2{ font-size: 17px; border-bottom: 1px solid #ccc; border-top: 1px #ccc solid; width: 93%;}
 
-.ff33{background: #fff; margin-left: 10px; width: 283px; height: 107px; font-family: 'source_sans_prolight'; text-align: left; padding: 10px; }
+.ff33{background: #fff; margin-left: 10px; width: 280px; height: 107px; font-family: 'source_sans_prolight'; text-align: left; padding: 10px; }
 .ff33 h1{ font-size: 16px; text-align: left; margin: 5px 0 0; min-height:40px;}
 .ff33 p{ font-size: 12px;line-height: 15px; margin-bottom: 5px; min-height: 30px;}
 .ff33 h2{ font-size: 14px; border-bottom: 1px solid #ccc; border-top: 1px #ccc solid; height: 25px;line-height: 22px;}
@@ -869,7 +873,7 @@ div#ascrail2000{z-index:705 !important;}
     width: 20px;
 }
 /* Chat Grupales */
-.persona{padding:2px 10px;}
+.persona{padding:2px 10px; cursor:pointer;}
 
 /* Calendarios */
 .calendar label{font-size:16px; float:left; padding:0 10px;}
@@ -1040,25 +1044,33 @@ ul.documentos li span { font-size: 12px;}
 .w465h120 .comment{ margin-top: 0px; text-align: left;}
  p.nota {font-size: 15px !important; margin-top: 10px; word-wrap: break-word; }
 
- .chatButton{ cursor: pointer;}
+ .chatButton{ cursor: pointer; } 
+ .chatButton, .sepfooter{ background:url(../img/lines/separadorfooter.gif) right 0 no-repeat; height:49px; }
  .chats{float:left; cursor:pointer;}
  .tiempochat span{margin-left:10px; padding-left:10px; text-align:left; text-decoration:underline; cursor:pointer; font-size:12px;}
  .tiempochat{margin-top:-17px; text-align:right; width:260px;}
  
 
-div.contactos{position: absolute; bottom: 85px; display: none; right: 130px; width: 280px; height: 300px; background: #F9F9F9; border: #ccc 1px solid; padding: 10px;}
+div.contactos{position: absolute; bottom: 80px; display: none; right: 295px; width: 280px; height: 300px; background: #F9F9F9; border: #ccc 1px solid; padding: 10px;}
+div.grupales{position: absolute; bottom: 80px; display: none; right: 179px; width: 280px; height: 210px; background: #F9F9F9; border: #ccc 1px solid; padding: 10px;}
+div.totales{position: absolute; bottom: 80px; display: none; right: 64px; width: 280px; height: 300px; background: #F9F9F9; border: #ccc 1px solid; padding: 10px;}
+.grupales table, .totales table{ border-spacing:0;  border-collapse:collapse; border:none; }
+.grupales td, .totales td{ border:none; padding:0; }
+.grupales td *, .totales td *{ margin:0; }
+.grupales .mas{ background:url(../img/btns/mas.gif) 12px center no-repeat; height:26px; line-height:26px; padding:10px 0 10px 50px; color:#666; font-size:26px; display:block; border-bottom:1px solid #CCC; cursor:pointer; }
 div.quien-like{position: absolute; bottom: 7px; left:50px; width: 230px; height: 200px; background: #F9F9F9; border: #ccc 1px solid; padding: 10px; z-index:995;}
-.contacto{ padding: 5px 10px; cursor: pointer;}
-.ventanachat p{margin:2px !important;}
-.ventanachat h2{margin-bottom:2px !important;}
+.contacto, .grupo{ padding: 5px 10px; cursor: pointer;}
+.ventanachat p, .ventanagrupal p{margin:2px !important;}
+.ventanachat h2, .ventanagrupal h2{margin-bottom:2px !important;}
 .contacto h2, p{ font-family: "source_sans_prolight"; color:#333; margin-left: 10px; font-size: 13px; margin-bottom:0;}
 .contacto p{font-size:12px;}
 .perschat h2, p{ font-family: "source_sans_prolight"; color:#333; margin-left: 10px; font-size: 13px; margin-bottom:0;}
 .perschat p{font-size:12px; margin:0 0 0 10px !important;}
-div.ventanachat{position: absolute; bottom: 85px; /*display: none;*/ right: 433px; width: 280px; height: 300px; background: #F9F9F9; border: #ccc 1px solid; padding: 10px;;}
-.ventanachat h2{ font-family: "source_sans_prolight"; color:#333; font-size: 17px;}
+div.ventanachat{position: absolute; bottom: 80px; /*display: none;*/ right: 602px; width: 280px; height: 300px; background: #F9F9F9; border: #ccc 1px solid; padding: 10px;;}
+div.ventanagrupal{position: absolute; bottom: 80px; /*display: none;*/ right: 482px; width: 330px; height: 300px; background: #F9F9F9; border: #ccc 1px solid; padding: 10px;;}
+.ventanachat h2, .ventanagrupal h2{ font-family: "source_sans_prolight"; color:#333; font-size: 17px;}
 
-.ventanachat textarea{ border: 1px solid #ccc;}
+.ventanachat textarea, .ventanagrupal textarea{ border: 1px solid #ccc;}
 .conversacionarea{ border: 1px solid #ccc; width: 260px; height: 180px; resize:none; padding: 10px; background: url(../img/icons/chat.png) bottom left #fff no-repeat;}
 .replymessage{height: 160px; width: 260px; overflow:hidden;}
 
@@ -1140,3 +1152,14 @@ img.tip{cursor: pointer;}
 .ventana_alerta .boton_ok:hover{background:#666;}
 .ventana_alerta .boton_ok a{font-size:16px; color:#000; text-align:center; }
 .ventana_alerta .boton_ok a:hover{ color:#fff;}
+
+.hscroll, .vscroll{ overflow:hidden; }
+input.no-bg{ background:none; border:none; }
+.no-bg:focus{ outline:0; }
+.padding710{ padding:7px 10px; }
+.padding1020{ padding:10px 20px; }
+.padding100{ padding:10px 0; }
+.padding1015{ padding:10px 15px; }
+
+.archivo{ border:1px solid #999; padding:2px 10px; margin-bottom:10px; display:block; font-size:18px; color:#999; text-align:left; }
+.selected .bgwhite, .selected{ border-color:#A20000; }

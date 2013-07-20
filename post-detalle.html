@@ -13,6 +13,7 @@
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 <link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
 <link href="assets/css/fancybox.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/scroll.css" rel="stylesheet" type="text/css" />
 <link href="assets/css/dropkick.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="assets/css/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
 </head>
@@ -116,7 +117,7 @@
           </div>
           <textarea class="textareapost"></textarea>
           <a class="btn width20 line30 bggray font13 margin-40l margin10r margin10t floatR " href="#">ENVIAR</a> </div>
-        <div class="floatL  postderecha margin10l width50 scroll" style="height:385px;">
+        <div class="floatL  postderecha margin10l width50 vscroll" style="height:385px;">
         <div class="floatL width50">
           <h3>Jose Luis Garza Salgado</h3>
          </div>
@@ -217,8 +218,7 @@
   <div id="footer">
     <div class="wrapper relative" align="left">
       <div class="clearfix">
-        <div class="floatL">
-          <div class="floatL width60"> <img class="floatL" src="assets/img/lines/separadorfooter.gif"/>
+          <div class="floatL width57">
             <ul class="floatL margin15t margin10l margin10r">
               <li><a href="#">Inicio</a></li>
               <li><a href="#">Eventos</a></li>
@@ -230,68 +230,196 @@
               <li><a href="#">Acerca de</a></li>
             </ul>
             <img class="floatR" src="assets/img/lines/separadorfooter.gif"/> </div>
-          <div class="contactos scroll">
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome2.png">
-              <h2  class="floatL">Luis Mario Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Area de Contabilidad</p>
-              <div class="chaticon floatR margin-10t"></div>
+          <div class="contactos vscroll" id="cscroll">
+            <div class="clearfix contacto borderb">
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Mariano Raul Barrientos</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
+              <div class="chaticon floatR"></div>
             </div>
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome2.png">
-              <h2  class="floatL">Juan Jose Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Consejo Regional Metropolitano</p>
-              <div class="chaticon floatR margin-10t"></div>
+            <div class="clearfix contacto borderb">
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Juan Cerrano Marquez</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
+              <div class="chaticon floatR"></div>
             </div>
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome.png">
-              <h2  class="floatL">Luis Mario Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Area de Contabilidad</p>
-              <div class="chaticon floatR margin-10t"></div>
+            <div class="clearfix contacto borderb">
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Jorge Perez Barrientos</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
+              <div class="chaticon floatR"></div>
             </div>
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome.png">
-              <h2  class="floatL">Luis Mario Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Consejo Regional Metropolitano</p>
-              <div class="chaticon2 floatR margin-10t"></div>
+            <div class="clearfix contacto borderb">
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Benito Juarez Solis</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
+              <div class="chaticon2 floatR"></div>
             </div>
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome2.png">
-              <h2  class="floatL">Luis Mario Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Area de Contabilidad</p>
-              <div class="chaticon floatR margin-10t"></div>
+            <div class="clearfix contacto borderb">
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Mariano Raul Barrientos</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
+              <div class="chaticon floatR"></div>
             </div>
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome.png">
-              <h2  class="floatL">Luis Mario Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Consejo Regional Metropolitano</p>
-              <div class="chaticon2 floatR margin-10t"></div>
+            <div class="clearfix contacto borderb">
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Juan Cerrano Marquez</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
+              <div class="chaticon floatR"></div>
             </div>
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome2.png">
-              <h2  class="floatL">Luis Mario Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Area de Contabilidad</p>
-              <div class="chaticon floatR margin-10t"></div>
+            <div class="clearfix contacto borderb">
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Jorge Perez Barrientos</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
+              <div class="chaticon floatR"></div>
             </div>
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome.png">
-              <h2  class="floatL">Luis Mario Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Consejo Regional Metropolitano</p>
-              <div class="chaticon2 floatR margin-10t"></div>
+            <div class="clearfix contacto borderb">
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Benito Juarez Solis</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
+              <div class="chaticon2 floatR"></div>
             </div>
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome.png">
-              <h2  class="floatL">Luis Mario Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Area de Contabilidad</p>
-              <div class="chaticon floatR margin-10t"></div>
+            <div class="clearfix contacto borderb">
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Mariano Raul Barrientos</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
+              <div class="chaticon floatR"></div>
             </div>
-            <div class="clearfix contacto borderb"> <img class="floatL" src="assets/img/photos/fotohome2.png">
-              <h2  class="floatL">Luis Mario Gonzalez Barrientos</h2>
-              <p  class="floatL margin10l margin5t margin0b">Consejo Regional Metropolitano</p>
-              <div class="chaticon2 floatR margin-10t"></div>
+            <div class="clearfix contacto borderb">
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Juan Cerrano Marquez</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
+              <div class="chaticon floatR"></div>
             </div>
           </div>
-          <div class="floatL clearfix chatButton width20">
-            <div class="floatL clearfix width100"> <img class="floatL margin10t margin15l" src="assets/img/icons/chat.png"/> <span class="floatL font17 margin10t margin5l">Chat en linea</span> </div>
-            <div class="floatL clearfix width100 margin-5t"> <span class="floatR font11 padding20r">(49 consejeros online)</span> </div>
+          <div class="grupales">
+          	<a class="mas" onClick="openFB(880,452,'nuevo-grupal.html');">Crear Nuevo Chat</a>
+            <div id="gscroll" class="vscroll" style="height:175px">
+              <div class="clearfix grupo borderb">
+                <table class="width100"><tbody><tr>
+                  <td width="20%"><img src="assets/img/photos/grupal.jpg" width="39" height="39" alt=""></td>
+                  <td width="65%" valign="middle"><h2>Alianzas en exportación</h2></td>
+                  <td valign="middle" align="center"><div class="chaticon"></div></td>
+                </tr></tbody></table>              
+              </div>
+              <div class="clearfix grupo borderb">
+                <table class="width100"><tbody><tr>
+                  <td width="20%"><img src="assets/img/photos/grupal.jpg" width="39" height="39" alt=""></td>
+                  <td width="65%" valign="middle"><h2>Reforma energética</h2></td>
+                  <td valign="middle" align="center"><div class="chaticon"></div></td>
+                </tr></tbody></table>              
+              </div>
+              <div class="clearfix grupo borderb">
+                <table class="width100"><tbody><tr>
+                  <td width="20%"><img src="assets/img/photos/grupal.jpg" width="39" height="39" alt=""></td>
+                  <td width="65%" valign="middle"><h2>Incremento en la Bolsa</h2></td>
+                  <td valign="middle" align="center"><div class="chaticon"></div></td>
+                </tr></tbody></table>              
+              </div>
+              <div class="clearfix grupo borderb">
+                <table class="width100"><tbody><tr>
+                  <td width="20%"><img src="assets/img/photos/grupal.jpg" width="39" height="39" alt=""></td>
+                  <td width="65%" valign="middle"><h2>Alianzas en exportación</h2></td>
+                  <td valign="middle" align="center"><div class="chaticon"></div></td>
+                </tr></tbody></table>              
+              </div>
+              <div class="clearfix grupo borderb">
+                <table class="width100"><tbody><tr>
+                  <td width="20%"><img src="assets/img/photos/grupal.jpg" width="39" height="39" alt=""></td>
+                  <td width="65%" valign="middle"><h2>Alianzas en exportación</h2></td>
+                  <td valign="middle" align="center"><div class="chaticon"></div></td>
+                </tr></tbody></table>              
+              </div>
+            </div>
           </div>
-          <img class="floatL" src="assets/img/lines/separadorfooter.gif"/>
-          <div class="floatL clearfix width15">
-            <div class="chats clearfix width45 margin10l"> <a href="chat-totales.html"><img class="floatL margin10t margin10l" src="assets/img/icons/chatgris.png"/></a> <span class="floatL font11 margin5l">Totales</span> </div>
-            <div class="chats clearfix width45 margin5l"> <a href="chat-grupales.html"><img class="floatL margin10t margin10l" src="assets/img/icons/chatgris.png"/></a> <span class="floatL font11 margin5l">Grupales</span> </div>
+          <div class="totales vscroll" id="tscroll">
+            <div class="clearfix contacto total borderb">
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Mariano Raul Barrientos</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
+              <div class="chaticon floatR"></div>
+            </div>
+            <div class="clearfix contacto total borderb">
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Juan Cerrano Marquez</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
+              <div class="chaticon floatR"></div>
+            </div>
+            <div class="clearfix contacto total borderb">
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Juan Cerrano Marquez</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
+              <div class="chaticon floatR"></div>
+            </div>
+            <div class="clearfix contacto total borderb">
+              <div class="floatL width15"> <img class="floatL" src="assets/img/photos/fotohome2.png"> </div>
+              <div class="perschat floatL width70 alert">
+                <h2>Jorge Perez Barrientos</h2>
+                <p>Consejo Regional Metropolitano</p>
+              </div>
+              <div class="chaticon floatR"></div>
+            </div>
+            <div class="clearfix grupo total borderb">
+              <table class="width100"><tbody><tr>
+                <td width="20%"><img src="assets/img/photos/grupal.jpg" width="39" height="39" alt=""></td>
+                <td width="65%" valign="middle"><h2>Alianzas en exportación</h2></td>
+                <td valign="middle" align="center"><div class="chaticon"></div></td>
+              </tr></tbody></table>              
+            </div>
+            <div class="clearfix grupo total borderb">
+              <table class="width100"><tbody><tr>
+                <td width="20%"><img src="assets/img/photos/grupal.jpg" width="39" height="39" alt=""></td>
+                <td width="65%" valign="middle"><h2>Reforma energética</h2></td>
+                <td valign="middle" align="center"><div class="chaticon"></div></td>
+              </tr></tbody></table>              
+            </div>
+            <div class="clearfix grupo total borderb">
+              <table class="width100"><tbody><tr>
+                <td width="20%"><img src="assets/img/photos/grupal.jpg" width="39" height="39" alt=""></td>
+                <td width="65%" valign="middle"><h2>Incremento en la Bolsa</h2></td>
+                <td valign="middle" align="center"><div class="chaticon"></div></td>
+              </tr></tbody></table>              
+            </div>
           </div>
-          <img class="floatL" src="assets/img/lines/separadorfooter.gif"/> </div>
+          <div class="floatL clearfix chatButton width15" id="chat">
+            <img class="floatL margin10t margin15l" src="assets/img/icons/chat.png"/> 
+            <div class="width70 floatR margin10t">
+            	<span class="font17 block">Chat</span>
+              <span class="font11 floatL">(49 consejeros online)</span>
+            </div>
+          </div>
+          <div class="floatL clearfix chatButton width11" id="grupales">
+            <div class="floatL clearfix width100"> <img class="floatL margin10t margin10l" src="assets/img/icons/chatgris.png"/> <span class="floatL font17 margin10t margin5l">Grupales</span> </div>
+          </div>
+          <div class="floatL clearfix chatButton width11" id="totales">
+            <div class="floatL clearfix width100"> <img class="floatL margin10t margin10l" src="assets/img/icons/chatgris.png"/> <span class="floatL font17 margin10t margin5l">Totales</span> </div>
+          </div>
         <div id="ventanas"> </div>
       </div>
       <div class="info-footer">
@@ -311,20 +439,20 @@
     </div>
   </div>
 </div>
+<script type="text/javascript" src="assets/js/jquery.js"></script> 
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script> 
 <script src="js/plugins.js"></script>
  
-<script type="text/javascript" src="assets/js/jquery.js"></script> 
 <script src="js/vendor/modernizr-2.6.2.min.js"></script> 
-<script type="text/javascript" src="assets/js/engine.js"></script> 
 <script type="text/javascript" src="assets/js/dropkick.js"></script> 
 <script type="text/javascript" src="assets/js/jquery.tipTip.js"></script> 
 <script type="text/javascript" src="assets/js/tabs.js"></script> 
-<script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script> 
+<script type="text/javascript" src="assets/js/mCustomScrollbar.js"></script>
 <script type="text/javascript" src="assets/js/fancybox.js"></script> 
 <script type="text/javascript" src="assets/js/jquery.fancybox-media.js"></script> 
 <script type="text/javascript" src="assets/js/jquery.fancybox-thumbs.js"></script>
 <script type="text/javascript" src="assets/js/jquery.jtruncate.js"></script> 
+<script type="text/javascript" src="assets/js/engine.js"></script> 
 <script type="text/javascript">
     $(document).ready(function(){
 		$('.truncate1').jTruncate({
@@ -335,10 +463,6 @@
         $(".tip").tipTip();
        
  
-        });
-        </script> 
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> 
-<script>$(document).ready(function(){
 
           var cantidad = $(".box24").length;
         var ancho = $(".box24").width() + 30;
@@ -346,7 +470,6 @@
          $(".widthscroll").width(anchoscroll);
 
       
-        $(".scroll").niceScroll();
        
 
        $(".fancybox-thumb").fancybox({

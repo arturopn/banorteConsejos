@@ -104,7 +104,8 @@ $(document).ready(function() {
 	$("#cscroll").mCustomScrollbar({
 		scrollInertia:250
 	});
-	$(".chatButton").click(function(){
+	$("#chat").click(function(){
+		$("div.grupales, div.totales").hide();
 		$("div.contactos").toggle("fast", function(){
 			var customScrollbar=$("#cscroll").find(".mCSB_scrollTools");
 			customScrollbar.css({"opacity":0});
@@ -112,6 +113,25 @@ $(document).ready(function() {
 			customScrollbar.animate({opacity:1},"slow");
 		});
 	});
+	$("#grupales").click(function(){
+		$("div.contactos, div.totales").hide();
+		$("div.grupales").toggle("fast", function(){
+			var customScrollbar=$("#gscroll").find(".mCSB_scrollTools");
+			customScrollbar.css({"opacity":0});
+			$("#gscroll").mCustomScrollbar("update");
+			customScrollbar.animate({opacity:1},"slow");
+		});
+	});
+	$("#totales").click(function(){
+		$("div.contactos, div.grupales").hide();
+		$("div.totales").toggle("fast", function(){
+			var customScrollbar=$("#tscroll").find(".mCSB_scrollTools");
+			customScrollbar.css({"opacity":0});
+			$("#tscroll").mCustomScrollbar("update");
+			customScrollbar.animate({opacity:1},"slow");
+		});
+	});
+	
 	$(".contacto").click(function(){
 		nombreDeContacto = $("h2",this).text();
 		consejoNombre = $("p", this).text();
@@ -120,7 +140,22 @@ $(document).ready(function() {
 		$( ".ventanachat" ).draggable();
 		$('.ventanachat textarea').click(function(){ $( ".ventanachat" ).draggable("disable"); });
 		$('.ventanachat textarea').blur(function(){ $( ".ventanachat" ).draggable("enable"); });
-		$(".replymessage").mCustomScrollbar({
+		$("#ventanas .replymessage:last").mCustomScrollbar({
+			scrollInertia:250
+		});	
+		//$(".ventanachat h2").text(nombreDeContacto);
+		//$(".ventanachat img").attr("src",foto);
+		//$(".ventanachat").show(400);
+	});
+	$(".grupo").click(function(){
+		nombreGrupo = $("h2",this).text();
+		foto = $("img",this).attr("src");
+		fblink = "openFB(880,442,'editar-grupal.html');";
+		$('#ventanas').append('<div class="ventanagrupal relative clearfix"><div class="width10 floatL"><a class="block margin5b" onClick="' + fblink + '"><img src="assets/img/icons/chatmas.gif"> </a> <a onClick="' + fblink + '"><img src="assets/img/icons/docmas.gif"></a></div><div class="width85 floatR"><div class="cerrarchat"></div><div class="floatL width15"><img class="floatL" src="assets/img/photos/grupal.jpg"></div><div class="floatL width80 aleft"><h2>' + nombreGrupo + '</h2></div><div class="floatR tiempochat"><span>Ver más</span></div><div class="floatL conversacionarea"><div class="replymessage"><div class="floatL width100 aleft"><p class="font12 bold width65 floatL">Israel Cantú</p><p class="floatR width30 font10 arigth">13/06/2013 13:11</p><p class="width100 font12 floatL">Hola Marco ya subiste el ayuntamiento?</p></div><div class="floatL width100 aleft"><p class="font12 bold width65 floatL">José Pedraza</p><p class="floatR width30 font10 arigth">13/06/2013 13:11</p><p class="width100 font12 floatL">Hola Marco ya subiste el ayuntamiento?</p></div><div class="floatL width100 aleft"><p class="font12 bold width65 floatL">Mariano Barrientos</p><p class="floatR width30 font10 arigth">13/06/2013 13:11</p><p class="width100 font12 floatL">Hola Marco ya subiste el ayuntamiento?</p></div><div class="floatL width100 aleft"><p class="font12 bold width65 floatL">Israel Cantú</p><p class="floatR width30 font10 arigth">13/06/2013 13:11</p><p class="width100 font12 floatL">Hola Marco ya subiste el ayuntamiento?</p></div><div class="floatL width100 aleft margin5t"><p class="font12 bold width65 floatL">Marcos</p><p class="floatR width30 font10 arigth">13/06/2013 13:13</p><p class="width100 font12 floatL">Si ya es nivel 7</p></div><div class="floatL width100 aleft margin5t"><p class="font12 bold width65 floatL">Israel Cantú</p><p class="floatR width30 font10 arigth">13/06/2013 13:20</p><p class="width100 font12 floatL">Si lo veo te voy a saquear!</p></div></div></div><textarea class="comment"></textarea></div></div>');
+		$( ".ventanagrupal" ).draggable();
+		$('.ventanagrupal textarea').click(function(){ $( ".ventanachat" ).draggable("disable"); });
+		$('.ventanagrupal textarea').blur(function(){ $( ".ventanachat" ).draggable("enable"); });
+		$("#ventanas .replymessage:last").mCustomScrollbar({
 			scrollInertia:250
 		});	
 		//$(".ventanachat h2").text(nombreDeContacto);
@@ -128,7 +163,7 @@ $(document).ready(function() {
 		//$(".ventanachat").show(400);
 	});
 	var z = 10;
-	$('.ventanachat').live('mousedown', function(){ $(this).css('z-index',z); z++; });
+	$('.ventanachat, .ventanagrupal').live('mousedown', function(){ $(this).css('z-index',z); z++; });
 
 	$(".quienLike").click(function(){
 		$('#quienVentana').append('<div class="quien-like scroll-like"><div class="cerrarchat"></div><div class="clearfix contacto borderb margin10t"><div class="floatL width15"><img class="floatL" src="assets/img/photos/fotohome2.png"></div><div class="floatL width80 aleft"><h2>Mariano Mario Barrientos</h2><p>Consejo Regional Metropolitano</p></div></div><div class="clearfix contacto borderb"><img class="floatL" src="assets/img/photos/fotohome2.png"><h2 class="floatL">Luis Mario Gonzalez Barrientos</h2><p class="floatL margin10l margin5t margin0b">Area de Contabilidad</p></div><div class="clearfix contacto borderb"><img class="floatL" src="assets/img/photos/fotohome2.png"><h2 class="floatL">Luis Mario Gonzalez Barrientos</h2><p class="floatL margin10l margin5t margin0b">Area de Contabilidad</p></div><div class="clearfix contacto borderb"><img class="floatL" src="assets/img/photos/fotohome2.png"><h2 class="floatL">Luis Mario Gonzalez Barrientos</h2><p class="floatL margin10l margin5t margin0b">Area de Contabilidad</p></div><div class="clearfix contacto borderb"><img class="floatL" src="assets/img/photos/fotohome2.png"><h2 class="floatL">Juan Jose Gonzalez Barrientos</h2><p class="floatL margin10l margin5t margin0b">Consejo Regional MNorte</p></div></div>'
@@ -144,11 +179,20 @@ $(document).ready(function() {
 	$(".cerrarchat").live('click',function(){
 		$(this).parent().hide(400);
 	});
+	$(".ventanagrupal .cerrarchat").live('click',function(){
+		$(this).parent().parent().hide(400);
+	});
 	
 	$(document).bind('click', function(e) {
 		var $clicked = $(e.target);
 		if (! $clicked.parents().hasClass("chatButton") && !$clicked.hasClass("chatButton") && ! $clicked.parents().hasClass("contacto") && !$clicked.hasClass("contacto")  && ! $clicked.parents().hasClass("contactos") && !$clicked.hasClass("contactos")  && ! $clicked.parents().hasClass("ventanachat") && !$clicked.hasClass("ventanachat") ){
 			$("div.contactos").hide();
+		}
+		if (! $clicked.parents().hasClass("chatButton") && !$clicked.hasClass("chatButton") && ! $clicked.parents().hasClass("grupo") && !$clicked.hasClass("grupo")  && ! $clicked.parents().hasClass("grupales") && !$clicked.hasClass("grupales")  && ! $clicked.parents().hasClass("ventanachat") && !$clicked.hasClass("ventanachat") ){
+			$("div.grupales").hide();
+		}
+		if (! $clicked.parents().hasClass("chatButton") && !$clicked.hasClass("chatButton") && ! $clicked.parents().hasClass("total") && !$clicked.hasClass("total")  && ! $clicked.parents().hasClass("totales") && !$clicked.hasClass("totales")  && ! $clicked.parents().hasClass("ventanachat") && !$clicked.hasClass("ventanachat") ){
+			$("div.totales").hide();
 		}
 		if (! $clicked.parents().hasClass("menu3lines") && ! $clicked.parents().hasClass("actividadopen") && !$clicked.hasClass("actividadopen") && !$clicked.hasClass("menu3lines")){
 			$(".actividadopen").hide();

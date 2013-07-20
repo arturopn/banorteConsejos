@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+<link href="assets/css/styles.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/scroll.css" rel="stylesheet" type="text/css" />
+<style>
+html, body{ min-width:inherit; }
+.acerca{ width:878px; }
+</style>
+</head>
+<body>
+
+  <div id="consejeros" class="tabs-cont clearfix acerca" style="height:440px;">
+    <div class="searchtop clearfix">
+      <div class="floatL sepfooter"><div class="padding1020"><p class="font22 prolight m0">Conversaciones Grupales</p></div></div>
+      <div class="floatL width55"><div class="padding710">
+      	<input type="text" class="font22 prolight width90 no-bg" placeholder="Título de la conversación">
+      </div></div>
+      <div class="width10 floatR"><div class="padding10"><a class="btn width90 floatR bga20 line25" href="#">INICIAR</a></div></div>
+    </div>
+    <div class="width100 clearfix">
+      <div class="floatL width55 margin10l clearfix">
+        <div class="padding10" align="left"><p class="font14 m0">Haz clic en los usuarios que desees agregar a la conversación, y posteriormente en el botón de agregar <img src="assets/img/icons/chatmas.gif" height="14"></p></div>
+        <div class="clearfix">
+          <div class="width85 floatL">
+            <div id="personas" class="floatL width100 vscroll bgwhite" style="height:328px;">
+              <div class="persona">
+                <div class="clearfix margin5b bgwhite w326h40" >
+                  <div class="floatL width20" style="height:50px;"> <img class="floatL margin10l" src="assets/img/photos/fotohome.png"/> </div>
+                  <div class="floatL width70" style="height:40px;">
+                    <p class="post2 font13 margin5b">Juan Jose Alberto Gonzalez Pedraza</p>
+                    <p  class="post2 font12">Consejo Regional Metropolitano</p>
+                  </div>
+                  <div class="chaticon floatR width10"></div>
+                </div>
+              </div>
+              <div class="persona">
+                <div class="clearfix margin5b bgwhite w326h40" >
+                  <div class="floatL width20" style="height:50px;"> <img class="floatL margin10l" src="assets/img/photos/fotohome.png"/> </div>
+                  <div class="floatL width70" style="height:40px;">
+                    <p class="post2 font13 margin5b">Juan Jose Alberto Gonzalez Pedraza</p>
+                    <p  class="post2 font12">Consejo Regional Metropolitano</p>
+                  </div>
+                  <div class="chaticon floatR width10"></div>
+                </div>
+              </div>
+              <div class="persona">
+                <div class="clearfix margin5b bgwhite w326h40" >
+                  <div class="floatL width20" style="height:50px;"> <img class="floatL margin10l" src="assets/img/photos/fotohome.png"/> </div>
+                  <div class="floatL width70" style="height:40px;">
+                    <p class="post2 font13 margin5b">Juan Jose Alberto Gonzalez Pedraza</p>
+                    <p  class="post2 font12">Consejo Regional Metropolitano</p>
+                  </div>
+                  <div class="chaticon floatR width10"></div>
+                </div>
+              </div>
+              <div class="persona">
+                <div class="clearfix margin5b bgwhite w326h40" >
+                  <div class="floatL width20" style="height:50px;"> <img class="floatL margin10l" src="assets/img/photos/fotohome.png"/> </div>
+                  <div class="floatL width70" style="height:40px;">
+                    <p class="post2 font13 margin5b">Juan Jose Alberto Gonzalez Pedraza</p>
+                    <p  class="post2 font12">Consejo Regional Metropolitano</p>
+                  </div>
+                  <div class="chaticon floatR width10"></div>
+                </div>
+              </div>
+              <div class="persona">
+                <div class="clearfix margin5b bgwhite w326h40" >
+                  <div class="floatL width20" style="height:50px;"> <img class="floatL margin10l" src="assets/img/photos/fotohome.png"/> </div>
+                  <div class="floatL width70" style="height:40px;">
+                    <p class="post2 font13 margin5b">Juan Jose Alberto Gonzalez Pedraza</p>
+                    <p  class="post2 font12">Consejo Regional Metropolitano</p>
+                  </div>
+                  <div class="chaticon floatR width10"></div>
+                </div>
+              </div>
+              <div class="persona">
+                <div class="clearfix margin5b bgwhite w326h40" >
+                  <div class="floatL width20" style="height:50px;"> <img class="floatL margin10l" src="assets/img/photos/fotohome.png"/> </div>
+                  <div class="floatL width70" style="height:40px;">
+                    <p class="post2 font13 margin5b">Juan Jose Alberto Gonzalez Pedraza</p>
+                    <p  class="post2 font12">Consejo Regional Metropolitano</p>
+                  </div>
+                  <div class="chaticon floatR width10"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="width10 floatR">
+            <a class="block margin5b" id="chatmas"><img src="assets/img/icons/chatmas.gif"> </a>
+            <a id="chatmenos"><img src="assets/img/icons/chatmenos.gif"> </a>
+          </div>
+        </div>
+      </div>
+      <div class="floatR width40 margin10r" >
+        <div class="padding10 margin15t">
+          <p class="aleft floatL width40 font14">Participantes</p>
+          <p class="arigth floatL width40"><span id="usuarios">3</span> usuarios</p>
+        </div>
+        <div class="clear padding10">
+          <div id="participantes" class=" width100 bgwhite vscroll" style="height:330px; border:1px solid #CCC;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+<script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/mCustomScrollbar.js"></script>
+<script type="text/javascript" src="assets/js/engine.js"></script>
+<script>
+
+$(document).ready(function(){
+	
+	$('.persona, .archivo').live('click', function(){ $(this).toggleClass('selected'); });
+	
+	var usuarios = 0;
+	$('#chatmas').live('click', function(){
+	
+		$('#personas .selected').each(function(){
+			usuarios++;
+			$('#usuarios').html(usuarios);
+			$(this).removeClass('selected');
+			var pers = $(this).html();
+			$('#participantes .mCSB_container').append('<div class="persona">' + pers + '</div>');
+			$(this).remove();
+			var customScrollbar=$("#personas").find(".mCSB_scrollTools");
+			customScrollbar.css({"opacity":0});
+			$("#personas").mCustomScrollbar("update");
+			customScrollbar.animate({opacity:1},"slow");
+			var customScrollbar=$("#participantes").find(".mCSB_scrollTools");
+			customScrollbar.css({"opacity":0});
+			$("#participantes").mCustomScrollbar("update");
+			customScrollbar.animate({opacity:1},"slow");
+			$("#participantes, #personas").mCustomScrollbar("scrollTo",0);
+		});
+	
+	});
+	
+	$('#chatmenos').live('click', function(){
+	
+		$('#participantes .selected').each(function(){
+			usuarios--;
+			$('#usuarios').html(usuarios);
+			$(this).removeClass('selected');
+			var pers = $(this).html();
+			$('#personas .mCSB_container').prepend('<div class="persona">' + pers + '</div>');
+			$(this).remove();
+			var customScrollbar=$("#personas").find(".mCSB_scrollTools");
+			customScrollbar.css({"opacity":0});
+			$("#personas").mCustomScrollbar("update");
+			customScrollbar.animate({opacity:1},"slow");
+			var customScrollbar=$("#participantes").find(".mCSB_scrollTools");
+			customScrollbar.css({"opacity":0});
+			$("#participantes").mCustomScrollbar("update");
+			customScrollbar.animate({opacity:1},"slow");
+			$("#participantes, #personas").mCustomScrollbar("scrollTo",0);
+		});
+	
+	});
+	
+	$('#docmenos').live('click', function(){
+	
+		$('#archivos .selected').each(function(){
+			$(this).remove();
+			var customScrollbar=$("#archivos").find(".mCSB_scrollTools");
+			customScrollbar.css({"opacity":0});
+			$("#archivos").mCustomScrollbar("update");
+			customScrollbar.animate({opacity:1},"slow");
+		});
+	
+	});
+
+ });
+
+/* var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+s.parentNode.insertBefore(g,s)}(document,'script'));*/
+</script>
+</body>
+</html>

@@ -38,6 +38,7 @@ div.dropbottom .dk_container:first-child{ margin-left: 130px;}
   background: url(../img/btns/select3.png) 93% 20px no-repeat;
   padding: 4px 5% 10px 5%;
   width: 90% !important;
+	height:32px;
 }
 
 .greyselect.bigger .dk_options a { padding: 0 10px;}
@@ -168,6 +169,7 @@ div.dropbottom .dk_container:first-child{ margin-left: 130px;}
 .dk_touch .dk_options {
   max-height: 170px;
 }
+.dk_options{ height:170px; }
 
 /******  End Theme ******/
 
