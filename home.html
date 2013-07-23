@@ -790,6 +790,16 @@ $(document).ready(function(){
 
 	$('div.fotobg').hide();
 	
+	$(".dk_options_inner").mCustomScrollbar({
+		scrollInertia:250
+	});
+	$(".dk_toggle").live('click', function(){
+		var customScrollbar=$(this).parent().find(".mCSB_scrollTools");
+		customScrollbar.css({"opacity":0});
+		$(this).parent().find('.dk_options_inner').mCustomScrollbar("update");
+		customScrollbar.animate({opacity:1},"slow");
+	});
+	
 	
 	//scroll horizontal para el div de la parte superior
 	var cantidad = $(".w207h234").length;
