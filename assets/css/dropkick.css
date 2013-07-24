@@ -163,6 +163,9 @@ div.dropbottom .dk_container:first-child{ margin-left: 130px;}
   -moz-border-radius: 0 0 5px 5px;
   -webkit-border-radius: 0 0 5px 5px;
 }
+#pconsejo .dk_options_inner{ max-height:100px; }
+.optdir .dk_options_inner{ max-height:120px; }
+#dk_container_dact .dk_options_inner{ max-height:60px; }
 
 /* Set a max-height on the options inner */
 .dk_options_inner,
