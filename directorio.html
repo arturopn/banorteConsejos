@@ -117,7 +117,7 @@
         <li class="pestanas"><a href="#configuracion">CONFIGURACIÓN</a></li>
       </ul>
       <div id="datospersonales" class="floatL vscroll taleft directorioin tabs-cont">
-        <div style="height:588px;">
+        <form><div style="height:588px;">
           <h1>Datos personales</h1>
           <div class="clearfix margin20b">
             <div class="floatL width30">
@@ -132,7 +132,7 @@
               <div class="floatL width50">
                 <label for"fotografia">Fotografía</label>
                 <p>Maximo 2mb</p>
-                <a href="index.html" class="btn width60  bggray line30  ">CAMBIAR</a></div>
+                <a class="btn width60  bggray line30 formbutton">CAMBIAR</a></div>
               <img src="assets/img/photos/foto.gif" class="floatR"/> </div>
           </div>
           <div class="clearfix margin20b">
@@ -197,7 +197,7 @@
             </div>
           </div>
           <div class="floatL width50 margin20t margin-20b" align="left"><a href="#" class="btn width40 line30  bggray font13 ">GUARDAR</a></div>
-        </div>
+        </div></form>
       </div>
       <div id="datosdecontacto" class="floatL directorioin tabs-cont vscroll">
         <div class="directorioperfil">
@@ -983,7 +983,32 @@
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script type="text/javascript">
 	$(document).ready(function(){
+
 		$('input[placeholder]').placeholder();
+
+		$('.formbutton').mousedown(function(){
+			$(this).closest('form').find('input').each(function(){ 
+				if( $(this).val() == $(this).attr('placeholder') )
+					$(this).val(''); 
+			});
+			return false;
+		});
+
+		$('.formbutton').mouseup(function(){
+			var vals = '';
+			$(this).closest('form').find('input').each(function(){ 
+				var val = $(this).attr('placeholder');
+				$(this).val(val);
+			});
+			return false;
+		});
+
+		$('form').submit(function(){
+			$(this).find('input').each(function(){ 
+				if( $(this).val() == $(this).attr('placeholder') )
+					$(this).val(''); 
+			});
+		});
 	
 		$('.drop-por').dropkick({ 
 			change: function (value, label) {
