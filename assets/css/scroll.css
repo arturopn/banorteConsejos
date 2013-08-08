@@ -12,6 +12,8 @@
 .mCS_destroyed>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar{
 	margin-right:30px;
 }
+.dk_options_inner .mCustomScrollBox>.mCSB_scrollTools{ width: 10px;}
+.dk_options_inner .mCSB_container{ margin-right: 10px;}
 .mCustomScrollBox>.mCSB_scrollTools{
 	width:16px;
 	height:100%;
