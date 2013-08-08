@@ -140,23 +140,26 @@
       lists[lists.length] = $select;
 
       // Focus events
-      if (!$.browser.msie) {
+      if($.browser.webkit) {
 
-      // old / orig. focus events
-      $dk.bind('focus.dropkick', function (e) {
-        $dk.addClass('dk_focus');
-      }).bind('blur.dropkick', function (e) {
-        $dk.removeClass('dk_open dk_focus');
+      $('html').click(function() {
+          $dk.removeClass('dk_open dk_focus');
+
+    });
+      $dk.click(function(event){
+          $dk.addClass('dk_focus');
+
       });
 
-  } else {
 
-      $("body").click( function(event) {          
-        if (!$(event.target).parents('.dk_container').length) {
-          _closeDropdown($dk);
-        }           
+  }else{
+
+      // Focus events
+      $dk.live('focus', function() {
+          $dk.addClass('dk_focus');
+      }).live('blur', function() {
+           $dk.removeClass('dk_open dk_focus');
       });
-
   }
 
 
