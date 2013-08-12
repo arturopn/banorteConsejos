@@ -30,6 +30,7 @@ div.dropbottom .dk_container:first-child{ margin-left: 130px;}
 
 .greyselect.bigger .dk_container { height: 45px;}
 .greyselect.bigger .dk_container a{ font-size: 18px; line-height: 32px;}
+.greyselect.bigger .dk_options_inner a{ font-size: 12px; }
 .greyselect.bigger  .dk_toggle {
   /**
    * Help: Arrow image not appearing
@@ -162,10 +163,11 @@ div.dropbottom .dk_container:first-child{ margin-left: 130px;}
   border-radius: 0 0 5px 5px;
   -moz-border-radius: 0 0 5px 5px;
   -webkit-border-radius: 0 0 5px 5px;
+  max-height:100px !important;
 }
-#pconsejo .dk_options_inner, #dk_container_estado .dk_options_inner, #dk_container_ciudad .dk_options_inner{ max-height:100px; }
+/*#pconsejo .dk_options_inner, #dk_container_estado .dk_options_inner, #dk_container_ciudad .dk_options_inner{  }
 .optdir .dk_options_inner{ max-height:120px; }
-#dk_container_dact .dk_options_inner{ max-height:60px; }
+#dk_container_dact .dk_options_inner{ max-height:60px; }*/
 
 /* Set a max-height on the options inner */
 .dk_options_inner,
